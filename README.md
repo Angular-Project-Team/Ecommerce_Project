@@ -1,4 +1,4 @@
-# Ecommerce
+# Ecommerce with (Angular v21 and tailwindcss v4)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
@@ -11,21 +11,33 @@ This project follows a scalable and maintainable folder structure designed for m
 ### Folder Architecture Overview
 
 ```
-src/app/
-├── core/
-│   ├── guards/
-│   ├── interceptors/
-│   ├── services/
-│   ├── models/
-│   └── constants/
-├── shared/
-│   ├── components/
-│   ├── directives/
-│   ├── pipes/
-│   ├── validators/
-│   └── utils/
-├── features/
-└── layouts/
+src/
+├── environments/
+├── styles/
+├── app/
+│   ├── core/
+│   │   ├── constants/
+│   │   ├── enums/
+│   │   ├── guards/
+│   │   ├── interceptors/
+│   │   ├── models/
+│   │   └── services/
+│   ├── shared/
+│   │   ├── components/
+│   │   ├── directives/
+│   │   ├── models/
+│   │   ├── pipes/
+│   │   ├── utils/
+│   │   └── validators/
+│   ├── features/
+│   └── layouts/
+
+public/
+├── docs/
+├── fonts/
+├── icons/
+├── images/
+└── favicon.ico
 ```
 
 ---
@@ -38,11 +50,12 @@ The core folder contains singleton services and application-wide functionality t
 
 #### What belongs here:
 
+- **constants/** — Application-wide constants, API endpoints, and configuration values
+- **enums/** — TypeScript enums for user roles, order status, payment methods, and other enumerated types
 - **guards/** — Route guards for authentication, authorization, and role-based access control
 - **interceptors/** — HTTP interceptors for handling authentication tokens, error handling, logging, and request/response transformations
-- **services/** — Singleton services such as authentication service, user service, API base service, and notification service
 - **models/** — TypeScript interfaces and types that represent data structures used across the entire application
-- **constants/** — Application-wide constants, environment configurations, API endpoints, and enum definitions
+- **services/** — Singleton services such as authentication service, user service, API base service, and notification service
 
 #### Team Guidelines:
 
@@ -61,9 +74,10 @@ The shared folder contains reusable components, directives, pipes, and utilities
 
 - **components/** — Reusable UI components such as buttons, modals, cards, tables, loaders, form inputs, and pagination
 - **directives/** — Custom attribute and structural directives for DOM manipulation
+- **models/** — Shared interfaces and types for UI components like pagination, dropdown options, and table columns
 - **pipes/** — Custom pipes for data transformation in templates
-- **validators/** — Custom form validators for reactive and template-driven forms
 - **utils/** — Helper functions, utility classes, and common logic
+- **validators/** — Custom form validators for reactive and template-driven forms
 
 #### Team Guidelines:
 
@@ -127,6 +141,67 @@ The layouts folder contains structural layout components that define the overall
 - Use router outlets within layouts for content projection
 - Keep layouts minimal and delegate content to feature components
 - Create separate layouts for different user experiences
+
+---
+
+### 5. Environments (`src/environments/`)
+
+The environments folder contains environment-specific configuration files for different deployment targets.
+
+#### What belongs here:
+
+- environment.ts — Default/development environment configuration
+- environment.development.ts — Development-specific settings
+- environment.staging.ts — Staging environment settings
+- environment.production.ts — Production environment settings
+
+#### Team Guidelines:
+
+- Never commit sensitive data like API keys or secrets to environment files
+- Use environment variables for sensitive configuration in CI/CD pipelines
+- Keep environment files consistent in structure across all environments
+- Import environment using the configured file replacement in angular.json
+
+---
+
+### 6. Styles (`src/styles/`)
+
+The styles folder contains global SCSS partials and theme configurations used throughout the application.
+
+#### What belongs here:
+
+- \_variables.scss — Colors, fonts, spacing, breakpoints, and design tokens
+- \_mixins.scss — Reusable SCSS mixins for common patterns
+- \_typography.scss — Global font styles, headings, and text utilities
+- \_themes.scss — Light/dark theme variables and theme switching logic
+- \_reset.scss — CSS reset or normalize styles
+
+#### Team Guidelines:
+
+- Prefix partial files with underscore to prevent direct compilation
+- Import all partials into the main styles.scss file
+- Use variables for all colors and spacing to maintain consistency
+- Document complex mixins with usage examples in comments
+
+---
+
+### 7. Public Assets (`public/`)
+
+The public folder contains static assets that are served directly without processing.
+
+#### What belongs here:
+
+- **images/** — Static images like banners, backgrounds, and product placeholders
+- **icons/** — SVG icons and icon sets
+- **fonts/** — Custom font files in woff, woff2, or ttf formats
+- **docs/** — Static documents like PDFs, terms of service, and privacy policies
+
+#### Team Guidelines:
+
+- Optimize images before adding to reduce bundle size
+- Use SVG format for icons when possible for scalability
+- Organize assets into appropriate subfolders
+- Use descriptive file names in kebab-case
 
 ---
 

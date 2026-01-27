@@ -1,0 +1,2 @@
+# This file ensures the folder is tracked by Git
+# Add environment config files here (environment.ts, environment.development.ts, environment.production.ts, etc.)

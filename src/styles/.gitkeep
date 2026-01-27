@@ -1,0 +1,7 @@
+# This file ensures the folder is tracked by Git
+# Add global SCSS partials here:
+# - _variables.scss (colors, fonts, spacing, breakpoints)
+# - _mixins.scss (reusable SCSS mixins)
+# - _typography.scss (font styles, headings)
+# - _themes.scss (light/dark theme variables)
+# - _reset.scss (CSS reset/normalize)

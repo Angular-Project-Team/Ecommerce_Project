@@ -1,0 +1,2 @@
+# This file ensures the folder is tracked by Git
+# Add custom pipes here (currency-format.pipe.ts, truncate.pipe.ts, etc.)
