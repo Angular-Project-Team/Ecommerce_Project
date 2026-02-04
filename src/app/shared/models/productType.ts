@@ -5,5 +5,6 @@ export type ProductType = {
       image: string;
       price: number,
       description: string,
-      productCode: string
+      productCode: string,
+      isFavorite:boolean
 }

@@ -1,14 +1,13 @@
 import { Component, signal } from '@angular/core';
+import { Home } from './features/Home/home';
+import { Products } from './features/Home/Components/products/products';
+import { Product } from './shared/components/product/product';
 
-import { HeroSection } from './features/components/hero-section/hero-section';
-import { Header } from './shared/components/header/header';
-import { Home } from './features/components/home/home';
-import { Products } from './features/components/products/products';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Products,Home],
+  imports: [Home,Products],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

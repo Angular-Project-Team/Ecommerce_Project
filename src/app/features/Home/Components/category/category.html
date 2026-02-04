@@ -1,0 +1,13 @@
+<!-- <div class="w-52 h-96 my-8 ">
+  <img [src]="mycategory.image" alt="Failed">
+</div> -->
+
+<div class="w-52 h-96 my-8 relative group cursor-pointer">
+  <img [src]="mycategory.image" alt="Failed" class="w-full h-full object-cover">
+
+  <div class="absolute bottom-0 left-0 right-0 h-1/4  bg-opacity-70
+              flex items-center justify-center text-white text-center
+              opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-2xl giveclr">
+    <span>{{ mycategory.name }}</span>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import { Component, Input, signal } from '@angular/core';
-import { ProductType } from '../../../shared/models/productType';
-import { Product } from '../../../shared/components/product/product';
-import { ProductService } from '../../services/product-service';
+import { ProductType } from '../../../../shared/models/productType';
+import { Product } from '../../../../shared/components/product/product';
+import { ProductService } from '../../../services/product-service';
 
 @Component({
   selector: 'app-best-seller',
@@ -10,6 +10,7 @@ import { ProductService } from '../../services/product-service';
   styleUrl: './best-seller.css',
 })
 export class BestSeller {
+  Math = Math;
 constructor(private productServices:ProductService) {}
   products=signal([] as ProductType[])
   ngOnInit(){

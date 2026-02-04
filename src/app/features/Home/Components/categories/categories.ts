@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
-import { Category } from '../category/category';
-import { CategoriesService} from '../../services/categories-service';
+import { CategoriesService} from '../../../services/categories-service';
 import { CategoryType } from '../../models/catType';
+import { Category } from '../category/category';
 
 @Component({
   selector: 'app-categories',
