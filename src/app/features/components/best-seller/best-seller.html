@@ -1,0 +1,11 @@
+<h1 class="text-center text-5xl mt-8 ">Best Seller</h1>
+<div class=" grid
+    grid-cols-1
+    sm:grid-cols-2
+    md:grid-cols-3 gap-6 px-4 md:px-8 lg:px-16 py-10 max-w-7xl mx-auto mb-14 ">
+  @for (product of products(); track product.id; let i = $index) {
+    @if (i < 6) {
+      <app-product [myproduct]="product" class="best"></app-product>
+    }
+  }
+</div>
