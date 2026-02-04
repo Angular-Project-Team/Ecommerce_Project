@@ -1,0 +1,514 @@
+{
+  "products": [
+    {
+      "catId":1,
+      "id": 1,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Transparent-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 2,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-Transparent-PNG.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 3,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Transparent-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 4,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-Transparent-Background.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 5,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Pic.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 6,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-PNG-HD.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 7,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-Transparent-PNG.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 8,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-Transparent-PNG.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 9,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":1,
+      "id": 10,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/16/Necklace-Jewellery-PNG-File.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+
+       {
+      "catId":2,
+      "id": 11,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-Picture.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+           {
+      "catId":2,
+      "id": 12,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-HD.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 13,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-Photo.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 14,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Clipart.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 15,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Photo.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 16,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Background-Isolated-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 17,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Free-Download.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 18,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-File.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 19,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":2,
+      "id": 20,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-Background-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":3,
+      "id": 21,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 22,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 23,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Background-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 24,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Isolated-File.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 25,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/22/Jewelry-Download-PNG-Isolated-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 26,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 27,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+     {
+      "catId":3,
+      "id": 28,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+         {
+      "catId":3,
+      "id": 29,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+         {
+      "catId":3,
+      "id": 30,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+         {
+      "catId":3,
+      "id": 31,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+         {
+      "catId":3,
+      "id": 32,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+
+             {
+      "catId":3,
+      "id": 33,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":3,
+      "id": 34,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+    {
+      "catId":4,
+      "id": 35,
+      "name": "Petal Velvet Accent Chair",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTxR4tzb6dzkBt245gsrDvgVWf-1HBbMjYce2e1jTUSPfhF6pXDc-ilI00xxjPihzygvT22UaDNCXZQxLBogf3xDodkDxzz10TTjwduLgXfVdnH46HaXSQbu6Dyxc1ojMcuheXBP3c&usqp=CAc",
+      "price": 450,
+      "description": "Luxurious cream velvet swivel chair with a unique scalloped 'petal' back design.",
+      "productCode": "CH-882"
+    },
+    {
+      "catId":4,
+      "id": 36,
+      "name": "Contemporary U-Shaped Kitchen",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Transparent-Image.png",
+      "price": 8500,
+      "description": "Sleek beige cabinetry with black accents and integrated interior shelving lights.",
+      "productCode": "KT-901"
+    },
+    {
+      "catId":4,
+      "id": 37,
+      "name": "Luxury Marble Kitchen Set",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-Transparent-Images-PNG.png",
+      "price": 9200,
+      "description": "L-shaped minimalist kitchen featuring marble backsplash and backlit display.",
+      "productCode": "KT-902"
+    },
+    {
+      "catId":4,
+      "id": 38,
+      "name": "Geometric Diamond Bookshelf",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-HD.png",
+      "price": 280,
+      "description": "A modern bookshelf consisting of four interlocking diamond-shaped modules.",
+      "productCode": "LB-303"
+    },
+    {
+      "catId":4,
+      "id": 39,
+      "name": "Semi-Circle Floating Mirror",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Clipart.png",
+      "price": 320,
+      "description": "Half-moon wall mirror integrated with vertical wooden slats and a floating drawer.",
+      "productCode": "MR-505"
+    },
+    {
+      "catId":4,
+      "id": 40,
+      "name": "Arched Entryway Console Set",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Transparent.png",
+      "price": 410,
+      "description": "Full-length arched floor mirror with a wall-mounted floating wood drawer.",
+      "productCode": "SC-404"
+    },
+    {
+      "catId":4,
+      "id": 41,
+      "name": "Spherical Base Coffee Table",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Picture.png",
+      "price": 590,
+      "description": "Artistic round wooden coffee table supported by a unique cluster of wooden spheres.",
+      "productCode": "TB-112"
+    },
+    {
+      "catId":4,
+      "id": 42,
+      "name": "Infinity Loop Coffee Table",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-File.png",
+      "price": 750,
+      "description": "Bentwood coffee table crafted into a seamless infinity loop shape.",
+      "productCode": "TB-113"
+    },
+    {
+      "catId":4,
+      "id": 43,
+      "name": "Corner Decorators ",
+      "price": 550,
+      "description": "Amazing corner decorators with attractie vase\n",
+      "productCode": "CD-1",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Photos.png"
+
+    },
+    {
+      "catId":5,
+      "id": 44,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 45,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 46,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 47,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 48,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 49,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 50,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+             {
+      "catId":5,
+      "id": 51,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":5,
+      "id": 52,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    },
+      {
+      "catId":5,
+      "id": 53,
+      "name": "Minimalist Symmetrical Bed Frame",
+      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
+      "price": 1200,
+      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
+      "productCode": "BD-001"
+    }
+  ],
+  "categories":[
+    {
+      "catId":1,
+      "name":"Rings",
+      "image":"/images/category/RingCat.png"
+    },
+     {
+      "catId":2,
+      "name":"Earings",
+      "image":"/images/category/EaringCat.png"
+
+    },
+     {
+      "catId":3,
+      "name":"Bracelets",
+      "image":"/images/category/BraceletCat.png"
+
+    },
+     {
+      "catId":4,
+      "name":"Necklace",
+      "image":"/images/category/NecklaceCat.png"
+    },
+    {
+      "catId":5,
+      "name":"Watches",
+      "image":"/images/category/WatchCat.png"
+    }
+
+  ]
+}
