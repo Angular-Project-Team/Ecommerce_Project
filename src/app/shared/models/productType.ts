@@ -6,5 +6,6 @@ export type ProductType = {
       price: number,
       description: string,
       productCode: string,
-      isFavorite:boolean
+      isFavorite:boolean,
+      material:string
 }

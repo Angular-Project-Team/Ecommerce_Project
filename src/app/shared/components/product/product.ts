@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { ProductType } from '../../models/productType';
 import { CommonModule } from '@angular/common';
 
@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Product {
 @Input() myproduct:ProductType= {} as ProductType;
+
 toggleFavorite() {
     this.myproduct.isFavorite = !this.myproduct.isFavorite;
     console.log('Favorite toggled:', this.myproduct);
@@ -27,3 +28,4 @@ toggleFavorite() {
       });
     }}
 }
+

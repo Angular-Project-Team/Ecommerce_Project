@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { CategoriesService} from '../../../services/categories-service';
-import { CategoryType } from '../../models/catType';
+import { CategoryType } from '../../../shopping/models/catType';
 import { Category } from '../category/category';
 
 @Component({

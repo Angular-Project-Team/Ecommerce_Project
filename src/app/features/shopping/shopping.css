@@ -1,0 +1,30 @@
+
+:host ::ng-deep app-header .navbar{
+  background-color: #074D4D;
+}
+
+:host ::ng-deep app-collection .forbg {
+  background-color: #074D4D;
+}
+:host ::ng-deep .restyle {
+  background-color: #074D4D;
+  color: white;
+  bottom: 190px;
+
+}
+:host ::ng-deep h1 {
+  color: white;
+}
+:host ::ng-deep app-collection p {
+color: white;
+}
+:host ::ng-deep .productst app-product .collectionst {
+  background-color: #074D4D;
+}
+:host ::ng-deep .productst app-product h2{
+  color: white;
+}
+:host ::ng-deep .productst app-product svg{
+  width: 34px;
+  height:34px;
+}

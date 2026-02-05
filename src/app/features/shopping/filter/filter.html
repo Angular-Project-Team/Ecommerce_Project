@@ -1,0 +1,32 @@
+<div class="p-6">
+  <h2 class="text-6xl font-[Vultura] text-center text-black">Our Products</h2>
+  <hr class="h-0.5 bg-[#074D4D] border-0 my-5">
+
+  <div class="flex flex-col md:flex-row gap-4 justify-end mt-6 font-[Montserrat]">
+    <!-- Category Dropdown -->
+    <select name="category" class="font-bold"  [(ngModel)]="selectedCatId"  >
+      <!-- <option value="">Categories</option> -->
+      <option [ngValue]="0" >All Caregories</option>
+      <option *ngFor="let cat of categories() " [ngValue]= "cat.catId" >{{ cat.name }} </option>
+    </select>
+
+        <!-- Material Dropdown -->
+    <select [(ngModel)]="selectedMaterial" class="font-bold">
+      <option value="">Materials</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="diamond">Diamond</option>
+    </select>
+
+    <!-- Price Dropdown -->
+    <select [(ngModel)]="selectedPrice" class="font-bold">
+      <option value="">Prices</option>
+      <option value="0-100">$0 - $100</option>
+      <option value="100-500">$100 - $500</option>
+      <option value="500+">$500+</option>
+    </select>
+      </div>
+</div>
+
+<app-products [recieveCatId]="selectedCatId"  [selectedMaterial]="selectedMaterial"
+  [selectedPrice]="selectedPrice"></app-products>

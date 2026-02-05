@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CategoryType } from '../../models/catType';
+import { CategoryType } from '../../../shopping/models/catType';
 
 @Component({
   selector: 'app-category',
