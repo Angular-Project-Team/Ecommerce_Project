@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
-import { ProductService } from '../../services/product-service';
-import { ProductType } from '../../../shared/models/productType';
-import { Product } from '../../../shared/components/product/product';
+import { ProductService } from '../../../services/product-service';
+import { ProductType } from '../../../../shared/models/productType';
+import { Product } from '../../../../shared/components/product/product';
 
 @Component({
   selector: 'app-products',

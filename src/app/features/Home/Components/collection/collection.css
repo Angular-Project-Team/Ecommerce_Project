@@ -1,0 +1,12 @@
+:host ::ng-deep app-product .card {
+  background-color: white;
+  height: 200px;
+  padding-bottom:10px ;
+}
+:host ::ng-deep app-product .collectionst  {
+  background-color: #EBE7E1;
+}
+:host ::ng-deep app-product img {
+  width: 110px;
+  height: 60px;
+}

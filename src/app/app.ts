@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { HeroSection } from './features/components/hero-section/hero-section';
-import { Header } from './shared/components/header/header';
-import { Home } from './features/components/home/home';
-import { Products } from './features/components/products/products';
-import { ProductDetails } from './features/product-details/product-details';
-
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],

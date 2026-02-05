@@ -1,514 +1,531 @@
 {
   "products": [
     {
-      "catId":1,
+      "catId": 1,
       "id": 1,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Transparent-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Classic Solitaire Diamond Ring",
+      "image": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Transparent-Image.png",
+      "price": 2499,
+      "description": "Elegant solitaire ring featuring a brilliant-cut diamond in a timeless prong setting.",
+      "productCode": "RG-001",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 2,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-Transparent-PNG.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Vintage Floral Gold Ring",
+      "image": "https://www.pngmart.com/files/15/Antique-Jewellery-PNG-File.png",
+      "price": 1850,
+      "description": "Antique-inspired gold ring with intricate floral engravings and ornate detailing.",
+      "productCode": "RG-002",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 3,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Transparent-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Modern Halo Engagement Ring",
+      "image": "https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Transparent-Image.png",
+      "price": 3200,
+      "description": "Contemporary engagement ring with a center stone surrounded by a dazzling halo of diamonds.",
+      "productCode": "RG-003",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 4,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-Transparent-Background.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Three Stone Anniversary Ring",
+      "image": "https://www.pngmart.com/files/16/Ring-Jewellery-Transparent-Background.png",
+      "price": 2750,
+      "description": "Symbolic three-stone ring representing past, present, and future in white gold.",
+      "productCode": "RG-004",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 5,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Pic.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Cushion Cut Gemstone Ring",
+      "image": "https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Pic.png",
+      "price": 1995,
+      "description": "Stunning cushion-cut center stone in a delicate pavé band setting.",
+      "productCode": "RG-005",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 6,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-PNG-HD.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Infinity Band Diamond Ring",
+      "image": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-HD.png",
+      "price": 2150,
+      "description": "Romantic infinity design with continuous diamonds symbolizing eternal love.",
+      "productCode": "RG-006",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 7,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-Transparent-PNG.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Art Deco Statement Ring",
+      "image": "https://www.pngmart.com/files/15/Antique-Jewellery-Download-PNG-Image.png",
+      "price": 3450,
+      "description": "Bold Art Deco-inspired ring with geometric patterns and vintage gemstones.",
+      "productCode": "RG-007",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 8,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/1/Jewellery-Ring-Transparent-PNG.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Princess Cut Wedding Ring",
+      "image": "https://www.pngmart.com/files/1/Jewellery-Ring-Transparent-PNG.png",
+      "price": 2880,
+      "description": "Sophisticated princess-cut diamond in a classic four-prong platinum setting.",
+      "productCode": "RG-008",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 9,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Rose Gold Twist Band Ring",
+      "image": "https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Image.png",
+      "price": 1675,
+      "description": "Delicate rose gold band with an elegant twisted design and diamond accents.",
+      "productCode": "RG-009",
+      "isFavorite": false
     },
-     {
-      "catId":1,
+    {
+      "catId": 1,
       "id": 10,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/16/Necklace-Jewellery-PNG-File.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Emerald Cut Cocktail Ring",
+      "image": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Clipart.png",
+      "price": 3850,
+      "description": "Glamorous emerald-cut statement ring perfect for special occasions.",
+      "productCode": "RG-010",
+      "isFavorite": false
     },
-
-       {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 11,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-Picture.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Gold Drop Chandelier Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Isolated-Pic.png",
+      "price": 895,
+      "description": "Elegant chandelier-style drop earrings in lustrous yellow gold with intricate detailing.",
+      "productCode": "ER-001",
+      "isFavorite": false
     },
-           {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 12,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-HD.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Diamond Stud Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Picture.png",
+      "price": 1450,
+      "description": "Classic diamond stud earrings in 14k gold with secure push-back closures.",
+      "productCode": "ER-002",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 13,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-Photo.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Teardrop Pearl Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Isolated-HD.png",
+      "price": 725,
+      "description": "Graceful teardrop-shaped pearl earrings with gold accents and gentle movement.",
+      "productCode": "ER-003",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 14,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Clipart.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Hoop Earrings with Gemstones",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Isolated-Photo.png",
+      "price": 980,
+      "description": "Medium-sized gold hoops adorned with colorful gemstones for everyday elegance.",
+      "productCode": "ER-004",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 15,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Photo.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Vintage Filigree Dangle Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-HD.png",
+      "price": 1125,
+      "description": "Ornate vintage-style earrings featuring delicate filigree work and antique finish.",
+      "productCode": "ER-005",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 16,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Background-Isolated-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Geometric Modern Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-Transparent-PNG.png",
+      "price": 650,
+      "description": "Contemporary geometric design in polished gold with clean, modern lines.",
+      "productCode": "ER-006",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 17,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Free-Download.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Halloween Crystal Drop Earrings",
+      "image": "https://www.pngmart.com/files/22/Halloween-Earrings-PNG.png",
+      "price": 425,
+      "description": "Festive crystal earrings with unique seasonal design and sparkling accents.",
+      "productCode": "ER-007",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 18,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-File.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Lever-Back Gold Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-File.png",
+      "price": 1250,
+      "description": "Secure lever-back earrings in 18k gold with cushion-cut center stones.",
+      "productCode": "ER-008",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 19,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Circular Pavé Stud Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Transparent.png",
+      "price": 1580,
+      "description": "Round stud earrings completely covered in brilliant pavé-set diamonds.",
+      "productCode": "ER-009",
+      "isFavorite": false
     },
-      {
-      "catId":2,
+    {
+      "catId": 2,
       "id": 20,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/15/Antique-Jewellery-PNG-Background-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Floral Cluster Earrings",
+      "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Photos.png",
+      "price": 875,
+      "description": "Delicate floral cluster design in gold with multiple gemstone petals.",
+      "productCode": "ER-010",
+      "isFavorite": false
     },
-      {
-      "catId":3,
+    {
+      "catId": 3,
       "id": 21,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Layered Chain Necklace Set",
+      "image": "https://www.pngmart.com/files/1/Artificial-Jewellery.png",
+      "price": 345,
+      "description": "Multi-strand necklace set with varying chain lengths for a trendy layered look.",
+      "productCode": "NK-001",
+      "isFavorite": false
     },
-     {
-      "catId":3,
+    {
+      "catId": 3,
       "id": 22,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Statement Gemstone Collar",
+      "image": "https://www.pngmart.com/files/16/Jewellery-PNG-Free-Download.png",
+      "price": 1850,
+      "description": "Bold collar necklace featuring an array of colorful gemstones in ornate settings.",
+      "productCode": "NK-002",
+      "isFavorite": false
     },
-     {
-      "catId":3,
+    {
+      "catId": 3,
       "id": 23,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Background-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Delicate Gold Chain Necklace",
+      "image": "https://www.pngmart.com/files/1/Jewellery-Chain-Transparent-Background.png",
+      "price": 425,
+      "description": "Simple yet elegant thin gold chain perfect for everyday wear or layering.",
+      "productCode": "NK-003",
+      "isFavorite": false
     },
-     {
-      "catId":3,
+    {
+      "catId": 3,
       "id": 24,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/22/Jewelry-PNG-Isolated-File.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Bridal Diamond Necklace Set",
+      "image": "https://www.pngmart.com/files/5/Jewel-Set-PNG-Pic.png",
+      "price": 4250,
+      "description": "Luxurious bridal necklace and earring set with cascading diamonds and intricate design.",
+      "productCode": "NK-004",
+      "isFavorite": false
     },
-     {
-      "catId":3,
+    {
+      "catId": 3,
       "id": 25,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/22/Jewelry-Download-PNG-Isolated-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-     {
-      "catId":3,
-      "id": 26,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-     {
-      "catId":3,
-      "id": 27,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-     {
-      "catId":3,
-      "id": 28,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-         {
-      "catId":3,
-      "id": 29,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-         {
-      "catId":3,
-      "id": 30,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-         {
-      "catId":3,
-      "id": 31,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-         {
-      "catId":3,
-      "id": 32,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-
-             {
-      "catId":3,
-      "id": 33,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-             {
-      "catId":3,
-      "id": 34,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-    {
-      "catId":4,
-      "id": 35,
-      "name": "Petal Velvet Accent Chair",
-      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTxR4tzb6dzkBt245gsrDvgVWf-1HBbMjYce2e1jTUSPfhF6pXDc-ilI00xxjPihzygvT22UaDNCXZQxLBogf3xDodkDxzz10TTjwduLgXfVdnH46HaXSQbu6Dyxc1ojMcuheXBP3c&usqp=CAc",
-      "price": 450,
-      "description": "Luxurious cream velvet swivel chair with a unique scalloped 'petal' back design.",
-      "productCode": "CH-882"
-    },
-    {
-      "catId":4,
-      "id": 36,
-      "name": "Contemporary U-Shaped Kitchen",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Transparent-Image.png",
-      "price": 8500,
-      "description": "Sleek beige cabinetry with black accents and integrated interior shelving lights.",
-      "productCode": "KT-901"
-    },
-    {
-      "catId":4,
-      "id": 37,
-      "name": "Luxury Marble Kitchen Set",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-Transparent-Images-PNG.png",
-      "price": 9200,
-      "description": "L-shaped minimalist kitchen featuring marble backsplash and backlit display.",
-      "productCode": "KT-902"
-    },
-    {
-      "catId":4,
-      "id": 38,
-      "name": "Geometric Diamond Bookshelf",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-HD.png",
-      "price": 280,
-      "description": "A modern bookshelf consisting of four interlocking diamond-shaped modules.",
-      "productCode": "LB-303"
-    },
-    {
-      "catId":4,
-      "id": 39,
-      "name": "Semi-Circle Floating Mirror",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Clipart.png",
-      "price": 320,
-      "description": "Half-moon wall mirror integrated with vertical wooden slats and a floating drawer.",
-      "productCode": "MR-505"
-    },
-    {
-      "catId":4,
-      "id": 40,
-      "name": "Arched Entryway Console Set",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Transparent.png",
-      "price": 410,
-      "description": "Full-length arched floor mirror with a wall-mounted floating wood drawer.",
-      "productCode": "SC-404"
-    },
-    {
-      "catId":4,
-      "id": 41,
-      "name": "Spherical Base Coffee Table",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Picture.png",
-      "price": 590,
-      "description": "Artistic round wooden coffee table supported by a unique cluster of wooden spheres.",
-      "productCode": "TB-112"
-    },
-    {
-      "catId":4,
-      "id": 42,
-      "name": "Infinity Loop Coffee Table",
+      "name": "Solitaire Diamond Pendant",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-File.png",
-      "price": 750,
-      "description": "Bentwood coffee table crafted into a seamless infinity loop shape.",
-      "productCode": "TB-113"
+      "price": 1995,
+      "description": "Classic solitaire diamond pendant on a delicate chain, timeless and elegant.",
+      "productCode": "NK-005",
+      "isFavorite": false
     },
     {
-      "catId":4,
-      "id": 43,
-      "name": "Corner Decorators ",
+      "catId": 3,
+      "id": 26,
+      "name": "Art Deco Diamond Necklace",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Picture.png",
+      "price": 3650,
+      "description": "Vintage-inspired Art Deco necklace with geometric diamond patterns and platinum setting.",
+      "productCode": "NK-006",
+      "isFavorite": false
+    },
+    {
+      "catId": 3,
+      "id": 27,
+      "name": "Riviera Diamond Tennis Necklace",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Transparent.png",
+      "price": 5200,
+      "description": "Stunning tennis necklace with continuous line of brilliant-cut diamonds.",
+      "productCode": "NK-007",
+      "isFavorite": false
+    },
+    {
+      "catId": 3,
+      "id": 28,
+      "name": "Y-Drop Diamond Necklace",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Clipart.png",
+      "price": 2750,
+      "description": "Modern Y-shaped necklace with diamond-studded chain and elegant drop pendant.",
+      "productCode": "NK-008",
+      "isFavorite": false
+    },
+    {
+      "catId": 3,
+      "id": 29,
+      "name": "Halo Pendant Necklace",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Clipart.png",
+      "price": 2280,
+      "description": "Center diamond surrounded by halo of smaller stones on white gold chain.",
+      "productCode": "NK-009",
+      "isFavorite": false
+    },
+    {
+      "catId": 3,
+      "id": 30,
+      "name": "Multi-Tier Diamond Statement Necklace",
+      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-Transparent-Images-PNG.png",
+      "price": 6850,
+      "description": "Spectacular multi-layered diamond necklace perfect for formal occasions and galas.",
+      "productCode": "NK-010",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 31,
+      "name": "Gold Link Chain Bracelet",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-HD-Isolated.png",
+      "price": 685,
+      "description": "Classic gold link bracelet with secure clasp and timeless design.",
+      "productCode": "BR-001",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 32,
+      "name": "Diamond Tennis Bracelet",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG.png",
+      "price": 3250,
+      "description": "Elegant tennis bracelet featuring a continuous line of brilliant diamonds.",
+      "productCode": "BR-002",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 33,
+      "name": "Beaded Gemstone Bracelet",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Isolated-HD.webp",
+      "price": 425,
+      "description": "Colorful beaded bracelet with semi-precious gemstones and stretch design.",
+      "productCode": "BR-003",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 34,
+      "name": "Charm Bracelet Collection",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-HD-Isolated.png",
+      "price": 795,
+      "description": "Personalized charm bracelet with multiple dangling charms and gold chain.",
+      "productCode": "BR-004",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 35,
+      "name": "Bangle Bracelet Set",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Photo.png",
       "price": 550,
-      "description": "Amazing corner decorators with attractie vase\n",
-      "productCode": "CD-1",
-      "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Photos.png"
-
+      "description": "Set of three stackable gold bangles with textured and smooth finishes.",
+      "productCode": "BR-005",
+      "isFavorite": false
     },
     {
-      "catId":5,
+      "catId": 4,
+      "id": 36,
+      "name": "Cuff Bracelet with Gemstones",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Image.png",
+      "price": 1150,
+      "description": "Wide cuff bracelet adorned with row of vibrant gemstones in gold setting.",
+      "productCode": "BR-006",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 37,
+      "name": "Rope Chain Gold Bracelet",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Picture.png",
+      "price": 875,
+      "description": "Twisted rope-style gold bracelet with substantial weight and elegant drape.",
+      "productCode": "BR-007",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 38,
+      "name": "Pearl Strand Bracelet",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-File.png",
+      "price": 625,
+      "description": "Lustrous freshwater pearl bracelet with ornate gold clasp and spacers.",
+      "productCode": "BR-008",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 39,
+      "name": "Cuban Link Gold Bracelet",
+      "image": "https://www.pngmart.com/files/23/Cuban-Link-PNG.png",
+      "price": 1425,
+      "description": "Bold Cuban link design in solid gold with secure box clasp.",
+      "productCode": "BR-009",
+      "isFavorite": false
+    },
+    {
+      "catId": 4,
+      "id": 40,
+      "name": "Infinity Symbol Bracelet",
+      "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Photos.png",
+      "price": 485,
+      "description": "Delicate bracelet featuring infinity symbol with diamond accents.",
+      "productCode": "BR-010",
+      "isFavorite": false
+    },
+    {
+      "catId": 5,
+      "id": 41,
+      "name": "Classic Leather Strap Watch",
+      "image": "https://www.pngmart.com/files/6/Watch-Transparent-Background.png",
+      "price": 1850,
+      "description": "Timeless watch with brown leather strap, silver case, and minimalist dial.",
+      "productCode": "WT-001",
+      "isFavorite": false
+    },
+    {
+      "catId": 5,
+      "id": 42,
+      "name": "Sport Chronograph Watch",
+      "image": "https://www.pngmart.com/files/6/Watch-PNG-Clipart.png",
+      "price": 2450,
+      "description": "High-performance chronograph with tachymeter bezel and stainless steel band.",
+      "productCode": "WT-002",
+      "isFavorite": false
+    },
+    {
+      "catId": 5,
+      "id": 43,
+      "name": "Luxury Swiss Automatic Watch",
+      "image": "https://www.pngmart.com/files/3/Branded-Watch-PNG-Clipart.png",
+      "price": 5800,
+      "description": "Premium Swiss-made automatic watch with exhibition caseback and sapphire crystal.",
+      "productCode": "WT-003",
+      "isFavorite": false
+    },
+    {
+      "catId": 5,
       "id": 44,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Diver's Professional Watch",
+      "image": "https://www.pngmart.com/files/6/Watch-PNG-File.png",
+      "price": 3250,
+      "description": "Water-resistant dive watch with rotating bezel and luminous markers, rated to 300m.",
+      "productCode": "WT-004",
+      "isFavorite": false
     },
-             {
-      "catId":5,
+    {
+      "catId": 5,
       "id": 45,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Women's Diamond Bezel Watch",
+      "image": "https://www.pngmart.com/files/3/Ladies-Watch-PNG-Transparent-Image.png",
+      "price": 4200,
+      "description": "Elegant ladies' watch with diamond-set bezel and mother-of-pearl dial.",
+      "productCode": "WT-005",
+      "isFavorite": false
     },
-             {
-      "catId":5,
+    {
+      "catId": 5,
       "id": 46,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Smart Hybrid Watch",
+      "image": "https://www.pngmart.com/files/6/Watch-PNG-Picture.png",
+      "price": 1650,
+      "description": "Modern hybrid smartwatch combining traditional aesthetics with fitness tracking technology.",
+      "productCode": "WT-006",
+      "isFavorite": false
     },
-             {
-      "catId":5,
+    {
+      "catId": 5,
       "id": 47,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Skeleton Mechanical Watch",
+      "image": "https://www.pngmart.com/files/6/Watch-Download-PNG-Image.png",
+      "price": 2950,
+      "description": "Open-worked skeleton watch showcasing intricate mechanical movement through transparent dial.",
+      "productCode": "WT-007",
+      "isFavorite": false
     },
-             {
-      "catId":5,
+    {
+      "catId": 5,
       "id": 48,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Rolex-Style Oyster Watch",
+      "image": "https://www.pngmart.com/files/3/Rolex-Watch-Transparent-PNG.png",
+      "price": 8500,
+      "description": "Luxury oyster-style watch with iconic design, jubilee bracelet, and ceramic bezel.",
+      "productCode": "WT-008",
+      "isFavorite": false
     },
-             {
-      "catId":5,
+    {
+      "catId": 5,
       "id": 49,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Pilot's Aviation Watch",
+      "image": "https://www.pngmart.com/files/3/Branded-Watch-PNG-File.png",
+      "price": 3850,
+      "description": "Aviation-inspired timepiece with oversized crown and highly legible dial for pilots.",
+      "productCode": "WT-009",
+      "isFavorite": false
     },
-             {
-      "catId":5,
+    {
+      "catId": 5,
       "id": 50,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-             {
-      "catId":5,
-      "id": 51,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-      {
-      "catId":5,
-      "id": 52,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
-    },
-      {
-      "catId":5,
-      "id": 53,
-      "name": "Minimalist Symmetrical Bed Frame",
-      "image":"https://www.pngmart.com/files/5/Jewel-Set-PNG-Image.png",
-      "price": 1200,
-      "description": "Modern king-size bed with a padded beige headboard and integrated side tables.",
-      "productCode": "BD-001"
+      "name": "Rose Gold Ladies' Dress Watch",
+      "image": "https://www.pngmart.com/files/3/Ladies-Watch-PNG-Photos.png",
+      "price": 2750,
+      "description": "Sophisticated rose gold dress watch with slim profile and genuine leather strap.",
+      "productCode": "WT-010",
+      "isFavorite": false
     }
   ],
-  "categories":[
+  "categories": [
     {
-      "catId":1,
-      "name":"Rings",
-      "image":"/images/category/RingCat.png"
-    },
-     {
-      "catId":2,
-      "name":"Earings",
-      "image":"/images/category/EaringCat.png"
-
-    },
-     {
-      "catId":3,
-      "name":"Bracelets",
-      "image":"/images/category/BraceletCat.png"
-
-    },
-     {
-      "catId":4,
-      "name":"Necklace",
-      "image":"/images/category/NecklaceCat.png"
+      "catId": 1,
+      "name": "Rings",
+      "image": "/images/category/RingCat.png"
     },
     {
-      "catId":5,
-      "name":"Watches",
-      "image":"/images/category/WatchCat.png"
+      "catId": 2,
+      "name": "Earings",
+      "image": "/images/category/EaringCat.png"
+    },
+    {
+      "catId": 3,
+      "name": "Necklace",
+      "image": "/images/category/NecklaceCat.png"
+    },
+    {
+      "catId": 4,
+      "name": "Bracelets",
+      "image": "/images/category/BraceletCat.png"
+    },
+    {
+      "catId": 5,
+      "name": "Watches",
+      "image": "/images/category/WatchCat.png"
     }
-
   ]
 }

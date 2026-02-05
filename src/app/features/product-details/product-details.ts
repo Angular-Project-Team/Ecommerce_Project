@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { Header } from '../../shared/components/header/header';
-import { Search } from '../components/search/search';
 import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import database from '../../../../database.json';
 import { CommonModule } from '@angular/common';
 import { Footer } from '../../shared/components/footer/footer';
+import { Search } from '../Home/Components/search/search';
 
 @Component({
   selector: 'app-product-details',
-  imports: [Header, Search, RouterLink, RouterLinkActive, CommonModule, Footer],
+  imports: [Header, RouterLink, RouterLinkActive, CommonModule, Footer, Search],
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
 })
