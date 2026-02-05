@@ -10,7 +10,6 @@ import { Products } from './features/components/products/products';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  imports: [Products,Home],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
