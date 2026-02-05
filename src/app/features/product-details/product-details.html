@@ -1,0 +1,21 @@
+<body class="bg-[#ffffff]">
+    <div class="bg-[#074D4D] p-10">
+        <app-header></app-header>
+    </div>
+
+    <div class="p-10">
+        <app-search></app-search>
+    </div>
+
+    <div class="text-[#747474] pl-30">
+        <div class="breadcrumbs text-sm">
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+                <li *ngIf="categoryName">{{categoryName}}</li>
+                <li>{{productName}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div><app-footer></app-footer></div>
