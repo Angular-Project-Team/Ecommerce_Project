@@ -5,7 +5,8 @@
       "id": 1,
       "name": "Classic Solitaire Diamond Ring",
       "image": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Transparent-Image.png",
-      "price": 2499,
+      "price": 1899,
+      "material": "diamond",
       "description": "Elegant solitaire ring featuring a brilliant-cut diamond in a timeless prong setting.",
       "productCode": "RG-001",
       "isFavorite": false
@@ -15,7 +16,8 @@
       "id": 2,
       "name": "Vintage Floral Gold Ring",
       "image": "https://www.pngmart.com/files/15/Antique-Jewellery-PNG-File.png",
-      "price": 1850,
+      "price": 1250,
+      "material": "gold",
       "description": "Antique-inspired gold ring with intricate floral engravings and ornate detailing.",
       "productCode": "RG-002",
       "isFavorite": false
@@ -25,7 +27,8 @@
       "id": 3,
       "name": "Modern Halo Engagement Ring",
       "image": "https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Transparent-Image.png",
-      "price": 3200,
+      "price": 1999,
+      "material": "diamond",
       "description": "Contemporary engagement ring with a center stone surrounded by a dazzling halo of diamonds.",
       "productCode": "RG-003",
       "isFavorite": false
@@ -35,7 +38,8 @@
       "id": 4,
       "name": "Three Stone Anniversary Ring",
       "image": "https://www.pngmart.com/files/16/Ring-Jewellery-Transparent-Background.png",
-      "price": 2750,
+      "price": 1750,
+      "material": "silver",
       "description": "Symbolic three-stone ring representing past, present, and future in white gold.",
       "productCode": "RG-004",
       "isFavorite": false
@@ -45,7 +49,8 @@
       "id": 5,
       "name": "Cushion Cut Gemstone Ring",
       "image": "https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Pic.png",
-      "price": 1995,
+      "price": 995,
+      "material": "gold",
       "description": "Stunning cushion-cut center stone in a delicate pavé band setting.",
       "productCode": "RG-005",
       "isFavorite": false
@@ -55,7 +60,8 @@
       "id": 6,
       "name": "Infinity Band Diamond Ring",
       "image": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-HD.png",
-      "price": 2150,
+      "price": 1650,
+      "material": "diamond",
       "description": "Romantic infinity design with continuous diamonds symbolizing eternal love.",
       "productCode": "RG-006",
       "isFavorite": false
@@ -65,7 +71,8 @@
       "id": 7,
       "name": "Art Deco Statement Ring",
       "image": "https://www.pngmart.com/files/15/Antique-Jewellery-Download-PNG-Image.png",
-      "price": 3450,
+      "price": 1850,
+      "material": "silver",
       "description": "Bold Art Deco-inspired ring with geometric patterns and vintage gemstones.",
       "productCode": "RG-007",
       "isFavorite": false
@@ -75,7 +82,8 @@
       "id": 8,
       "name": "Princess Cut Wedding Ring",
       "image": "https://www.pngmart.com/files/1/Jewellery-Ring-Transparent-PNG.png",
-      "price": 2880,
+      "price": 1950,
+      "material": "diamond",
       "description": "Sophisticated princess-cut diamond in a classic four-prong platinum setting.",
       "productCode": "RG-008",
       "isFavorite": false
@@ -85,7 +93,8 @@
       "id": 9,
       "name": "Rose Gold Twist Band Ring",
       "image": "https://www.pngmart.com/files/16/Ring-Jewellery-PNG-Image.png",
-      "price": 1675,
+      "price": 875,
+      "material": "gold",
       "description": "Delicate rose gold band with an elegant twisted design and diamond accents.",
       "productCode": "RG-009",
       "isFavorite": false
@@ -95,7 +104,8 @@
       "id": 10,
       "name": "Emerald Cut Cocktail Ring",
       "image": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Clipart.png",
-      "price": 3850,
+      "price": 1799,
+      "material": "silver",
       "description": "Glamorous emerald-cut statement ring perfect for special occasions.",
       "productCode": "RG-010",
       "isFavorite": false
@@ -105,7 +115,8 @@
       "id": 11,
       "name": "Gold Drop Chandelier Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Isolated-Pic.png",
-      "price": 895,
+      "price": 695,
+      "material": "gold",
       "description": "Elegant chandelier-style drop earrings in lustrous yellow gold with intricate detailing.",
       "productCode": "ER-001",
       "isFavorite": false
@@ -116,6 +127,7 @@
       "name": "Diamond Stud Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Picture.png",
       "price": 1450,
+      "material": "diamond",
       "description": "Classic diamond stud earrings in 14k gold with secure push-back closures.",
       "productCode": "ER-002",
       "isFavorite": false
@@ -125,7 +137,8 @@
       "id": 13,
       "name": "Teardrop Pearl Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Isolated-HD.png",
-      "price": 725,
+      "price": 525,
+      "material": "silver",
       "description": "Graceful teardrop-shaped pearl earrings with gold accents and gentle movement.",
       "productCode": "ER-003",
       "isFavorite": false
@@ -135,7 +148,8 @@
       "id": 14,
       "name": "Hoop Earrings with Gemstones",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Isolated-Photo.png",
-      "price": 980,
+      "price": 780,
+      "material": "gold",
       "description": "Medium-sized gold hoops adorned with colorful gemstones for everyday elegance.",
       "productCode": "ER-004",
       "isFavorite": false
@@ -145,7 +159,8 @@
       "id": 15,
       "name": "Vintage Filigree Dangle Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-HD.png",
-      "price": 1125,
+      "price": 925,
+      "material": "silver",
       "description": "Ornate vintage-style earrings featuring delicate filigree work and antique finish.",
       "productCode": "ER-005",
       "isFavorite": false
@@ -155,7 +170,8 @@
       "id": 16,
       "name": "Geometric Modern Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-Transparent-PNG.png",
-      "price": 650,
+      "price": 450,
+      "material": "gold",
       "description": "Contemporary geometric design in polished gold with clean, modern lines.",
       "productCode": "ER-006",
       "isFavorite": false
@@ -165,7 +181,8 @@
       "id": 17,
       "name": "Halloween Crystal Drop Earrings",
       "image": "https://www.pngmart.com/files/22/Halloween-Earrings-PNG.png",
-      "price": 425,
+      "price": 225,
+      "material": "silver",
       "description": "Festive crystal earrings with unique seasonal design and sparkling accents.",
       "productCode": "ER-007",
       "isFavorite": false
@@ -175,7 +192,8 @@
       "id": 18,
       "name": "Lever-Back Gold Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-File.png",
-      "price": 1250,
+      "price": 1050,
+      "material": "diamond",
       "description": "Secure lever-back earrings in 18k gold with cushion-cut center stones.",
       "productCode": "ER-008",
       "isFavorite": false
@@ -186,6 +204,7 @@
       "name": "Circular Pavé Stud Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Transparent.png",
       "price": 1580,
+      "material": "diamond",
       "description": "Round stud earrings completely covered in brilliant pavé-set diamonds.",
       "productCode": "ER-009",
       "isFavorite": false
@@ -195,7 +214,8 @@
       "id": 20,
       "name": "Floral Cluster Earrings",
       "image": "https://www.pngmart.com/files/23/Gold-Earrings-PNG-Photos.png",
-      "price": 875,
+      "price": 675,
+      "material": "gold",
       "description": "Delicate floral cluster design in gold with multiple gemstone petals.",
       "productCode": "ER-010",
       "isFavorite": false
@@ -205,7 +225,8 @@
       "id": 21,
       "name": "Layered Chain Necklace Set",
       "image": "https://www.pngmart.com/files/1/Artificial-Jewellery.png",
-      "price": 345,
+      "price": 245,
+      "material": "gold",
       "description": "Multi-strand necklace set with varying chain lengths for a trendy layered look.",
       "productCode": "NK-001",
       "isFavorite": false
@@ -215,7 +236,8 @@
       "id": 22,
       "name": "Statement Gemstone Collar",
       "image": "https://www.pngmart.com/files/16/Jewellery-PNG-Free-Download.png",
-      "price": 1850,
+      "price": 1650,
+      "material": "silver",
       "description": "Bold collar necklace featuring an array of colorful gemstones in ornate settings.",
       "productCode": "NK-002",
       "isFavorite": false
@@ -225,7 +247,8 @@
       "id": 23,
       "name": "Delicate Gold Chain Necklace",
       "image": "https://www.pngmart.com/files/1/Jewellery-Chain-Transparent-Background.png",
-      "price": 425,
+      "price": 325,
+      "material": "gold",
       "description": "Simple yet elegant thin gold chain perfect for everyday wear or layering.",
       "productCode": "NK-003",
       "isFavorite": false
@@ -235,7 +258,8 @@
       "id": 24,
       "name": "Bridal Diamond Necklace Set",
       "image": "https://www.pngmart.com/files/5/Jewel-Set-PNG-Pic.png",
-      "price": 4250,
+      "price": 1999,
+      "material": "diamond",
       "description": "Luxurious bridal necklace and earring set with cascading diamonds and intricate design.",
       "productCode": "NK-004",
       "isFavorite": false
@@ -245,7 +269,8 @@
       "id": 25,
       "name": "Solitaire Diamond Pendant",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-File.png",
-      "price": 1995,
+      "price": 1495,
+      "material": "diamond",
       "description": "Classic solitaire diamond pendant on a delicate chain, timeless and elegant.",
       "productCode": "NK-005",
       "isFavorite": false
@@ -255,7 +280,8 @@
       "id": 26,
       "name": "Art Deco Diamond Necklace",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Picture.png",
-      "price": 3650,
+      "price": 1850,
+      "material": "diamond",
       "description": "Vintage-inspired Art Deco necklace with geometric diamond patterns and platinum setting.",
       "productCode": "NK-006",
       "isFavorite": false
@@ -265,7 +291,8 @@
       "id": 27,
       "name": "Riviera Diamond Tennis Necklace",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Transparent.png",
-      "price": 5200,
+      "price": 1950,
+      "material": "diamond",
       "description": "Stunning tennis necklace with continuous line of brilliant-cut diamonds.",
       "productCode": "NK-007",
       "isFavorite": false
@@ -275,7 +302,8 @@
       "id": 28,
       "name": "Y-Drop Diamond Necklace",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Clipart.png",
-      "price": 2750,
+      "price": 1750,
+      "material": "silver",
       "description": "Modern Y-shaped necklace with diamond-studded chain and elegant drop pendant.",
       "productCode": "NK-008",
       "isFavorite": false
@@ -285,7 +313,8 @@
       "id": 29,
       "name": "Halo Pendant Necklace",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-PNG-Clipart.png",
-      "price": 2280,
+      "price": 1280,
+      "material": "gold",
       "description": "Center diamond surrounded by halo of smaller stones on white gold chain.",
       "productCode": "NK-009",
       "isFavorite": false
@@ -295,7 +324,8 @@
       "id": 30,
       "name": "Multi-Tier Diamond Statement Necklace",
       "image": "https://www.pngmart.com/files/15/Diamond-Necklace-Transparent-Images-PNG.png",
-      "price": 6850,
+      "price": 1999,
+      "material": "diamond",
       "description": "Spectacular multi-layered diamond necklace perfect for formal occasions and galas.",
       "productCode": "NK-010",
       "isFavorite": false
@@ -305,7 +335,8 @@
       "id": 31,
       "name": "Gold Link Chain Bracelet",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-HD-Isolated.png",
-      "price": 685,
+      "price": 585,
+      "material": "gold",
       "description": "Classic gold link bracelet with secure clasp and timeless design.",
       "productCode": "BR-001",
       "isFavorite": false
@@ -315,7 +346,8 @@
       "id": 32,
       "name": "Diamond Tennis Bracelet",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG.png",
-      "price": 3250,
+      "price": 1950,
+      "material": "diamond",
       "description": "Elegant tennis bracelet featuring a continuous line of brilliant diamonds.",
       "productCode": "BR-002",
       "isFavorite": false
@@ -325,7 +357,8 @@
       "id": 33,
       "name": "Beaded Gemstone Bracelet",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Isolated-HD.webp",
-      "price": 425,
+      "price": 225,
+      "material": "silver",
       "description": "Colorful beaded bracelet with semi-precious gemstones and stretch design.",
       "productCode": "BR-003",
       "isFavorite": false
@@ -335,7 +368,8 @@
       "id": 34,
       "name": "Charm Bracelet Collection",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-HD-Isolated.png",
-      "price": 795,
+      "price": 595,
+      "material": "gold",
       "description": "Personalized charm bracelet with multiple dangling charms and gold chain.",
       "productCode": "BR-004",
       "isFavorite": false
@@ -345,7 +379,8 @@
       "id": 35,
       "name": "Bangle Bracelet Set",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Photo.png",
-      "price": 550,
+      "price": 450,
+      "material": "silver",
       "description": "Set of three stackable gold bangles with textured and smooth finishes.",
       "productCode": "BR-005",
       "isFavorite": false
@@ -355,7 +390,8 @@
       "id": 36,
       "name": "Cuff Bracelet with Gemstones",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Image.png",
-      "price": 1150,
+      "price": 950,
+      "material": "gold",
       "description": "Wide cuff bracelet adorned with row of vibrant gemstones in gold setting.",
       "productCode": "BR-006",
       "isFavorite": false
@@ -365,7 +401,8 @@
       "id": 37,
       "name": "Rope Chain Gold Bracelet",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Picture.png",
-      "price": 875,
+      "price": 775,
+      "material": "gold",
       "description": "Twisted rope-style gold bracelet with substantial weight and elegant drape.",
       "productCode": "BR-007",
       "isFavorite": false
@@ -375,7 +412,8 @@
       "id": 38,
       "name": "Pearl Strand Bracelet",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-File.png",
-      "price": 625,
+      "price": 525,
+      "material": "silver",
       "description": "Lustrous freshwater pearl bracelet with ornate gold clasp and spacers.",
       "productCode": "BR-008",
       "isFavorite": false
@@ -385,7 +423,8 @@
       "id": 39,
       "name": "Cuban Link Gold Bracelet",
       "image": "https://www.pngmart.com/files/23/Cuban-Link-PNG.png",
-      "price": 1425,
+      "price": 1225,
+      "material": "diamond",
       "description": "Bold Cuban link design in solid gold with secure box clasp.",
       "productCode": "BR-009",
       "isFavorite": false
@@ -395,7 +434,8 @@
       "id": 40,
       "name": "Infinity Symbol Bracelet",
       "image": "https://www.pngmart.com/files/23/Bracelet-PNG-Photos.png",
-      "price": 485,
+      "price": 385,
+      "material": "silver",
       "description": "Delicate bracelet featuring infinity symbol with diamond accents.",
       "productCode": "BR-010",
       "isFavorite": false
@@ -405,7 +445,8 @@
       "id": 41,
       "name": "Classic Leather Strap Watch",
       "image": "https://www.pngmart.com/files/6/Watch-Transparent-Background.png",
-      "price": 1850,
+      "price": 850,
+      "material": "silver",
       "description": "Timeless watch with brown leather strap, silver case, and minimalist dial.",
       "productCode": "WT-001",
       "isFavorite": false
@@ -415,7 +456,8 @@
       "id": 42,
       "name": "Sport Chronograph Watch",
       "image": "https://www.pngmart.com/files/6/Watch-PNG-Clipart.png",
-      "price": 2450,
+      "price": 1450,
+      "material": "silver",
       "description": "High-performance chronograph with tachymeter bezel and stainless steel band.",
       "productCode": "WT-002",
       "isFavorite": false
@@ -425,7 +467,8 @@
       "id": 43,
       "name": "Luxury Swiss Automatic Watch",
       "image": "https://www.pngmart.com/files/3/Branded-Watch-PNG-Clipart.png",
-      "price": 5800,
+      "price": 1999,
+      "material": "gold",
       "description": "Premium Swiss-made automatic watch with exhibition caseback and sapphire crystal.",
       "productCode": "WT-003",
       "isFavorite": false
@@ -435,7 +478,8 @@
       "id": 44,
       "name": "Diver's Professional Watch",
       "image": "https://www.pngmart.com/files/6/Watch-PNG-File.png",
-      "price": 3250,
+      "price": 1650,
+      "material": "silver",
       "description": "Water-resistant dive watch with rotating bezel and luminous markers, rated to 300m.",
       "productCode": "WT-004",
       "isFavorite": false
@@ -445,7 +489,8 @@
       "id": 45,
       "name": "Women's Diamond Bezel Watch",
       "image": "https://www.pngmart.com/files/3/Ladies-Watch-PNG-Transparent-Image.png",
-      "price": 4200,
+      "price": 1899,
+      "material": "diamond",
       "description": "Elegant ladies' watch with diamond-set bezel and mother-of-pearl dial.",
       "productCode": "WT-005",
       "isFavorite": false
@@ -455,7 +500,8 @@
       "id": 46,
       "name": "Smart Hybrid Watch",
       "image": "https://www.pngmart.com/files/6/Watch-PNG-Picture.png",
-      "price": 1650,
+      "price": 950,
+      "material": "silver",
       "description": "Modern hybrid smartwatch combining traditional aesthetics with fitness tracking technology.",
       "productCode": "WT-006",
       "isFavorite": false
@@ -465,7 +511,8 @@
       "id": 47,
       "name": "Skeleton Mechanical Watch",
       "image": "https://www.pngmart.com/files/6/Watch-Download-PNG-Image.png",
-      "price": 2950,
+      "price": 1550,
+      "material": "gold",
       "description": "Open-worked skeleton watch showcasing intricate mechanical movement through transparent dial.",
       "productCode": "WT-007",
       "isFavorite": false
@@ -475,7 +522,8 @@
       "id": 48,
       "name": "Rolex-Style Oyster Watch",
       "image": "https://www.pngmart.com/files/3/Rolex-Watch-Transparent-PNG.png",
-      "price": 8500,
+      "price": 1999,
+      "material": "diamond",
       "description": "Luxury oyster-style watch with iconic design, jubilee bracelet, and ceramic bezel.",
       "productCode": "WT-008",
       "isFavorite": false
@@ -485,7 +533,8 @@
       "id": 49,
       "name": "Pilot's Aviation Watch",
       "image": "https://www.pngmart.com/files/3/Branded-Watch-PNG-File.png",
-      "price": 3850,
+      "price": 1750,
+      "material": "silver",
       "description": "Aviation-inspired timepiece with oversized crown and highly legible dial for pilots.",
       "productCode": "WT-009",
       "isFavorite": false
@@ -495,7 +544,8 @@
       "id": 50,
       "name": "Rose Gold Ladies' Dress Watch",
       "image": "https://www.pngmart.com/files/3/Ladies-Watch-PNG-Photos.png",
-      "price": 2750,
+      "price": 1350,
+      "material": "gold",
       "description": "Sophisticated rose gold dress watch with slim profile and genuine leather strap.",
       "productCode": "WT-010",
       "isFavorite": false
