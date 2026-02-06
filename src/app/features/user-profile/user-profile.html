@@ -27,14 +27,16 @@
 
   <div class="mt-8 border-b border-gray-200">
     <nav class="flex justify-center gap-6 md:gap-16">
-      <button class="pb-2 text-sm font-medium border-b-2 border-primary text-primary">
+      <a class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700" routerLink="/user-profile/account-details" routerLinkActive="border-primary text-primary border-b-2">
         Account Details
-      </button>
-      <button class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+      </a>
+      <a class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700" routerLink="/user-profile/saved-payment" routerLinkActive="border-primary text-primary border-b-2">
         Saved Payment
-      </button>
-      <button class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700">Orders</button>
+      </a>
+      <a class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700" routerLink="/user-profile/orders" routerLinkActive="border-primary text-primary border-b-2">
+        Orders
+      </a>
     </nav>
   </div>
-
+  <router-outlet></router-outlet>
 </div>
