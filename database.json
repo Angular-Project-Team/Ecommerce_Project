@@ -9,7 +9,7 @@
       "material": "diamond",
       "description": "Elegant solitaire ring featuring a brilliant-cut diamond in a timeless prong setting.",
       "productCode": "RG-001",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 1,
@@ -42,7 +42,7 @@
       "material": "silver",
       "description": "Symbolic three-stone ring representing past, present, and future in white gold.",
       "productCode": "RG-004",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 1,
@@ -86,7 +86,7 @@
       "material": "diamond",
       "description": "Sophisticated princess-cut diamond in a classic four-prong platinum setting.",
       "productCode": "RG-008",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 1,
@@ -548,7 +548,7 @@
       "material": "gold",
       "description": "Sophisticated rose gold dress watch with slim profile and genuine leather strap.",
       "productCode": "WT-010",
-      "isFavorite": true
+      "isFavorite": false
     }
   ],
   "categories": [

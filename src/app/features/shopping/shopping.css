@@ -1,8 +1,8 @@
 
 
-:host ::ng-deep app-collection {
-  margin-top: 500px;
-}
+/* :host ::ng-deep app-collection {
+ margin-top: 500px;
+} */
 :host ::ng-deep app-collection .forbg {
   background-color: #074D4D;
 }

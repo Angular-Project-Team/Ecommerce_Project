@@ -18,7 +18,7 @@ export class Product {
 
   toggleFavorite() {
     this.myproduct.isFavorite = !this.myproduct.isFavorite;
-
+      this.favoriteChange.emit(this.myproduct);
     // Update backend
     this.productService.updateProduct(this.myproduct.id, this.myproduct).subscribe({
       next: (res) => {
