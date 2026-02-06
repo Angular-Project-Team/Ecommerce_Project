@@ -4,14 +4,20 @@
 
   <div class="flex flex-col md:flex-row gap-4 justify-end mt-6 font-[Montserrat]">
     <!-- Category Dropdown -->
-    <select name="category" class="font-bold"  [(ngModel)]="selectedCatId"  >
-      <!-- <option value="">Categories</option> -->
-      <option [ngValue]="0" >All Caregories</option>
-      <option *ngFor="let cat of categories() " [ngValue]= "cat.catId" >{{ cat.name }} </option>
+    <select
+      name="category"
+      class="font-bold"
+      [(ngModel)]="selectedCatId"
+      (ngModelChange)="onCategoryChange()">
+      <option [ngValue]="0">All Categories</option>
+      <option *ngFor="let cat of categories()" [ngValue]="cat.catId">{{ cat.name }}</option>
     </select>
 
-        <!-- Material Dropdown -->
-    <select [(ngModel)]="selectedMaterial" class="font-bold">
+    <!-- Material Dropdown -->
+    <select
+      [(ngModel)]="selectedMaterial"
+      class="font-bold"
+      (ngModelChange)="onMaterialChange()">
       <option value="">Materials</option>
       <option value="gold">Gold</option>
       <option value="silver">Silver</option>
@@ -19,14 +25,21 @@
     </select>
 
     <!-- Price Dropdown -->
-    <select [(ngModel)]="selectedPrice" class="font-bold">
+    <select
+      [(ngModel)]="selectedPrice"
+      class="font-bold"
+      (ngModelChange)="onPriceChange()">
       <option value="">Prices</option>
       <option value="0-100">$0 - $100</option>
       <option value="100-500">$100 - $500</option>
       <option value="500+">$500+</option>
     </select>
-      </div>
+  </div>
 </div>
 
-<app-products [recieveCatId]="selectedCatId"  [selectedMaterial]="selectedMaterial"
-  [selectedPrice]="selectedPrice"></app-products>
+<app-products
+  [recieveCatId]="selectedCatIdSignal()"
+  [selectedMaterial]="selectedMaterialSignal()"
+  [selectedPrice]="selectedPriceSignal()"
+  [searchTerm]="searchTermSignal()">
+</app-products>

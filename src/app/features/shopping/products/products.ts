@@ -18,12 +18,12 @@ export class Products implements OnChanges {
   @Input() recieveCatId: number = 0;
   @Input() selectedMaterial: string = '';
   @Input() selectedPrice: string = '';
+  @Input() searchTerm: string = '';
 
   ngOnInit() {
     this.productServices.allProducts().subscribe({
       next: (data) => {
         this.products.set(data);
-        // Filter immediately after loading products
         this.filterProducts();
       },
       error: (err) => { console.log(err); }
@@ -31,7 +31,11 @@ export class Products implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    // Only filter if products are already loaded
+
+     console.log('Products ngOnChanges triggered:', changes);
+    if (changes['searchTerm']) {
+      console.log('Search term changed to:', this.searchTerm);
+    }
     if (this.products().length > 0) {
       this.filterProducts();
     }
@@ -57,6 +61,14 @@ export class Products implements OnChanges {
         result = result.filter((prd) => prd.price > 100 && prd.price <= 500);
       if (this.selectedPrice === '500+')
         result = result.filter((prd) => prd.price > 500);
+    }
+    if (this.searchTerm && this.searchTerm.trim() !== '') {
+      const searchLower = this.searchTerm.toLowerCase();
+      console.log('Searching for:', searchLower);
+      result = result.filter((prd) =>
+        prd.name?.toLowerCase().includes(searchLower)
+        // prd.description?.toLowerCase().includes(searchLower)
+      );
     }
 
     this.filteredProducts.set(result);

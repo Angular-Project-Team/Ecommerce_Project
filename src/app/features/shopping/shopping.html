@@ -1,7 +1,7 @@
  <app-header ></app-header>
   <app-collection></app-collection>
-  <app-search></app-search>
-<app-filter></app-filter>
+    <app-search (searchTermChange)="searchTerm = $event"></app-search>
+<app-filter [searchTerm]="searchTerm"></app-filter>
 
   <!-- <app-products></app-products> -->
   <app-footer></app-footer>
