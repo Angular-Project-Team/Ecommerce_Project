@@ -1,10 +1,8 @@
- <app-header ></app-header>
+<div class="mt-20">
   <app-collection></app-collection>
-    <app-search (searchTermChange)="searchTerm = $event"></app-search>
-<app-filter [searchTerm]="searchTerm"></app-filter>
-
+  <app-search (searchTermChange)="searchTerm = $event"></app-search>
+  <div id="filter">
+  <app-filter [searchTerm]="searchTerm"></app-filter>
+  </div>
   <!-- <app-products></app-products> -->
-  <app-footer></app-footer>
-
-
-
+</div>

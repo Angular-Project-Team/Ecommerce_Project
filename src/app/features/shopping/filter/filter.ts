@@ -4,6 +4,7 @@ import { CategoryType } from '../models/catType';
 import { CommonModule } from '@angular/common';
 import { CategoriesService } from '../../services/categories-service';
 import { Products } from '../products/products';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-filter',
@@ -12,7 +13,9 @@ import { Products } from '../products/products';
   styleUrl: './filter.css',
 })
 export class Filter implements OnChanges {
-  constructor(private productServices: CategoriesService) {}
+  constructor(private productServices: CategoriesService,
+     private route: ActivatedRoute
+  ) {}
 
   categories = signal<CategoryType[]>([]);
   selectedCatId: number = 0;
@@ -26,14 +29,28 @@ export class Filter implements OnChanges {
   selectedMaterialSignal = signal<string>('');
   selectedPriceSignal = signal<string>('');
 
-  ngOnInit() {
+  // ngOnInit() {
+  //   this.productServices.allCategories().subscribe({
+  //     next: (data) => {
+  //       this.categories.set(data);
+  //     },
+  //     error: (err) => { console.log(err); }
+
+  //   });
+
+  // }
+    ngOnInit() {
     this.productServices.allCategories().subscribe({
-      next: (data) => {
-        this.categories.set(data);
-      },
-      error: (err) => { console.log(err); }
+      next: (data) => this.categories.set(data),
     });
-  }
+
+
+    this.route.queryParams.subscribe(params => {
+      const catId = Number(params['catId']) || 0;
+
+      this.selectedCatId = catId;
+      this.selectedCatIdSignal.set(catId);
+    });}
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['searchTerm']) {
@@ -42,7 +59,6 @@ export class Filter implements OnChanges {
     }
   }
 
-  // Update signals when dropdowns change
   onCategoryChange() {
     this.selectedCatIdSignal.set(this.selectedCatId);
   }

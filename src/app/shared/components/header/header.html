@@ -1,8 +1,8 @@
-<div class="navbar bg-transparent  shadow-none absolute top-0 left-0 w-full z-50">
+<div class="navbar bg-[#074D4D]  shadow-none absolute top-0 left-0 w-full z-50">
   <div class="navbar-start hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-white ml-28 gap-9 text-lg font-[Vultura]" >
-      <li ><a>Home</a></li>
-      <li ><a>Shoping</a></li>
+      <li ><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
+      <li ><a [routerLink]="['/shopping']" routerLinkActive="router-link-active">Shoping</a></li>
       <li><a>About</a></li>
       <li><a>Contact</a></li>
     </ul>

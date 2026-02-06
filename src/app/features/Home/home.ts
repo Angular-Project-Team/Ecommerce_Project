@@ -11,15 +11,17 @@ import { HeroSection } from './Components/hero-section/hero-section';
 import { Commisions } from './Components/commisions/commisions';
 import { Search } from './Components/search/search';
 import { ProductType } from '../../shared/models/productType';
+import { Filter } from '../shopping/filter/filter';
 
 
 @Component({
   selector: 'app-home',
-  imports: [BestSeller,Header,Footer,Categories,HeroSection,Search,Collection,Commisions],
+  imports: [BestSeller,Header,Footer,Categories,HeroSection,Search,Collection,Commisions,Filter],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home {
+  searchTerm: string = '';
 
 }
 

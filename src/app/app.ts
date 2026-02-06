@@ -3,12 +3,15 @@ import { Home } from './features/Home/home';
 import { Products } from './features/shopping/products/products';
 import { Product } from './shared/components/product/product';
 import { Shopping } from './features/shopping/shopping';
+import { Header } from './shared/components/header/header';
+import { Footer } from './shared/components/footer/footer';
+import { RouterOutlet } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [Home,Products,Shopping],
+  imports: [Header,Footer,RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
