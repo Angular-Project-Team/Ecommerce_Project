@@ -10,16 +10,12 @@ import { ProductService } from '../../../features/services/product-service';
   styleUrl: './product.css',
 })
 export class Product {
-<<<<<<< HEAD
   @Input() myproduct: ProductType = {} as ProductType;
-=======
-@Input() myproduct:ProductType= {} as ProductType;
 @Output() favoriteChange = new EventEmitter<ProductType>();
 
 
   constructor(private productService: ProductService) {}
 
->>>>>>> origin/Home
   toggleFavorite() {
     this.myproduct.isFavorite = !this.myproduct.isFavorite;
       this.favoriteChange.emit(this.myproduct);

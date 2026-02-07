@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-=======
 import { Component, signal } from '@angular/core';
 import { Home } from './features/Home/home';
 import { Products } from './features/shopping/products/products';
@@ -23,7 +15,6 @@ import { Favourite } from './features/favourite/favourite';
 @Component({
   selector: 'app-root',
   imports: [Header,Footer,RouterOutlet,Register,Favourite],
->>>>>>> origin/Home
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

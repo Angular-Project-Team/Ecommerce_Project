@@ -20,7 +20,7 @@ import { ReviewCard } from "./components/review-card/review-card";
 
 @Component({
   selector: 'app-product-details',
-  imports: [Header, RouterLink, RouterLinkActive, CommonModule, Footer, Search,
+  imports: [RouterLink, RouterLinkActive, CommonModule,Search,
             Rating, Color, Quantity, FavButton, CartBtn, Details, ReviewCard],
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
@@ -36,7 +36,7 @@ export class ProductDetails {
     console.log(this.productId);
     const productId = Number(this.route.snapshot.paramMap.get('id'));
     const product = database.products.find((p: any) => p.id === productId);
-
+    
     if (product) {
       this.productName = product.name;
       const category = database.categories.find((c: any) => c.catId === product.catId);

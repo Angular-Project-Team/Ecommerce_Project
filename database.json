@@ -471,7 +471,7 @@
       "material": "gold",
       "description": "Premium Swiss-made automatic watch with exhibition caseback and sapphire crystal.",
       "productCode": "WT-003",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "catId": 5,
