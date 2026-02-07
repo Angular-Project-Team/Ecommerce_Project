@@ -10,14 +10,10 @@ import { Login } from './auth/login/login';
 import { Register } from './auth/register/register';
 import { Favourite } from './features/favourite/favourite';
 
-
-
 @Component({
   selector: 'app-root',
-  imports: [Header,Footer,RouterOutlet,Register,Favourite],
+  imports: [Header, Footer, RouterOutlet, Register, Favourite, Login],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-
-}
+export class App {}

@@ -582,5 +582,15 @@
       "image": "/images/category/WatchCat.png",
       "id": "ca3d"
     }
+  ],
+  "users": [
+    {
+      "id": "245f",
+      "fName": "Omar",
+      "lName": "Osama",
+      "email": "omarosama1124@gmail.com",
+      "phone": "01231231231",
+      "password": "C0c0nut_oi1"
+    }
   ]
 }
