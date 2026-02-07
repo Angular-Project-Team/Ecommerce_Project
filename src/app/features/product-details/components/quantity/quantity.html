@@ -1,0 +1,19 @@
+<div class="flex items-center space-x-10 mb-6 bg-[#074D4D] p-1 px-5 text-[#ffffff] w-fit">
+  <button
+    class="px-1 py-1 text-md hover:cursor-pointer"
+    (click)="decrease()"
+  >
+    −
+  </button>
+
+  <span class="font-semibold text-lg">
+    {{ quantity }}
+  </span>
+
+  <button
+    class="px-1 py-1 text-md hover:cursor-pointer"
+    (click)="increase()"
+  >
+    +
+  </button>
+</div>

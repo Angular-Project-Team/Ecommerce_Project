@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './product.css',
 })
 export class Product {
-@Input() myproduct:ProductType= {} as ProductType;
-toggleFavorite() {
+  @Input() myproduct: ProductType = {} as ProductType;
+  toggleFavorite() {
     this.myproduct.isFavorite = !this.myproduct.isFavorite;
     console.log('Favorite toggled:', this.myproduct);
     // Add your favorite logic here (e.g., call a service)
@@ -25,5 +25,6 @@ toggleFavorite() {
         text: `Check out ${this.myproduct.name} for $${this.myproduct.price}`,
         url: window.location.href
       });
-    }}
+    }
+  }
 }
