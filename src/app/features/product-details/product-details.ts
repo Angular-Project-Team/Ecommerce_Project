@@ -17,17 +17,21 @@ import { CartBtn } from "./components/Add-to-cart-Button/cart-btn/cart-btn";
 import { CartService } from '../services/cart-service';
 import { Details } from './components/Details/details';
 import { ReviewCard } from "./components/review-card/review-card";
+import { Favourite } from "../favourite/favourite";
+import { RelatedProducts } from "../../shared/components/related-products/related-products";
+import { ReviewForm } from "./components/review-form/review-form";
 
 @Component({
   selector: 'app-product-details',
-  imports: [RouterLink, RouterLinkActive, CommonModule,Search,
-            Rating, Color, Quantity, FavButton, CartBtn, Details, ReviewCard],
+  imports: [RouterLink, RouterLinkActive, CommonModule, Search,
+    Rating, Color, Quantity, FavButton, CartBtn, Details, ReviewCard, Favourite, RelatedProducts, ReviewForm],
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
 })
 export class ProductDetails {
   productName: string = '';
   categoryName: string = '';
+  categoryId: number = 0;
   productId = 0;
   product = signal({} as ProductType);
 
@@ -36,9 +40,10 @@ export class ProductDetails {
     console.log(this.productId);
     const productId = Number(this.route.snapshot.paramMap.get('id'));
     const product = database.products.find((p: any) => p.id === productId);
-    
+
     if (product) {
       this.productName = product.name;
+      this.categoryId = product.catId;
       const category = database.categories.find((c: any) => c.catId === product.catId);
       this.categoryName = category ? category.name : 'Category';
     }
@@ -49,6 +54,10 @@ export class ProductDetails {
     this.productService.productbyId(this.productId).subscribe({
       next: (data) => {
         this.product.set(data);
+        this.productName = data.name;
+        this.categoryId = data.catId;
+        const category = database.categories.find((c: any) => c.catId === data.catId);
+        this.categoryName = category ? category.name : 'Category';
         console.log(this.product());
       },
       error: (err) => {
@@ -75,6 +84,10 @@ handleAddToCart(event: { productId: number; color: string; quantity: number }) {
     quantity: event.quantity
   });
 console.log(event);
+}
+
+onFavoriteChange(updated: ProductType) {
+  this.product.set({ ...this.product(), isFavorite: updated.isFavorite });
 }
 
 }

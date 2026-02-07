@@ -1,7 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, EventEmitter, signal } from '@angular/core';
 import { ProductType } from '../../../../shared/models/productType';
-import { Input } from '@angular/core';
+import { Input , Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProductService } from '../../../services/product-service';
 
 @Component({
   selector: 'app-fav-button',
@@ -10,10 +11,25 @@ import { CommonModule } from '@angular/common';
   styleUrl: './fav-button.css',
 })
 export class FavButton {
+@Input() myproduct: ProductType = {} as ProductType;
+@Output() favoriteChange = new EventEmitter<ProductType>();
 
-  @Input() myproduct: ProductType = {} as ProductType;
+
+  constructor(private productService: ProductService) {}
+
   toggleFavorite() {
     this.myproduct.isFavorite = !this.myproduct.isFavorite;
-    console.log('Favorite toggled:', this.myproduct);
+      this.favoriteChange.emit(this.myproduct);
+    // Update backend
+    this.productService.updateProduct(this.myproduct.id, this.myproduct).subscribe({
+      next: (res) => {
+        console.log('Favorite updated on server:', this.myproduct);
+      },
+      error: (err) => {
+        console.error('Error updating favorite:', err);
+        // Optionally revert UI if error
+        this.myproduct.isFavorite = !this.myproduct.isFavorite;
+      },
+    });
   }
 }

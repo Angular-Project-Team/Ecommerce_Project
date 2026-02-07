@@ -11,7 +11,12 @@ export interface CartItem {
 })
 export class CartService {
 
+  private storageKey = 'cart_items';
   cart: CartItem[] = [];
+
+  constructor() {
+    this.loadFromStorage();
+  }
 
   getCart() {
     return this.cart;
@@ -27,6 +32,24 @@ export class CartService {
     } else {
       this.cart.push(item);
     }
+
+    this.saveToStorage();
   }
 
+  private loadFromStorage() {
+    const raw = localStorage.getItem(this.storageKey);
+    if (!raw) return;
+    try {
+      const parsed = JSON.parse(raw) as CartItem[];
+      if (Array.isArray(parsed)) {
+        this.cart = parsed;
+      }
+    } catch {
+      this.cart = [];
+    }
+  }
+
+  private saveToStorage() {
+    localStorage.setItem(this.storageKey, JSON.stringify(this.cart));
+  }
 }

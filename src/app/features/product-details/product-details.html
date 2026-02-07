@@ -1,8 +1,3 @@
-<!-- <body class="bg-[#ffffff]">
-    <div class="bg-[#074D4D] p-10">
-        <app-header></app-header>
-    </div> -->
-
     <div class="pt-20 pb-10">
         <app-search></app-search>
     </div>
@@ -12,7 +7,7 @@
             <ul>
                 <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
                 <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
-                <li *ngIf="categoryName">{{categoryName}}</li>
+                <li *ngIf="categoryName"><a [routerLink]="['/products']" [queryParams]="{catId: categoryId}">{{categoryName}}</a></li>
                 <li>{{productName}}</li>
             </ul>
         </div>
@@ -21,7 +16,12 @@
     @if(product()){
     <div class="flex pl-30 pt-10 pb-10 pr-10 space-x-5">
         <div class="bg-[#EBE7E1] w-100"> 
-            <div class="p-5 flex justify-end"><app-fav-button></app-fav-button></div>
+            <div class="p-5 flex justify-end">
+                <app-fav-button
+                    [myproduct]="product()"
+                    (favoriteChange)="onFavoriteChange($event)">
+                </app-fav-button>
+            </div>
             <img class="m-5 w-full h-full" class="image" [src]="product().image" alt="{{product().name}}" />
         </div>
         
@@ -41,3 +41,5 @@
 
     <div> <app-details></app-details></div>
     <div class="pt-20 pb-20"><app-review-card></app-review-card></div>
+    <div id="related"><app-related-products></app-related-products></div>
+    <div class="pb-5"><app-review-form></app-review-form></div>
