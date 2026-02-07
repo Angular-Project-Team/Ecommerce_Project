@@ -1,4 +1,4 @@
-<div class="flex flex-col  h-[420px]">
+<div class="flex flex-col  h-[420px] h-full">
  <div class="card bg-[#EBE7E1]  shadow-none rounded-none p-20  relative group cursor-pointer  prod">
       <figure class="h-3.5/4">
         <img
@@ -8,7 +8,7 @@
           />
       </figure>
        <div class="absolute top-2 right-2 flex flex-col gap-2
-              opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
 
     <!-- Favorite icon -->
     <button (click)="toggleFavorite()" class="hover:scale-110 transition-transform">
@@ -39,7 +39,7 @@
     <button
             class="absolute bottom-0 left-0 right-0 h-1/7  bg-opacity-70
               flex items-center justify-center text-white text-center cursor-pointer
-              opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-2xl givecoler poi">
+              md:opacity-0 md:group-hover:opacity-100  transition-opacity duration-300 text-2xl givecoler poi">
       Add to Cart
     </button>
 

@@ -6,20 +6,22 @@ import { Categories } from './Components/categories/categories';
 import { BestSeller } from './Components/best-seller/best-seller';
 import { Footer } from '../../shared/components/footer/footer';
 import { Collection } from './Components/collection/collection';
-import { Products } from './Components/products/products';
+import { Products } from '../shopping/products/products';
 import { HeroSection } from './Components/hero-section/hero-section';
 import { Commisions } from './Components/commisions/commisions';
 import { Search } from './Components/search/search';
 import { ProductType } from '../../shared/models/productType';
+import { Filter } from '../shopping/filter/filter';
 
 
 @Component({
   selector: 'app-home',
-  imports: [BestSeller,Header,Footer,Categories,HeroSection,Search,Collection,Commisions],
+  imports: [BestSeller,Header,Footer,Categories,HeroSection,Search,Collection,Commisions,Filter],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home {
+  searchTerm: string = '';
 
 }
 

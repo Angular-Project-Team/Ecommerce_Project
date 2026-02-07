@@ -28,18 +28,18 @@
   </aside>
 <!-- <div class="m-auto"> -->
   <nav >
-    <h6 class="footer-title">HOME</h6>
-    <a class="link link-hover">Best Seller</a>
-    <a class="link link-hover">New Collection</a>
-    <a class="link link-hover">Commisions</a>
+    <a class="footer-title" [routerLink]="['/home']">HOME</a>
+    <a class="link link-hover" [routerLink]="['/home']" fragment="best-seller" >Best Seller</a>
+    <a class="link link-hover" [routerLink]="['/home']" fragment="new-collection">New Collection</a>
+    <a class="link link-hover" [routerLink]="['/home']" fragment="commisions">Commisions</a>
   </nav>
   <nav>
-    <h6 class="footer-title">SHOPING</h6>
-    <a class="link link-hover">Rings</a>
-    <a class="link link-hover">Earings</a>
-    <a class="link link-hover">Pracelets</a>
-    <a class="link link-hover">Necklace</a>
-    <a class="link link-hover">Watches</a>
+    <a class="footer-title" [routerLink]="['/shopping']">SHOPING</a>
+    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 1 }">Rings</a>
+    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 2 }">Earings</a>
+    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 4 }">Pracelets</a>
+    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 3 }">Necklace</a>
+    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 5 }">Watches</a>
   </nav>
   <nav>
     <h6 class="footer-title">About</h6>
