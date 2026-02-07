@@ -598,7 +598,11 @@
         "fullAddress": "123 Diamond Street, Luxe City, Jewelania",
         "zipCode": "10001"
       },
-      "createdAt": "2024-01-15T10:30:00Z"
+      "createdAt": "2024-01-15T10:30:00Z",
+      "city": "New York",
+      "streetAddress": "123 Diamond Street",
+      "fullAddress": "123 Diamond Street, Luxe City, Jewelania",
+      "zipCode": "10001"
     },
     {
       "id": "2",
@@ -744,8 +748,8 @@
         }
       ],
       "subtotal": 445,
-      "tax": 44.50,
-      "total": 489.50,
+      "tax": 44.5,
+      "total": 489.5,
       "paymentMethod": "credit-card",
       "status": "delivered",
       "shippingAddress": {
@@ -770,8 +774,8 @@
         }
       ],
       "subtotal": 1899,
-      "tax": 189.90,
-      "total": 2088.90,
+      "tax": 189.9,
+      "total": 2088.9,
       "paymentMethod": "paypal",
       "status": "shipped",
       "shippingAddress": {
