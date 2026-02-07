@@ -1,0 +1,30 @@
+<div class="container mx-auto px-4 py-8 mt-14">
+  <h1 class="text-6xl  mb-8 font-[Vultura]">My Favorites</h1>
+  <hr class="h-0.5 bg-[#074D4D] border-0 my-5">
+
+  <!-- Loading State -->
+  <div *ngIf="isLoading()" class="flex justify-center items-center min-h-[400px]">
+    <div class="text-2xl text-gray-600">Loading favorites...</div>
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="!isLoading() && favoriteProducts().length === 0"
+       class="flex flex-col justify-center items-center min-h-[400px]">
+
+    <!-- SVG + text unchanged -->
+
+  </div>
+
+  <!-- Favorites Grid -->
+  <div *ngIf="!isLoading() && favoriteProducts().length > 0"
+       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+    <app-product
+      *ngFor="let product of favoriteProducts()"
+      [myproduct]="product"
+      (favoriteChange)="onFavoriteChange($event)">
+    </app-product>
+
+  </div>
+</div>
+<!-- related product -->

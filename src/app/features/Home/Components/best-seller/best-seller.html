@@ -1,0 +1,16 @@
+<h1 class="text-center text-5xl mt-8 font-[Vultura] "id="bestSeller">Best Seller</h1>
+<div class=" grid
+    grid-cols-1
+    sm:grid-cols-2
+    md:grid-cols-3 gap-6 px-4 md:px-8 lg:px-16 py-10 max-w-9xl max-h-6xl mx-auto mb-14 items-stretch ">
+  @for (product of products(); track product.id; let i = $index) {
+    @if (i == 1 || i==37|| i==49 ||i==10 ||i==22|| i==28) {
+      <app-product [myproduct]="product" class="block h-full"></app-product>
+    }
+  }
+</div>
+<!-- <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 p-4 items-stretch">
+  @for (product of products(); track product.id) {
+    <app-product class="block h-full" [myproduct]="product"></app-product>
+  }
+</div> -->

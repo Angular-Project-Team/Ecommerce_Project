@@ -1,0 +1,6 @@
+<div class="flex flex-wrap gap-5 justify-center">
+@for (category of categories(); track category.catId)
+{
+  <app-category [mycategory]="category"></app-category>
+}
+</div>
