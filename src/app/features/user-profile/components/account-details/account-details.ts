@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './account-details.css',
 })
 export class AccountDetails {
-
+  showCurrentPassword = false;
+  showNewPassword = false;
+  showConfirmPassword = false;
 }

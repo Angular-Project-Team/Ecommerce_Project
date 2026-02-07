@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, ActivatedRoute } from '@angular/router';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -13,4 +13,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class UserProfile {
   faPenToSquare = faPenToSquare;
+  constructor(private router: Router, private route: ActivatedRoute) { }
+
+  get currentRoute() {
+    return this.router.url;
+  }
 }
