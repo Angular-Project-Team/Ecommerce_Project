@@ -21,10 +21,10 @@ export class CartBtn {
       color: this.selectedColor,
       quantity: this.quantity
     });
-    console.log('Add to Cart clicked:', {
-      productId: this.productId,
-      color: this.selectedColor,
-      quantity: this.quantity
-    });
+    // console.log('Add to Cart clicked:', {
+    //   productId: this.productId,
+    //   color: this.selectedColor,
+    //   quantity: this.quantity
+    // });
   }
 }

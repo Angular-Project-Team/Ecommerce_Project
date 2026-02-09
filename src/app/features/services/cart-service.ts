@@ -34,9 +34,7 @@ export class CartService {
 
     return this.getCart().pipe(
       switchMap((items) => {
-        const existingItem = items.find(
-          p => p.productId === normalizedId && p.color === normalizedItem.color
-        );
+        const existingItem = items.find(p => p.productId === normalizedId && p.color === normalizedItem.color);
 
         if (existingItem && existingItem.id != null) {
           const updated: CartItem = {

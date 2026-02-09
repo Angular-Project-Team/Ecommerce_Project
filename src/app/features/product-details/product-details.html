@@ -6,8 +6,8 @@
         <div class="breadcrumbs text-sm">
             <ul>
                 <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-                <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
-                <li *ngIf="categoryName"><a [routerLink]="['/products']" [queryParams]="{catId: categoryId}">{{categoryName}}</a></li>
+                <li><a routerLink="/shopping" routerLinkActive="active">Products</a></li>
+                <li *ngIf="categoryName"><a [routerLink]="['/shopping']" [queryParams]="{catId: categoryId}">{{categoryName}}</a></li>
                 <li>{{productName}}</li>
             </ul>
         </div>
@@ -17,12 +17,9 @@
     <div class="flex pl-30 pt-10 pb-10 pr-10 space-x-5">
         <div class="bg-[#EBE7E1] w-100"> 
             <div class="p-5 flex justify-end">
-                <app-fav-button
-                    [myproduct]="product()"
-                    (favoriteChange)="onFavoriteChange($event)">
-                </app-fav-button>
+                <app-fav-button [myproduct]="product()" (favoriteChange)="onFavoriteChange($event)"></app-fav-button>
             </div>
-            <img class="m-5 w-full h-full" class="image" [src]="product().image" alt="{{product().name}}" />
+            <img class="m-5 w-full h-full" class="image" [src]="product().image" alt="{{product().name}}">
         </div>
         
         <div class="p-10">

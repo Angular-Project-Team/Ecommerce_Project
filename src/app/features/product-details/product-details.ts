@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Header } from '../../shared/components/header/header';
 import { ActivatedRoute, RouterLink, RouterLinkActive, Router } from '@angular/router';
 import database from '../../../../database.json';
@@ -20,6 +20,7 @@ import { ReviewCard } from "./components/review-card/review-card";
 import { Favourite } from "../favourite/favourite";
 import { RelatedProducts } from "../../shared/components/related-products/related-products";
 import { ReviewForm } from "./components/review-form/review-form";
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-product-details',
@@ -28,18 +29,35 @@ import { ReviewForm } from "./components/review-form/review-form";
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
 })
-export class ProductDetails {
+export class ProductDetails implements OnInit, OnDestroy {
   productName: string = '';
   categoryName: string = '';
   categoryId: number = 0;
   productId = 0;
   product = signal({} as ProductType);
+  private readonly destroy$ = new Subject<void>();
 
-  constructor(private route: ActivatedRoute, private productService: ProductService, private router: Router,private cartService: CartService) {
-    this.productId = route.snapshot.params["id"];
-    console.log(this.productId);
-    const productId = Number(this.route.snapshot.paramMap.get('id'));
-    const product = database.products.find((p: any) => p.id === productId);
+  constructor(private route: ActivatedRoute, private productService: ProductService, private router: Router,private cartService: CartService) {}
+
+  ngOnInit() {
+    this.route.paramMap.pipe(takeUntil(this.destroy$)).subscribe({
+      next: (params) => {
+        const id = Number(params.get('id'));
+        if (!id) return;
+        this.refresh(id);
+      },
+      error: (err) => console.error(err),
+    });
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+
+  private refresh(id: number) {
+    this.productId = id;
+    const product = database.products.find((p: any) => p.id === id);
 
     if (product) {
       this.productName = product.name;
@@ -47,24 +65,20 @@ export class ProductDetails {
       const category = database.categories.find((c: any) => c.catId === product.catId);
       this.categoryName = category ? category.name : 'Category';
     }
-  }
 
-  ngOnInit() {
-    // this.productID = Number(this.route.snapshot.paramMap.get('id'));
-    this.productService.productbyId(this.productId).subscribe({
+    this.productService.productbyId(id).subscribe({
       next: (data) => {
         this.product.set(data);
         this.productName = data.name;
         this.categoryId = data.catId;
         const category = database.categories.find((c: any) => c.catId === data.catId);
         this.categoryName = category ? category.name : 'Category';
-        console.log(this.product());
+        this.selectedColor = '';
+        this.quantity = 1;
       },
-      error: (err) => {
-        console.log(err);
-      }
-    })
-  };
+      error: (err) => console.log(err),
+    });
+  }
 
   selectedColor!: string;
   quantity: number = 1;
