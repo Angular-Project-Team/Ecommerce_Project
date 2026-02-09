@@ -119,7 +119,7 @@
       "material": "gold",
       "description": "Elegant chandelier-style drop earrings in lustrous yellow gold with intricate detailing.",
       "productCode": "ER-001",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 2,
@@ -251,7 +251,7 @@
       "material": "gold",
       "description": "Simple yet elegant thin gold chain perfect for everyday wear or layering.",
       "productCode": "NK-003",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 3,
@@ -581,6 +581,26 @@
       "name": "Watches",
       "image": "/images/category/WatchCat.png",
       "id": "ca3d"
+    }
+  ],
+  "cart": [
+    {
+      "id": "f2d7",
+      "productId": 35,
+      "color": "#f8b996",
+      "quantity": 3
+    },
+    {
+      "id": "a124",
+      "productId": 11,
+      "color": "#d1d5db",
+      "quantity": 1
+    },
+    {
+      "id": "b406",
+      "productId": 2,
+      "color": "#D3AF37",
+      "quantity": 2
     }
   ]
 }
