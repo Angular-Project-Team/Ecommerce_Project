@@ -5,12 +5,14 @@ import { ProductService } from '../services/product-service';
 import { CartItem } from '../../shared/models/cartItem';
 import { ProductType } from '../../shared/models/productType';
 import { CartViewItem } from '../../shared/models/cartViewItem';
+import { RelatedProducts } from '../../shared/components/related-products/related-products';
+import { Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule , RelatedProducts],
   templateUrl: './cart.html',
   styleUrls: ['./cart.css'],
 })
@@ -32,10 +34,7 @@ export class Cart implements OnInit {
 
   total = computed(() => this.subtotal() + this.shipping());
 
-  constructor(
-    private cartService: CartService,
-    private productService: ProductService
-  ) {}
+  constructor(private cartService: CartService,private productService: ProductService, private router: Router) {}
 
   ngOnInit() {
     this.productService.allProducts().subscribe({
@@ -100,5 +99,9 @@ export class Cart implements OnInit {
 
   trackByKey(index: number, item: CartViewItem) {
     return item.key;
+  }
+
+  gotoCheckout() {
+   this.router.navigate(['/checkout']);
   }
 }
