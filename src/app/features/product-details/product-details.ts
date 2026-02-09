@@ -24,7 +24,7 @@ import { ReviewForm } from "./components/review-form/review-form";
 @Component({
   selector: 'app-product-details',
   imports: [RouterLink, RouterLinkActive, CommonModule, Search,
-    Rating, Color, Quantity, FavButton, CartBtn, Details, ReviewCard, Favourite, RelatedProducts, ReviewForm],
+    Rating, Color, Quantity, FavButton, CartBtn, Details, ReviewCard, RelatedProducts, ReviewForm],
   templateUrl: './product-details.html',
   styleUrl: './product-details.css',
 })
@@ -79,9 +79,12 @@ onQuantityChanged(qty: number) {
 
 handleAddToCart(event: { productId: number; color: string; quantity: number }) {
   this.cartService.addToCart({
-    productId: event.productId,
+    productId: Number(event.productId),
     color: event.color,
     quantity: event.quantity
+  }).subscribe({
+    next: () => console.log('Added to cart'),
+    error: (err) => console.error(err),
   });
 console.log(event);
 }
