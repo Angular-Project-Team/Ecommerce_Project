@@ -15,7 +15,7 @@ export class AuthService {
     return this.httpClient.post(this.baseUrl, userData);
   }
   checkUserExists(email: string, phone: string): Observable<User[]> {
-    return this.httpClient.get<User[]>(`${this.baseUrl}?email=${email}&phone=${phone}`);
+    return this.httpClient.get<User[]>(this.baseUrl);
   }
 
   loginForm(email: string, password: string): Observable<User[]> {

@@ -50,40 +50,64 @@ export class Register {
   }
 
   submitForm(): void {
-    if (this.registerForm.valid) {
-      const { email, phone } = this.registerForm.value;
-      this.registerForm.get('email')?.setErrors(null);
-      this.registerForm.get('phone')?.setErrors(null);
-      this.authService.checkUserExists(email, phone).subscribe({
-        next: (users) => {
-          if (users.length > 0) {
-            const emailTaken = users.some((u) => u.email === email);
-            const phoneTaken = users.some((u) => u.phone === phone);
-
-            if (emailTaken) {
-              this.registerForm.get('email')?.setErrors({ emailExists: true });
-            }
-            if (phoneTaken) {
-              this.registerForm.get('phone')?.setErrors({ phoneExists: true });
-            }
-
-            this.registerForm.markAllAsTouched();
-          } else {
-            const { confirmPassword, ...userData } = this.registerForm.value;
-
-            this.authService.registerForm(userData).subscribe({
-              next: (response) => {
-                console.log('User Saved Successfully', response);
-                this.router.navigate(['/login']);
-              },
-            });
-          }
-        },
-      });
-    } else {
+    if (this.registerForm.invalid) {
       this.flag = true;
       this.registerForm.markAllAsTouched();
+      return;
     }
+
+    const { email, phone } = this.registerForm.value;
+
+    this.authService.checkUserExists(email, phone).subscribe({
+      next: (users) => {
+        const emailTaken = users.find((u) => u.email === email);
+        const phoneTaken = users.find((u) => u.phone === phone);
+
+        if (emailTaken || phoneTaken) {
+          if (emailTaken) {
+            this.registerForm.get('email')?.setErrors({ emailExists: true });
+          }
+          if (phoneTaken) {
+            this.registerForm.get('phone')?.setErrors({ phoneExists: true });
+          }
+          this.flag = true;
+        } else {
+          const { confirmPassword, ...userData } = this.registerForm.value;
+          this.authService.registerForm(userData).subscribe({
+            next: (response) => {
+              console.log('User Saved Successfully', response);
+              this.router.navigate(['/login']);
+            },
+            error: (err) => {
+              console.error('Registration failed', err);
+            },
+          });
+        }
+
+        // if (users.length > 0) {
+        //   if (emailTaken) {
+        //     this.registerForm.get('email')?.setErrors({ emailExists: true });
+        //   }
+        //   if (phoneTaken) {
+        //     this.registerForm.get('phone')?.setErrors({ phoneExists: true });
+        //   }
+
+        //   this.registerForm.markAllAsTouched();
+        // } else {
+        //   const { confirmPassword, ...userData } = this.registerForm.value;
+
+        //   this.authService.registerForm(userData).subscribe({
+        //     next: (response) => {
+        //       console.log('User Saved Successfully', response);
+        //       this.router.navigate(['/login']);
+        //     },
+        //   });
+        // }
+      },
+      error: (err) => {
+        console.error('Error checking user existence', err);
+      },
+    });
   }
 
   confirmPassword(group: AbstractControl) {
