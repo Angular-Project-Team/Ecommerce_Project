@@ -11,8 +11,9 @@ import { Register } from './auth/register/register';
 import { Favourite } from './features/favourite/favourite';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [Header, Footer, RouterOutlet, Register, Favourite, Login],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
