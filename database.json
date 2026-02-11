@@ -548,7 +548,7 @@
       "material": "gold",
       "description": "Sophisticated rose gold dress watch with slim profile and genuine leather strap.",
       "productCode": "WT-010",
-      "isFavorite": false
+      "isFavorite": true
     }
   ],
   "categories": [
@@ -585,22 +585,506 @@
   ],
   "cart": [
     {
-      "id": "f2d7",
-      "productId": 35,
-      "color": "#f8b996",
-      "quantity": 3
-    },
-    {
-      "id": "a124",
-      "productId": 11,
-      "color": "#d1d5db",
-      "quantity": 1
-    },
-    {
-      "id": "b406",
-      "productId": 2,
+      "id": "fa3e",
+      "productId": 10,
       "color": "#D3AF37",
-      "quantity": 2
+      "quantity": 1,
+      "cartId": "cart-1770806946559-mrc642"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-001",
+      "userId": 1,
+      "cartId": null,
+      "status": "shipping"
+    },
+    {
+      "id": "ord-002",
+      "userId": 2,
+      "cartId": null,
+      "status": "delivered"
+    },
+    {
+      "id": "ord-003",
+      "userId": 3,
+      "cartId": null,
+      "status": "processing"
+    },
+    {
+      "id": "ord-1770680326974",
+      "userId": 1,
+      "cartId": null,
+      "status": "processing"
+    },
+    {
+      "id": "ord-1770680809028",
+      "userId": 1,
+      "cartId": "cart-1770680661453-rsjgj0",
+      "status": "processing",
+      "items": [
+        {
+          "id": "f2d7",
+          "productId": 35,
+          "color": "#f8b996",
+          "quantity": 3,
+          "cartId": "cart-1770680661453-rsjgj0"
+        },
+        {
+          "id": "a124",
+          "productId": 11,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770680661453-rsjgj0"
+        },
+        {
+          "id": "b406",
+          "productId": 2,
+          "color": "#D3AF37",
+          "quantity": 2,
+          "cartId": "cart-1770680661453-rsjgj0"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770680925793",
+      "userId": 1,
+      "cartId": "cart-1770680809097-xks2a2",
+      "status": "processing",
+      "items": [
+        {
+          "id": "7743",
+          "productId": 14,
+          "color": "#d1d5db",
+          "quantity": 2,
+          "cartId": "cart-1770680809097-xks2a2"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681085518",
+      "userId": 1,
+      "cartId": "cart-1770680925823-yqnzua",
+      "status": "processing",
+      "items": [
+        {
+          "id": "59d8",
+          "productId": 18,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770680925823-yqnzua"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681135467",
+      "userId": 1,
+      "cartId": "cart-1770681085545-lzm5tb",
+      "status": "processing",
+      "items": [
+        {
+          "id": "2027",
+          "productId": 8,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770681085545-lzm5tb"
+        },
+        {
+          "id": "c6f9",
+          "productId": 18,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770681085545-lzm5tb"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681321554",
+      "userId": 1,
+      "cartId": "cart-1770681135495-mbrbyw",
+      "status": "processing",
+      "items": [
+        {
+          "id": "de16",
+          "productId": 5,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770681135495-mbrbyw"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681392384",
+      "userId": 1,
+      "cartId": "cart-1770681321586-olrsuq",
+      "status": "processing",
+      "items": [
+        {
+          "id": "872a",
+          "productId": 21,
+          "color": "#d1d5db",
+          "quantity": 2,
+          "cartId": "cart-1770681321586-olrsuq"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681538544",
+      "userId": 1,
+      "cartId": "cart-1770681392412-5r8jbz",
+      "status": "processing",
+      "items": [
+        {
+          "id": "e2e4",
+          "productId": 27,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770681392412-5r8jbz"
+        },
+        {
+          "id": "7af8",
+          "productId": 38,
+          "color": "#f8b996",
+          "quantity": 2,
+          "cartId": "cart-1770681392412-5r8jbz"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681574938",
+      "userId": 1,
+      "cartId": "cart-1770681538579-0xiwdv",
+      "status": "processing",
+      "items": [
+        {
+          "id": "ba61",
+          "productId": 10,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770681538579-0xiwdv"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681598780",
+      "userId": 1,
+      "cartId": "cart-1770681574978-ac6loe",
+      "status": "processing",
+      "items": [
+        {
+          "id": "e678",
+          "productId": 23,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770681574978-ac6loe"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681721771",
+      "userId": 1,
+      "cartId": "cart-1770681598898-fh09a0",
+      "status": "processing",
+      "items": [
+        {
+          "id": "6e20",
+          "productId": 30,
+          "color": "#d1d5db",
+          "quantity": 3,
+          "cartId": "cart-1770681598898-fh09a0"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681774237",
+      "userId": 1,
+      "cartId": "cart-1770681721810-8lk1ec",
+      "status": "processing",
+      "items": [
+        {
+          "id": "6f14",
+          "productId": 37,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770681721810-8lk1ec"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681810121",
+      "userId": 1,
+      "cartId": "cart-1770681774264-0m9c6w",
+      "status": "processing",
+      "items": [
+        {
+          "id": "8075",
+          "productId": 4,
+          "color": "#D3AF37",
+          "quantity": 2,
+          "cartId": "cart-1770681774264-0m9c6w"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681840934",
+      "userId": 1,
+      "cartId": "cart-1770681810145-fl4b4u",
+      "status": "processing",
+      "items": [
+        {
+          "id": "44a3",
+          "productId": 9,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770681810145-fl4b4u"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770681924889",
+      "userId": 1,
+      "cartId": "cart-1770681840965-tvrt0w",
+      "status": "processing",
+      "items": [
+        {
+          "id": "2268",
+          "productId": 33,
+          "color": "#d1d5db",
+          "quantity": 2,
+          "cartId": "cart-1770681840965-tvrt0w"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770682465570",
+      "userId": 1,
+      "cartId": "cart-1770681924921-qdphni",
+      "status": "processing",
+      "items": [
+        {
+          "id": "6bdf",
+          "productId": 2,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770681924921-qdphni"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770682653245",
+      "userId": 1,
+      "cartId": "cart-1770682465603-rttnnc",
+      "status": "processing",
+      "items": [
+        {
+          "id": "aa9d",
+          "productId": 2,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770682465603-rttnnc"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770682706399",
+      "userId": 1,
+      "cartId": "cart-1770682653292-p1cwgd",
+      "status": "processing",
+      "items": [
+        {
+          "id": "21fd",
+          "productId": 2,
+          "color": "#D3AF37",
+          "quantity": 2,
+          "cartId": "cart-1770682653292-p1cwgd"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805356638",
+      "userId": 1,
+      "cartId": "cart-1770682706426-kfqgmj",
+      "status": "processing",
+      "items": [
+        {
+          "id": "7875",
+          "productId": 2,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770682706426-kfqgmj"
+        },
+        {
+          "id": "76c1",
+          "productId": 23,
+          "color": "#D3AF37",
+          "quantity": 2,
+          "cartId": "cart-1770682706426-kfqgmj"
+        },
+        {
+          "id": "f590",
+          "productId": 38,
+          "color": "#f8b996",
+          "quantity": 1,
+          "cartId": "cart-1770682706426-kfqgmj"
+        },
+        {
+          "id": "2c44",
+          "productId": 35,
+          "color": "#f8b996",
+          "quantity": 3,
+          "cartId": "cart-1770682706426-kfqgmj"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805497901",
+      "userId": 1,
+      "cartId": "cart-1770805356686-kkbn8e",
+      "status": "processing",
+      "items": [
+        {
+          "id": "2328",
+          "productId": 15,
+          "color": "#d1d5db",
+          "quantity": 8,
+          "cartId": "cart-1770805356686-kkbn8e"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805649586",
+      "userId": 1,
+      "cartId": "cart-1770805497930-xny56r",
+      "status": "processing",
+      "items": [
+        {
+          "id": "3d8c",
+          "productId": 14,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770805497930-xny56r"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805749263",
+      "userId": 1,
+      "cartId": "cart-1770805649612-j4jeai",
+      "status": "processing",
+      "items": [
+        {
+          "id": "dba8",
+          "productId": 43,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770805649612-j4jeai"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805782872",
+      "userId": 1,
+      "cartId": "cart-1770805749292-hdj8xy",
+      "status": "processing",
+      "items": [
+        {
+          "id": "82e2",
+          "productId": 18,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770805749292-hdj8xy"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805826434",
+      "userId": 1,
+      "cartId": "cart-1770805782903-3159w0",
+      "status": "processing",
+      "items": [
+        {
+          "id": "64ae",
+          "productId": 18,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770805782903-3159w0"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770805987011",
+      "userId": 1,
+      "cartId": "cart-1770805826468-cgm05e",
+      "status": "processing",
+      "items": [
+        {
+          "id": "4dc0",
+          "productId": 18,
+          "color": "#d1d5db",
+          "quantity": 1,
+          "cartId": "cart-1770805826468-cgm05e"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770806026369",
+      "userId": 1,
+      "cartId": "cart-1770805987046-17l0ux",
+      "status": "processing",
+      "items": [
+        {
+          "id": "a1b8",
+          "productId": 2,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770805987046-17l0ux"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770806850243",
+      "userId": 1,
+      "cartId": "cart-1770806026401-ey0cue",
+      "status": "processing",
+      "items": [
+        {
+          "id": "d6d1",
+          "productId": 10,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770806026401-ey0cue"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770806891829",
+      "userId": 1,
+      "cartId": "cart-1770806850319-5emyih",
+      "status": "processing",
+      "items": [
+        {
+          "id": "40c8",
+          "productId": 10,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770806850319-5emyih"
+        }
+      ]
+    },
+    {
+      "id": "ord-1770806946524",
+      "userId": 1,
+      "cartId": "cart-1770806891883-jmab7o",
+      "status": "processing",
+      "items": [
+        {
+          "id": "f722",
+          "productId": 12,
+          "color": "#D3AF37",
+          "quantity": 1,
+          "cartId": "cart-1770806891883-jmab7o"
+        }
+      ]
     }
   ]
 }

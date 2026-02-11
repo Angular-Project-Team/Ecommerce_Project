@@ -1,0 +1,56 @@
+<div class="pt-24 pb-20 px-6 lg:px-20 text-[#1d1d1d]">
+  <h1 class="text-3xl font-[Vultura] tracking-wide">YOUR PURCHASE</h1>
+
+  <div class="mt-8 grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
+    <div>
+      <div *ngFor="let item of items(); trackBy: trackByKey" class="border-t border-[#E5E5E5] py-6 flex gap-6 items-center">
+        <div class="w-24 h-24 bg-[#F4F1ED] flex items-center justify-center">
+          <img [src]="item.image" [alt]="item.name" class="max-w-full max-h-full" />
+        </div>
+
+        <div class="flex-1">
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="font-semibold">{{ item.name }}</p>
+              <div class="flex items-center gap-2 text-sm text-[#6B6B6B] mt-1">
+                <span>Color</span>
+                <span class="w-3 h-3 rounded-full border" [style.background]="item.color"></span>
+              </div>
+            </div>
+            <button class="text-[#8A8A8A] hover:text-[#074D4D] hover:cursor-pointer" (click)="remove(item)">X</button>
+          </div>
+
+          <div class="mt-4 flex flex-wrap items-center gap-6">
+            <span class="text-sm text-[#6B6B6B]">{{ item.price | currency }}</span>
+            <div class="text-[#6B6B6B]"> Quantity : {{ item.quantity }}</div>
+            <span class="ml-auto font-semibold">{{ item.lineTotal | currency }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="items().length > 0" class="border-t border-[#E5E5E5]"></div>
+    </div>
+
+    <div class="border border-[#D9D9D9] p-6 h-fit">
+      <h2 class="text-lg font-semibold">Order Summary</h2>
+
+      <div class="mt-4 space-y-3 text-sm">
+        <div class="flex justify-between">
+          <span class="text-[#6B6B6B]">Subtotal</span>
+          <span>{{ subtotal() | currency }}</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-[#6B6B6B]">Shipping</span>
+          <span>{{ shipping() | currency }}</span>
+        </div>
+        <div class="border-t border-[#E5E5E5] pt-3 flex justify-between font-semibold">
+          <span>TOTAL</span>
+          <span>{{ total() | currency }}</span>
+        </div>
+      </div>
+
+      <button (click)="confirmOrder()" class="mt-6 w-full bg-[#074D4D] text-white py-3 text-sm tracking-wide hover:bg-[#063a3a] hover:cursor-pointer">CONFIRM ORDER</button>
+    </div>
+  </div>
+</div>
+<app-popup [open]="showPopup"></app-popup>
