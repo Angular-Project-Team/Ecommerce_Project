@@ -1,4 +1,8 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { Home } from './features/Home/home';
+import { Shopping } from './features/shopping/shopping';
+import { BestSeller } from './features/Home/Components/best-seller/best-seller';
+import { Favourite } from './features/favourite/favourite';
 
 export const routes: Routes = [
     {
@@ -11,5 +15,9 @@ export const routes: Routes = [
             { path: 'orders', loadComponent: () => import('./features/user-profile/components/orders/orders').then(m => m.Orders) }
         ]
     },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: Home },
+    { path: 'shopping', component: Shopping },
+    { path: 'favourite', component: Favourite },
     { path: '**', redirectTo: 'user-profile', pathMatch: 'full' }
 ];
