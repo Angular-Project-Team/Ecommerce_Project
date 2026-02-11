@@ -1,82 +1,118 @@
-<section class="w-full h-screen bg-[#074D4D] flex justify-center items-center">
+<section class="w-full h-screen bg-[#074D4D] flex justify-center items-center font-sans p-4">
   <div
     class="relative w-[calc(786px-200px)] bg-[#EBE7E1] flex justify-center items-center rounded-md"
   >
     <div class="absolute inset-2 border-4 border-[#074D4D]"></div>
 
-
-    <div class="relative z-10 w-full h-full flex flex-col items-center p-6">
-      <img src="/public/images/logo/BlackLogo.png" alt="" class="w-14 mt-[19px] mb-3" />
-
+    <div class="relative z-10 w-full h-full flex flex-col items-center py-12">
+      <img src="images/logo/BlackLogo.png" alt="" class="w-14 mt-[19px] mb-3" />
 
       <h1 class="font-semibold font-sans text-2xl text-[#363636]">WELCOME BACK !</h1>
       <p class="font-light text-md text-[#363636]">
         Enter your information to login into our website
       </p>
 
+      @let email = loginForm.get('email');
+      @let pass = loginForm.get('password');
 
-      <form class="w-full max-w-sm mt-8 flex flex-col gap-3">
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="submitForm()"
+        class="w-full max-w-sm mt-8 flex flex-col gap-1"
+      >
         <div class="relative">
           <input
+            formControlName="email"
             type="email"
             id="email"
-            class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+            class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
             placeholder=" "
           />
           <label
             for="email"
             class="absolute text-sm text-gray-500 duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] start-3 peer-focus:text-[#074D4D] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
+            >Email</label
           >
-            Email
-          </label>
         </div>
-
-
-        <div class="relative flex items-center">
+        @if (email?.invalid && email?.touched) {
+          <div
+            class="flex items-center gap-2 bg-[#FDEAEA] border border-[#F5C2C2] text-[#CC3333] px-2.5 py-2 rounded-md text-[11px] mb-1 mt-1 animate-pulse"
+          >
+            <svg class="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              ></path>
+            </svg>
+            <span>
+              @if (email?.errors?.['required']) {
+                Email is required
+              } @else if (email?.errors?.['email']) {
+                Invalid email format
+              }
+            </span>
+          </div>
+        }
+        <div class="relative">
           <input
-            type="password"
+            formControlName="password"
+            [type]="showPassword ? 'text' : 'password'"
             id="password"
-            class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+            class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
             placeholder=" "
           />
           <label
             for="password"
             class="absolute text-sm text-gray-500 duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] start-3 peer-focus:text-[#074D4D] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
+            >Password</label
           >
-            Password
-          </label>
-
 
           <button
             type="button"
-            class="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-gray-500 hover:text-[#074D4D] underline decoration-1 underline-offset-2"
+            (click)="showPassword = !showPassword"
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#074D4D] cursor-pointer z-20"
           >
-            Hide
+            <i class="fa-solid" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
           </button>
         </div>
+        @if (pass?.invalid && pass?.touched) {
+          <div
+            class="flex items-center gap-2 bg-[#FDEAEA] border border-[#F5C2C2] text-[#CC3333] px-2.5 py-2 rounded-md text-[11px] mb-1 mt-1 animate-pulse"
+          >
+            <svg class="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              ></path>
+            </svg>
+            <span>
+              @if (pass?.errors?.['required']) {
+                Password is required
+              } @else if (pass?.errors?.['minlength']) {
+                At least 6 characters
+              }
+            </span>
+          </div>
+        }
+
         <button
+          [disabled]="loginForm.invalid"
           type="submit"
-          class="w-full bg-[#074D4D] text-[#EBE7E1] py-3 text-sm font-semibold hover:bg-[#063d3d] transition-colors duration-300"
+          class="w-full cursor-pointer bg-[#074D4D] text-[#EBE7E1] py-3 mt-1 text-sm font-semibold hover:bg-[#063d3d] disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300"
         >
           Login
         </button>
+        @if (loginError) {
+          <div
+            class="flex items-center gap-2 bg-[#FDEAEA] border border-[#F5C2C2] text-[#CC3333] px-2.5 py-2 rounded-md text-[11px] mb-2 mt-2 animate-pulse"
+          >
+            <svg class="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              ></path>
+            </svg>
+            <span>Email or Password is incorrect!</span>
+          </div>
+        }
       </form>
-
-
-      <div class="mt-6">
-        <span class="text-gray-500 text-sm font-light"> Don’t have an account ? </span>
-        <a
-          routerLink="/register"
-          class="text-black text-md font-semibold cursor-pointer underline hover:text-[#0a6363] transition-colors"
-        >
-          Sign Up
-        </a>
-      </div>
     </div>
   </div>
 </section>
-
-
-
-
-

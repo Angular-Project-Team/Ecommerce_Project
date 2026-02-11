@@ -4,14 +4,11 @@
   >
     <div class="absolute inset-2 border-4 border-[#074D4D] pointer-events-none"></div>
 
-
-    <div class="relative z-10 w-full h-full flex flex-col items-center p-6">
-      <img src="/images/logo/BlackLogo.png" alt="" class="w-14 mt-[19px] mb-3" />
-
+    <div class="relative z-10 w-full h-full flex flex-col items-center p-12">
+      <img src="images/logo/BlackLogo.png" alt="" class="w-14 mt-[19px] mb-3" />
 
       <h1 class="font-semibold font-sans text-2xl text-[#363636]">HELLO DEAR !</h1>
       <p class="font-light text-md text-[#363636]">Enter your information to create an account</p>
-
 
       @let fName = registerForm.get('fName');
       @let lName = registerForm.get('lName');
@@ -19,7 +16,6 @@
       @let phone = registerForm.get('phone');
       @let pass = registerForm.get('password');
       @let confirmPass = registerForm.get('confirmPassword');
-
 
       <form
         [formGroup]="registerForm"
@@ -33,7 +29,7 @@
                 formControlName="fName"
                 type="text"
                 id="firstName"
-                class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+                class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
                 placeholder=" "
               />
               <label
@@ -58,12 +54,13 @@
                     Min 3 chars
                   } @else if (fName?.errors?.['maxlength']) {
                     Max 20 chars
+                  } @else if (fName?.errors?.['pattern']) {
+                    Only letters are allowed
                   }
                 </span>
               </div>
             }
           </div>
-
 
           <div class="flex flex-col w-1/2">
             <div class="relative w-full">
@@ -71,7 +68,7 @@
                 formControlName="lName"
                 type="text"
                 id="lastName"
-                class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+                class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
                 placeholder=" "
               />
               <label
@@ -94,6 +91,10 @@
                     Required
                   } @else if (lName?.errors?.['minlength']) {
                     Min 3 chars
+                  } @else if (lName?.errors?.['pattern']) {
+                    Only letters are allowed
+                  } @else if (lName?.errors?.['maxlength']) {
+                    Max 20 chars
                   }
                 </span>
               </div>
@@ -101,13 +102,12 @@
           </div>
         </div>
 
-
         <div class="relative">
           <input
             formControlName="email"
             type="email"
             id="email"
-            class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+            class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
             placeholder=" "
           />
           <label
@@ -116,6 +116,7 @@
             >Email</label
           >
         </div>
+
         @if (email?.invalid && email?.touched) {
           <div
             class="flex items-center gap-2 bg-[#FDEAEA] border border-[#F5C2C2] text-[#CC3333] px-2.5 py-2 rounded-md text-[11px] mb-1 mt-1 animate-pulse"
@@ -130,18 +131,19 @@
                 Email is required
               } @else if (email?.errors?.['email']) {
                 Invalid email format
+              } @else if (email?.errors?.['emailExists']) {
+                This email is already registered!
               }
             </span>
           </div>
         }
-
 
         <div class="relative">
           <input
             formControlName="phone"
             type="tel"
             id="phone"
-            class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+            class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
             placeholder=" "
           />
           <label
@@ -164,18 +166,19 @@
                 Phone is required
               } @else if (phone?.errors?.['pattern']) {
                 Enter a valid Egyptian number
+              } @else if (phone?.errors?.['phoneExists']) {
+                This phone number is already registered!
               }
             </span>
           </div>
         }
 
-
         <div class="relative">
           <input
             formControlName="password"
-            type="password"
+            [type]="showPassword ? 'text' : 'password'"
             id="password"
-            class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+            class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
             placeholder=" "
           />
           <label
@@ -183,6 +186,14 @@
             class="absolute text-sm text-gray-500 duration-300 transform -translate-y-3 scale-75 top-3 z-10 origin-[0] start-3 peer-focus:text-[#074D4D] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3"
             >Password</label
           >
+
+          <button
+            type="button"
+            (click)="showPassword = !showPassword"
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#074D4D] cursor-pointer z-20"
+          >
+            <i class="fa-solid" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+          </button>
         </div>
         @if (pass?.invalid && pass?.touched) {
           <div
@@ -203,13 +214,12 @@
           </div>
         }
 
-
         <div class="relative">
           <input
             formControlName="confirmPassword"
             type="password"
             id="confirmPassword"
-            class="block px-3 pb-1.5 pt-4 w-full text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
+            class="block px-3 pb-1.5 pt-4 w-full text-[#363636] text-sm bg-transparent border border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#074D4D] peer"
             placeholder=" "
           />
           <label
@@ -220,7 +230,7 @@
         </div>
         @if (
           confirmPass?.touched &&
-          (confirmPass?.errors?.['required'] || registerForm.getError('misMatch'))
+          (confirmPass?.errors?.['required'] || registerForm.hasError('misMatch'))
         ) {
           <div
             class="flex items-center gap-2 bg-[#FDEAEA] border border-[#F5C2C2] text-[#CC3333] px-2.5 py-2 rounded-md text-[11px] mb-1 mt-1 animate-pulse"
@@ -240,14 +250,13 @@
           </div>
         }
 
-
         <button
+          [disabled]="registerForm.invalid"
           type="submit"
           class="w-full cursor-pointer bg-[#074D4D] text-[#EBE7E1] py-3 mt-1 text-sm font-semibold hover:bg-[#063d3d] disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300"
         >
           Sign Up
         </button>
-
 
         @if (flag) {
           <div
@@ -260,6 +269,3 @@
     </div>
   </div>
 </section>
-
-
-
