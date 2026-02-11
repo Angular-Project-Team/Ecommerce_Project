@@ -15,7 +15,7 @@ import { User } from '../../core/models/user.model';
 })
 export class UserProfile implements OnInit {
   faPenToSquare = faPenToSquare;
-  
+
   userService:UserService = inject(UserService);
   router:Router = inject(Router);
   id:number = 1;

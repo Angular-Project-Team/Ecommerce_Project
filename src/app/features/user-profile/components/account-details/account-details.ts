@@ -22,7 +22,6 @@ export class AccountDetails {
   showNewPassword = false;
   showConfirmPassword = false;
 
-  // Success/Error message signals
   showDetailsSuccess = signal(false);
   showPasswordSuccess = signal(false);
   passwordError = signal<string | null>(null);
