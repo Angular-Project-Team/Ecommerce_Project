@@ -59,7 +59,8 @@
               "buildTarget": "Ecommerce:build:production"
             },
             "development": {
-              "buildTarget": "Ecommerce:build:development"
+              "buildTarget": "Ecommerce:build:development",
+              "liveReload": false
             }
           },
           "defaultConfiguration": "development"

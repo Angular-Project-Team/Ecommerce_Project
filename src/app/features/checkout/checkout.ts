@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, computed, signal } from '@angular/core';
+import { Component, OnInit, OnDestroy, computed, signal } from '@angular/core';
 import { CartService } from '../services/cart-service';
 import { ProductService } from '../services/product-service';
 import { CartItem } from '../../shared/models/cartItem';
@@ -16,14 +16,15 @@ import { switchMap } from 'rxjs/operators';
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule , Popup],
+  imports: [CommonModule, Popup],
   templateUrl: './checkout.html',
   styleUrls: ['./checkout.css'],
 })
-export class Checkout implements OnInit {
+export class Checkout implements OnInit, OnDestroy {
   private cartItems = signal<CartItem[]>([]);
   private products = signal<ProductType[]>([]);
-  showPopup = false;
+  showPopup = signal(false);
+  private popupTimer: ReturnType<typeof setTimeout> | null = null;
 
   items = computed<CartViewItem[]>(() =>
     this.cartItems()
@@ -44,7 +45,13 @@ export class Checkout implements OnInit {
     private productService: ProductService,
     private orderService: OrderService,
     private router: Router
-  ) {}
+  ) { }
+
+  ngOnDestroy() {
+    if (this.popupTimer) {
+      clearTimeout(this.popupTimer);
+    }
+  }
 
   ngOnInit() {
     this.productService.allProducts().subscribe({
@@ -96,7 +103,7 @@ export class Checkout implements OnInit {
       id: `ord-${Date.now()}`,
       userId: 1,
       cartId: this.cartService.getCartId(),
-      status: 'processing', 
+      status: 'processing',
       items: this.cartItems()
     };
 
@@ -105,15 +112,22 @@ export class Checkout implements OnInit {
     ).subscribe({
       next: () => {
         console.log('Order confirmed and cart cleared');
-       this.showPopup = true;
-       this.refresh();
+        this.showPopup.set(true);
+        this.popupTimer = setTimeout(() => {
+          this.closePopup();
+        }, 3000);
+        //  this.refresh();
       },
       error: (err) => console.error(err),
     });
   }
 
   closePopup() {
-    this.showPopup = false;
+    if (this.popupTimer) {
+      clearTimeout(this.popupTimer);
+      this.popupTimer = null;
+    }
+    this.showPopup.set(false);
     this.router.navigate(['/home']);
   }
 }

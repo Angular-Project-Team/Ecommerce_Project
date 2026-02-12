@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Output, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './popup.css',
 })
 export class Popup {
-  @Input() open = false;
+  open = input(false);
   @Output() closed = new EventEmitter<void>();
 
   close() {
