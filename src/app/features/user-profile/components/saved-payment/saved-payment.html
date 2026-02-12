@@ -1,66 +1,241 @@
-  <div class="mt-8">
-    <h3 class="text-xl font-semibold text-gray-900 mb-6">Saved Payment</h3>
-    <hr class="mb-8 border-[#969696]" />
+<div class="mt-8">
+  <h3 class="text-xl font-semibold text-gray-900 mb-6">Saved Payment</h3>
+  <hr class="mb-8 border-[#969696]" />
 
-    <div class="space-y-4">
-      <div class="border border-gray-300 rounded-lg p-4 md:p-6">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div class="flex items-center gap-4">
-            <fa-icon [icon]="faCcVisa" class="text-4xl text-[#1A1F71]"></fa-icon>
-            <div class="flex flex-col gap-1">
-              <p class="font-medium text-gray-900">•••• •••• •••• 4242</p>
-              <p class="text-sm text-gray-500">Expires 12/27</p>
-              <p class="text-sm text-gray-500">Sarah Adams</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="flex items-center gap-1 text-sm text-primary font-medium">
-              <fa-icon [icon]="faCheck" class="text-xs"></fa-icon>
-              Default
-            </span>
-            <div class="flex gap-2">
-              <button class="p-2 text-gray-500 hover:text-primary transition-colors">
-                <fa-icon [icon]="faPenToSquare"></fa-icon>
-              </button>
-              <button class="p-2 text-gray-500 hover:text-red-500 transition-colors">
-                <fa-icon [icon]="faXmark"></fa-icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="border border-gray-300 rounded-lg p-4 md:p-6">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div class="flex items-center gap-6">
-            <fa-icon [icon]="faCcMastercard" class="text-4xl text-[#EB001B]"></fa-icon>
-            <div class="flex flex-col gap-1">
-              <p class="font-medium text-gray-900">•••• •••• •••• 8521</p>
-              <p class="text-sm text-gray-500">Expires 03/26</p>
-              <p class="text-sm text-gray-500">Sarah Adams</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4">
-            <button class="text-sm text-gray-500 hover:text-primary transition-colors">
-              Set as default
-            </button>
-            <div class="flex gap-2">
-              <button class="p-2 text-gray-500 hover:text-primary transition-colors">
-                <fa-icon [icon]="faPenToSquare"></fa-icon>
-              </button>
-              <button class="p-2 text-gray-500 hover:text-red-500 transition-colors">
-                <fa-icon [icon]="faXmark"></fa-icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Success Message -->
+  @if (successMessage()) {
+    <div
+      class="mb-4 flex items-center gap-2 text-green-600 bg-green-50 px-4 py-3 rounded border border-green-200"
+    >
+      <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      <span class="text-sm font-medium">{{ successMessage() }}</span>
     </div>
+  }
 
+  <!-- Error Message -->
+  @if (errorMessage()) {
+    <div
+      class="mb-4 flex items-center gap-2 text-red-600 bg-red-50 px-4 py-3 rounded border border-red-200"
+    >
+      <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      <span class="text-sm font-medium">{{ errorMessage() }}</span>
+    </div>
+  }
+
+  <!-- Cards List -->
+  <div class="space-y-4">
+    @for (payment of payments(); track payment.id) {
+      <app-payment-item
+        [payment]="payment"
+        (edit)="openEditForm($event)"
+        (delete)="confirmDelete($event)"
+        (setDefault)="setAsDefault($event)"
+      />
+    } @empty {
+      <div class="text-center py-12 text-gray-500">
+        <p class="text-lg font-medium">No payment methods saved yet</p>
+        <p class="text-sm mt-1">Add a payment method to get started</p>
+      </div>
+    }
+  </div>
+
+  <!-- Payment Form (Add / Edit) -->
+  @if (showForm()) {
+    <div class="mt-6 border border-gray-300 rounded-lg p-4 md:p-6">
+      <h4 class="text-lg font-semibold text-gray-900 mb-4">
+        {{ isEditMode() ? 'Edit Payment Method' : 'Add New Payment Method' }}
+      </h4>
+
+      <form [formGroup]="paymentForm" (ngSubmit)="submitForm()">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Card Number (last 4 digits) -->
+          <div>
+            <input
+              type="text"
+              placeholder="Last 4 digits of card *"
+              maxlength="4"
+              formControlName="cardNumber"
+              class="w-full px-4 py-3 border text-input-text rounded text-sm focus:outline-none transition-colors"
+              [class.border-red-500]="isFieldInvalid('cardNumber')"
+              [class.border-gray-300]="!isFieldInvalid('cardNumber')"
+              [class.focus:border-input-border]="!isFieldInvalid('cardNumber')"
+              [class.focus:border-red-500]="isFieldInvalid('cardNumber')"
+            />
+            @if (isFieldInvalid('cardNumber')) {
+              <p class="text-red-500 text-xs mt-1">{{ getErrorMessage('cardNumber') }}</p>
+            }
+          </div>
+
+          <!-- Card Type -->
+          <div>
+            <select
+              formControlName="cardType"
+              class="w-full px-4 py-3 border text-input-text rounded text-sm focus:outline-none transition-colors border-gray-300 focus:border-input-border bg-white"
+            >
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="amex">American Express</option>
+            </select>
+          </div>
+
+          <!-- Cardholder Name -->
+          <div>
+            <input
+              type="text"
+              placeholder="Cardholder Name *"
+              formControlName="cardholderName"
+              class="w-full px-4 py-3 border text-input-text rounded text-sm focus:outline-none transition-colors"
+              [class.border-red-500]="isFieldInvalid('cardholderName')"
+              [class.border-gray-300]="!isFieldInvalid('cardholderName')"
+              [class.focus:border-input-border]="!isFieldInvalid('cardholderName')"
+              [class.focus:border-red-500]="isFieldInvalid('cardholderName')"
+            />
+            @if (isFieldInvalid('cardholderName')) {
+              <p class="text-red-500 text-xs mt-1">{{ getErrorMessage('cardholderName') }}</p>
+            }
+          </div>
+
+          <!-- Expiry Date -->
+          <div>
+            <input
+              type="text"
+              placeholder="Expiry Date (MM/YY) *"
+              maxlength="5"
+              formControlName="expiryDate"
+              (input)="formatExpiryDate($event)"
+              class="w-full px-4 py-3 border text-input-text rounded text-sm focus:outline-none transition-colors"
+              [class.border-red-500]="isFieldInvalid('expiryDate')"
+              [class.border-gray-300]="!isFieldInvalid('expiryDate')"
+              [class.focus:border-input-border]="!isFieldInvalid('expiryDate')"
+              [class.focus:border-red-500]="isFieldInvalid('expiryDate')"
+            />
+            @if (isFieldInvalid('expiryDate')) {
+              <p class="text-red-500 text-xs mt-1">{{ getErrorMessage('expiryDate') }}</p>
+            }
+          </div>
+        </div>
+
+        <!-- Set as Default Checkbox -->
+        <div class="mt-4">
+          <label class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer select-none">
+            <input
+              type="checkbox"
+              formControlName="isDefault"
+              class="w-4 h-4 accent-profile-primary border-gray-300 rounded"
+            />
+            Set as default payment method
+          </label>
+        </div>
+
+        <!-- Card Type Preview -->
+        <div class="mt-4 flex items-center gap-2 text-gray-500">
+          <span class="text-sm">Card type:</span>
+          @switch (paymentForm.get('cardType')?.value) {
+            @case ('visa') {
+              <fa-icon [icon]="faCcVisa" class="text-2xl text-[#1A1F71]"></fa-icon>
+            }
+            @case ('mastercard') {
+              <fa-icon [icon]="faCcMastercard" class="text-2xl text-[#EB001B]"></fa-icon>
+            }
+            @case ('amex') {
+              <fa-icon [icon]="faCcAmex" class="text-2xl text-[#2E77BB]"></fa-icon>
+            }
+          }
+        </div>
+
+        <!-- Form Actions -->
+        <div class="mt-6 flex items-center gap-3 flex-wrap">
+          <button
+            type="submit"
+            [disabled]="isSubmitting()"
+            class="w-full md:w-auto bg-profile-primary text-white px-8 py-3 text-sm font-medium hover:bg-white hover:text-profile-primary border-2 border-profile-primary transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {{ isSubmitting() ? 'Saving...' : isEditMode() ? 'Update Card' : 'Add Card' }}
+          </button>
+          <button
+            type="button"
+            (click)="cancelForm()"
+            class="w-full md:w-auto px-8 py-3 text-sm font-medium text-gray-600 border-2 border-gray-300 hover:border-gray-500 hover:text-gray-800 transition-colors duration-300"
+          >
+            Cancel
+          </button>
+          @if (paymentForm.invalid && paymentForm.touched) {
+            <p class="text-red-500 text-sm w-full md:w-auto">
+              Please fill in all required fields correctly
+            </p>
+          }
+        </div>
+      </form>
+    </div>
+  }
+
+  <!-- Add New Payment Button (hidden when form is open) -->
+  @if (!showForm()) {
     <button
-      class="mt-6 w-full md:w-auto bg-primary text-white px-8 py-3 text-sm font-medium hover:bg-white hover:text-primary border-2 border-primary transition-colors duration-300"
+      (click)="openAddForm()"
+      class="mt-6 w-full md:w-auto bg-profile-primary text-white px-8 py-3 text-sm font-medium hover:bg-white hover:text-profile-primary border-2 border-profile-primary transition-colors duration-300"
     >
       <fa-icon [icon]="faPlus"></fa-icon>
       Add New Payment Method
     </button>
+  }
+</div>
+
+<!-- Delete Confirmation Modal -->
+@if (showDeleteConfirm()) {
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="fixed inset-0 bg-black/50 transition-opacity" (click)="cancelDelete()"></div>
+    <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6 z-10">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0">
+          <fa-icon [icon]="faTriangleExclamation" class="text-red-600"></fa-icon>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">Delete Payment Method</h3>
+      </div>
+
+      <p class="text-sm text-gray-600 mb-6">
+        Are you sure you want to delete the card ending in
+        <span class="font-semibold">{{ paymentToDelete()?.cardNumber }}</span
+        >? This action cannot be undone.
+      </p>
+
+      @if (paymentToDelete()?.isDefault) {
+        <div
+          class="mb-4 flex items-center gap-2 text-amber-700 bg-amber-50 px-3 py-2.5 rounded border border-amber-200"
+        >
+          <fa-icon [icon]="faTriangleExclamation" class="text-sm shrink-0"></fa-icon>
+          <span class="text-xs font-medium"
+            >This is your default card. Another card will be set as default automatically.</span
+          >
+        </div>
+      }
+
+      <div class="flex justify-end gap-3">
+        <button
+          (click)="cancelDelete()"
+          class="px-6 py-2.5 text-sm font-medium text-gray-600 border-2 border-gray-300 rounded hover:border-gray-500 hover:text-gray-800 transition-colors duration-300"
+        >
+          Cancel
+        </button>
+        <button
+          (click)="executeDelete()"
+          class="px-6 py-2.5 text-sm font-medium text-white bg-red-600 border-2 border-red-600 rounded hover:bg-white hover:text-red-600 transition-colors duration-300"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
   </div>
+}

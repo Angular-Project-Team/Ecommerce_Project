@@ -16,7 +16,7 @@ import { Filter } from '../shopping/filter/filter';
 
 @Component({
   selector: 'app-home',
-  imports: [BestSeller,Header,Footer,Categories,HeroSection,Search,Collection,Commisions,Filter],
+  imports: [BestSeller,Categories,HeroSection,Collection,Commisions],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

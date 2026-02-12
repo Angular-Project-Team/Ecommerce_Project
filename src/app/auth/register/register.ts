@@ -12,7 +12,7 @@ import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-register',
-  imports: [RouterLink, ReactiveFormsModule, NgClass],
+  imports: [ReactiveFormsModule, NgClass],
   templateUrl: './register.html',
   styleUrl: './register.css',
 })

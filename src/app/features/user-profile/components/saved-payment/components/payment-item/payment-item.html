@@ -1,0 +1,48 @@
+<div class="border border-gray-300 rounded-lg p-4 md:p-6">
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="flex items-center gap-4">
+      @switch (payment()?.cardType) {
+        @case ('visa') {
+          <fa-icon [icon]="faCcVisa" class="text-4xl text-[#1A1F71]"></fa-icon>
+        }
+        @case ('mastercard') {
+          <fa-icon [icon]="faCcMastercard" class="text-4xl text-[#EB001B]"></fa-icon>
+        }
+        @case ('amex') {
+          <fa-icon [icon]="faCcAmex" class="text-4xl text-[#2E77BB]"></fa-icon>
+        }
+      }
+      <div class="flex flex-col gap-1">
+        <p class="font-medium text-gray-900">•••• •••• •••• {{ payment()?.cardNumber }}</p>
+        <p class="text-sm text-gray-500">Expires {{ payment()?.expiryDate }}</p>
+        <p class="text-sm text-gray-500">{{ payment()?.cardholderName }}</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      @if (payment()?.isDefault) {
+        <span class="flex items-center gap-1 text-sm text-profile-primary font-medium">
+          <fa-icon [icon]="faCheck" class="text-xs"></fa-icon>
+          Default
+        </span>
+      } @else {
+        <button
+          (click)="onSetDefault()"
+          class="text-sm text-gray-500 hover:text-profile-primary transition-colors"
+        >
+          Set as default
+        </button>
+      }
+      <div class="flex gap-2">
+        <button
+          (click)="onEdit()"
+          class="p-2 text-gray-500 hover:text-profile-primary transition-colors"
+        >
+          <fa-icon [icon]="faPenToSquare"></fa-icon>
+        </button>
+        <button (click)="onDelete()" class="p-2 text-gray-500 hover:text-red-500 transition-colors">
+          <fa-icon [icon]="faXmark"></fa-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
