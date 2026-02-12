@@ -12,9 +12,10 @@ import { Favourite } from './features/favourite/favourite';
 
 
 
+
 @Component({
   selector: 'app-root',
-  imports: [Header,Footer,RouterOutlet,Register,Favourite],
+  imports: [Header, Footer, RouterOutlet, Register, Favourite],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
