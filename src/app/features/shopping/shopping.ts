@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-shopping',
-  imports: [Header,Collection,Footer,Products,Search,Filter,FormsModule],
+  imports: [Collection,Search,Filter,FormsModule],
   templateUrl: './shopping.html',
   styleUrl: './shopping.css',
 })
