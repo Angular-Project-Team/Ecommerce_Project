@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RouterEvent, RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterEvent, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
