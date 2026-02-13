@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ProductType } from '../../models/productType';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../../../features/services/product-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -10,11 +11,19 @@ import { ProductService } from '../../../features/services/product-service';
   styleUrl: './product.css',
 })
 export class Product {
-@Input() myproduct:ProductType= {} as ProductType;
-@Output() favoriteChange = new EventEmitter<ProductType>();
+  @Input() myproduct: ProductType = {} as ProductType;
+  @Output() favoriteChange = new EventEmitter<ProductType>();
 
+  constructor(private productService: ProductService,private router: Router) {}
 
-  constructor(private productService: ProductService) {}
+  goToDetails() {
+    const id = Number(this.myproduct?.id);
+    if (!id) return;
+    this.productService.productbyId(id).subscribe({
+      next: () => this.router.navigate(['/product', id]),
+      error: (err) => console.error('Error loading product:', err),
+    });
+  }
 
   toggleFavorite() {
     this.myproduct.isFavorite = !this.myproduct.isFavorite;
@@ -46,6 +55,7 @@ export class Product {
         text: `Check out ${this.myproduct.name} for $${this.myproduct.price}`,
         url: window.location.href
       });
-    }}
+    }
+  }
 }
 

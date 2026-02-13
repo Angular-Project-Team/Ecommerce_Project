@@ -11,10 +11,11 @@ import { Register } from './auth/register/register';
 import { Favourite } from './features/favourite/favourite';
 import { RouterOutlet } from '@angular/router';
 
+
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Header, Footer, RouterOutlet, Register, Favourite],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

@@ -1,0 +1,42 @@
+    <div class="pt-20 pb-10">
+        <app-search></app-search>
+    </div>
+
+    <div class="text-[#747474] pl-30">
+        <div class="breadcrumbs text-sm">
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/shopping" routerLinkActive="active">Products</a></li>
+                <li *ngIf="categoryName"><a [routerLink]="['/shopping']" [queryParams]="{catId: categoryId}">{{categoryName}}</a></li>
+                <li>{{productName}}</li>
+            </ul>
+        </div>
+    </div>
+
+    @if(product()){
+    <div class="flex pl-30 pt-10 pb-10 pr-10 space-x-5">
+        <div class="bg-[#EBE7E1] w-100"> 
+            <div class="p-5 flex justify-end">
+                <app-fav-button [myproduct]="product()" (favoriteChange)="onFavoriteChange($event)"></app-fav-button>
+            </div>
+            <img class="m-5 w-full h-full" class="image" [src]="product().image" alt="{{product().name}}">
+        </div>
+        
+        <div class="p-10">
+        <p class="text-xl font-bold pb-5">{{product().name}}</p>
+        <p class="text-lg font-semibold">{{product().price | currency}}</p>
+        <div class="pt-5"><app-rating></app-rating></div>
+        <div class="pt-5"><app-color (colorSelected)="onColorSelected($event)"></app-color></div>
+        <div> <p class="text-lg font-semibold pb-2">Quantity:</p></div>
+        <div class="flex row justify-center align-middle space-x-5">
+            <app-quantity (quantityChanged)="onQuantityChanged($event)"></app-quantity>
+            <app-cart-btn [productId]="product().id" [selectedColor]="selectedColor" [quantity]="quantity" (addToCartClicked)="handleAddToCart($event)"></app-cart-btn>
+        </div>
+     </div>
+    </div>
+    }
+
+    <div> <app-details></app-details></div>
+    <div class="pt-20 pb-20"><app-review-card></app-review-card></div>
+    <div id="related"><app-related-products></app-related-products></div>
+    <div class="pb-5"><app-review-form></app-review-form></div>

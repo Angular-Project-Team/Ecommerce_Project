@@ -1,0 +1,11 @@
+<h1 class="text-center text-5xl mt-8 font-[Vultura] "id="related">Related Products</h1>
+<div class=" grid
+    grid-cols-1
+    sm:grid-cols-2
+    md:grid-cols-4 gap-6 px-4 md:px-8 lg:px-16 py-10 max-w-9xl max-h-6xl mx-auto mb-14 items-stretch ">
+  @for (product of products(); track product.id; let i = $index) {
+    @if (i == 1 || i==37||i==22 || i==17) {
+      <app-product [myproduct]="product" class="block h-full"></app-product>
+    }
+  }
+</div>

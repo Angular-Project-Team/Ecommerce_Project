@@ -37,6 +37,21 @@ import { RouterModule, Routes } from '@angular/router';
           import('./features/favourite/favourite').then(m => m.Favourite)
       },
       {
+        path: 'product/:id',
+        loadComponent: () =>
+          import('./features/product-details/product-details').then(m => m.ProductDetails)
+      },
+      {
+        path : 'cart',
+        loadComponent: () =>
+          import('./features/cart/cart').then(m => m.Cart)
+      },
+      {
+        path : 'checkout',
+        loadComponent: () =>
+          import('./features/checkout/checkout').then(m => m.Checkout)
+      },
+      {
         path: 'user-profile',
         loadComponent: () =>
           import('./features/user-profile/user-profile').then(m => m.UserProfile),
@@ -83,3 +98,4 @@ import { RouterModule, Routes } from '@angular/router';
   },
   { path: '**', redirectTo: 'home' }
   ];
+

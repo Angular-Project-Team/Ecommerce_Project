@@ -1,0 +1,44 @@
+@if (open() === true) {
+  <div class="h-screen w-screen bg-gray-400">
+    <div
+      class="fixed grid place-items-center backdrop-blur-sm top-0 right-0 left-0 z-50 w-full inset-0 h-modal h-full justify-center items-center"
+    >
+      <div class="relative container m-auto px-6 py-6">
+        <div class="m-auto md:w-7/12">
+          <div class="bg-[#074D4D] dark:bg-gray-800 shadow-xl">
+            <div class="p-8">
+              <div class="border-4 border-[#ffffff] p-5">
+                <button
+                  type="button"
+                  (click)="close()"
+                  class="absolute top-3 right-3 text-white text-xl hover:opacity-80"
+                >
+                  ✕
+                </button>
+                <div class="space-y-8 flex flex-col items-center justify-center text-center">
+                  <img src="./images/logo/WhiteLogo.png" class="w-20" />
+                  <h2 class="mb-8 text-2xl text-white font-[Vultura]">Thank You!</h2>
+                  <p class="text-white text-md">
+                    We do appreciate your trust in us we hope <br />
+                    to see another order from you again !
+                  </p>
+                </div>
+                <div class="mt-10 grid">
+                  <div class="relative flex items-center space-x-4 justify-center">
+                    <img src="./images/confirm.png" class="w-16" />
+                  </div>
+                </div>
+                <div class="mt-5 space-y-4 py-3 text-white text-center">
+                  <p class="text-s">
+                    Your order has been confirmed and is being processed.You will receive an email
+                    with the details of your order and a tracking number once it has shipped.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}
