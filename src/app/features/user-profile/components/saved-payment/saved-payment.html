@@ -2,7 +2,6 @@
   <h3 class="text-xl font-semibold text-gray-900 mb-6">Saved Payment</h3>
   <hr class="mb-8 border-[#969696]" />
 
-  <!-- Success Message -->
   @if (successMessage()) {
     <div
       class="mb-4 flex items-center gap-2 text-green-600 bg-green-50 px-4 py-3 rounded border border-green-200"
@@ -18,7 +17,6 @@
     </div>
   }
 
-  <!-- Error Message -->
   @if (errorMessage()) {
     <div
       class="mb-4 flex items-center gap-2 text-red-600 bg-red-50 px-4 py-3 rounded border border-red-200"
@@ -34,7 +32,6 @@
     </div>
   }
 
-  <!-- Cards List -->
   <div class="space-y-4">
     @for (payment of payments(); track payment.id) {
       <app-payment-item
@@ -51,7 +48,6 @@
     }
   </div>
 
-  <!-- Payment Form (Add / Edit) -->
   @if (showForm()) {
     <div class="mt-6 border border-gray-300 rounded-lg p-4 md:p-6">
       <h4 class="text-lg font-semibold text-gray-900 mb-4">
@@ -60,7 +56,6 @@
 
       <form [formGroup]="paymentForm" (ngSubmit)="submitForm()">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Card Number (last 4 digits) -->
           <div>
             <input
               type="text"
@@ -78,7 +73,6 @@
             }
           </div>
 
-          <!-- Card Type -->
           <div>
             <select
               formControlName="cardType"
@@ -90,7 +84,6 @@
             </select>
           </div>
 
-          <!-- Cardholder Name -->
           <div>
             <input
               type="text"
@@ -107,7 +100,6 @@
             }
           </div>
 
-          <!-- Expiry Date -->
           <div>
             <input
               type="text"
@@ -127,7 +119,6 @@
           </div>
         </div>
 
-        <!-- Set as Default Checkbox -->
         <div class="mt-4">
           <label class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer select-none">
             <input
@@ -139,7 +130,6 @@
           </label>
         </div>
 
-        <!-- Card Type Preview -->
         <div class="mt-4 flex items-center gap-2 text-gray-500">
           <span class="text-sm">Card type:</span>
           @switch (paymentForm.get('cardType')?.value) {
@@ -155,7 +145,6 @@
           }
         </div>
 
-        <!-- Form Actions -->
         <div class="mt-6 flex items-center gap-3 flex-wrap">
           <button
             type="submit"
@@ -181,7 +170,6 @@
     </div>
   }
 
-  <!-- Add New Payment Button (hidden when form is open) -->
   @if (!showForm()) {
     <button
       (click)="openAddForm()"
@@ -193,7 +181,6 @@
   }
 </div>
 
-<!-- Delete Confirmation Modal -->
 @if (showDeleteConfirm()) {
   <div class="fixed inset-0 z-50 flex items-center justify-center p-4">
     <div class="fixed inset-0 bg-black/50 transition-opacity" (click)="cancelDelete()"></div>
