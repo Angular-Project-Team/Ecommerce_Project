@@ -8,7 +8,7 @@
           />
       </figure>
        <div class="absolute top-2 right-2 flex flex-col gap-2
-              md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
+              md:opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
 
     <!-- Favorite icon -->
     <button (click)="toggleFavorite(); $event.stopPropagation()" class="hover:scale-110 transition-transform">
@@ -39,8 +39,8 @@
     <button
             (click)="goToDetails(); $event.stopPropagation()"
             class="absolute bottom-0 left-0 right-0 h-1/7  bg-opacity-70
-              flex items-center justify-center text-white text-center cursor-pointer
-              md:opacity-0 md:group-hover:opacity-100  transition-opacity duration-300 text-2xl givecoler poi">
+              flex items-center justify-center text-white text-center cursor-pointer  opacity-100 sm:opacity-100
+              md:opacity-100 lg:opacity-0 group-hover:opacity-100  transition-opacity duration-300 text-2xl givecoler poi">
       Add to Cart
     </button>
 
