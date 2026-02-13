@@ -20,7 +20,7 @@
       "material": "gold",
       "description": "Antique-inspired gold ring with intricate floral engravings and ornate detailing.",
       "productCode": "RG-002",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "catId": 1,
@@ -119,7 +119,7 @@
       "material": "gold",
       "description": "Elegant chandelier-style drop earrings in lustrous yellow gold with intricate detailing.",
       "productCode": "ER-001",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "catId": 2,
@@ -317,7 +317,7 @@
       "material": "gold",
       "description": "Center diamond surrounded by halo of smaller stones on white gold chain.",
       "productCode": "NK-009",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "catId": 3,

@@ -1,55 +1,56 @@
-<div class=" footercls text-white text-lg font-[Montserrat]">
-<footer class="footer sm:footer-horizontal  p-10  text-white text-lg font-[Montserrat] ">
+<footer class="w-full bg-[#074D4D] text-white text-lg font-[Montserrat]">
 
-  <aside>
-    <p class="text-6xl font-bold mb-5">
-      CLIO
-    </p>
-    <div class="flex mb-2">
-      <svg width="35" height="32" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10.2058 16.6346C12.4258 20.9975 16.0025 24.5587 20.3654 26.7942L23.7571 23.4025C24.1733 22.9862 24.79 22.8475 25.3296 23.0325C27.0562 23.6029 28.9217 23.9112 30.8333 23.9112C31.6812 23.9112 32.375 24.605 32.375 25.4529V30.8333C32.375 31.6812 31.6812 32.375 30.8333 32.375C16.3571 32.375 4.625 20.6429 4.625 6.16667C4.625 5.31875 5.31875 4.625 6.16667 4.625H11.5625C12.4104 4.625 13.1042 5.31875 13.1042 6.16667C13.1042 8.09375 13.4125 9.94375 13.9829 11.6704C14.1525 12.21 14.0292 12.8112 13.5975 13.2429L10.2058 16.6346Z" fill="#EBE7E1"/>
-      </svg>
-      <a class="link link-hover">+1 (555) 123-4567</a>
-    </div>
-    <div class="flex mb-2">
-      <svg width="35" height="30" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M30.8334 6.16675H6.16671C4.47087 6.16675 3.09879 7.55425 3.09879 9.25008L3.08337 27.7501C3.08337 29.4459 4.47087 30.8334 6.16671 30.8334H30.8334C32.5292 30.8334 33.9167 29.4459 33.9167 27.7501V9.25008C33.9167 7.55425 32.5292 6.16675 30.8334 6.16675ZM30.8334 12.3334L18.5 20.0417L6.16671 12.3334V9.25008L18.5 16.9584L30.8334 9.25008V12.3334Z" fill="#EBE7E1"/>
-      </svg>
+  <div class="footer sm:footer-horizontal p-10">
 
-    <a class="link link-hover"> info@cliogems.com</a>
-    </div>
-    <div class="flex">
-      <svg width="35" height="30" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M18.5 17.7291C17.4779 17.7291 16.4975 17.323 15.7747 16.6002C15.0519 15.8774 14.6459 14.8971 14.6459 13.8749C14.6459 12.8527 15.0519 11.8724 15.7747 11.1496C16.4975 10.4268 17.4779 10.0208 18.5 10.0208C19.5222 10.0208 20.5026 10.4268 21.2253 11.1496C21.9481 11.8724 22.3542 12.8527 22.3542 13.8749C22.3542 14.3811 22.2545 14.8822 22.0608 15.3498C21.8671 15.8175 21.5832 16.2423 21.2253 16.6002C20.8675 16.9581 20.4426 17.242 19.975 17.4357C19.5074 17.6294 19.0062 17.7291 18.5 17.7291ZM18.5 3.08325C15.6379 3.08325 12.893 4.22023 10.8692 6.24406C8.84535 8.26789 7.70837 11.0128 7.70837 13.8749C7.70837 21.9687 18.5 33.9166 18.5 33.9166C18.5 33.9166 29.2917 21.9687 29.2917 13.8749C29.2917 11.0128 28.1547 8.26789 26.1309 6.24406C24.1071 4.22023 21.3622 3.08325 18.5 3.08325Z" fill="#EBE7E1"/>
-      </svg>
+    <aside>
+      <p class="text-6xl font-bold mb-5">CLIO</p>
 
-    <a class="link link-hover">123 Diamond Street, Luxe City, Jewelania</a>
-    </div>
-  </aside>
-<!-- <div class="m-auto"> -->
-  <nav >
-    <a class="footer-title" [routerLink]="['/home']">HOME</a>
-    <a class="link link-hover" [routerLink]="['/home']" fragment="best-seller" >Best Seller</a>
-    <a class="link link-hover" [routerLink]="['/home']" fragment="new-collection">New Collection</a>
-    <a class="link link-hover" [routerLink]="['/home']" fragment="commisions">Commisions</a>
-  </nav>
-  <nav>
-    <a class="footer-title" [routerLink]="['/shopping']">SHOPING</a>
-    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 1 }">Rings</a>
-    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 2 }">Earings</a>
-    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 4 }">Pracelets</a>
-    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 3 }">Necklace</a>
-    <a class="link link-hover" [routerLink]="['/shopping']" fragment="filter" [queryParams]="{ catId: 5 }">Watches</a>
-  </nav>
-  <nav>
-    <h6 class="footer-title">About</h6>
-    <a class="link link-hover">Company</a>
-    <a class="link link-hover">Staff</a>
-    <a class="link link-hover">Privacy Policy</a>
-  </nav>
-<!-- </div> -->
+      <div class="flex mb-2">
+        <!-- icon -->
+        <a class="link link-hover">+1 (555) 123-4567</a>
+      </div>
+
+      <div class="flex mb-2">
+        <!-- icon -->
+        <a class="link link-hover">info@cliogems.com</a>
+      </div>
+
+      <div class="flex">
+        <!-- icon -->
+        <a class="link link-hover">
+          123 Diamond Street, Luxe City, Jewelania
+        </a>
+      </div>
+    </aside>
+
+    <nav>
+      <a class="footer-title">HOME</a>
+      <a class="link link-hover">Best Seller</a>
+      <a class="link link-hover">New Collection</a>
+      <a class="link link-hover">Commisions</a>
+    </nav>
+
+    <nav>
+      <a class="footer-title">SHOPPING</a>
+      <a class="link link-hover">Rings</a>
+      <a class="link link-hover">Earings</a>
+      <a class="link link-hover">Pracelets</a>
+      <a class="link link-hover">Necklace</a>
+      <a class="link link-hover">Watches</a>
+    </nav>
+
+    <nav>
+      <h6 class="footer-title">About</h6>
+      <a class="link link-hover">Company</a>
+      <a class="link link-hover">Staff</a>
+      <a class="link link-hover">Privacy Policy</a>
+    </nav>
+
+  </div>
+
+  <!-- copyright -->
+  <div class="text-center py-4">
+    <p>© All copy rights reserved for Clio Company</p>
+  </div>
+
 </footer>
-<div class=" text-center">
-  <p>© All copy rights reserved for Clio Company</p>
-</div>
-</div>
