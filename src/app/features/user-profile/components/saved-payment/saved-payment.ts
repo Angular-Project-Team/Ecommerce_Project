@@ -13,7 +13,7 @@ function expiryDateValidator(control: AbstractControl): ValidationErrors | null 
   if (!value || !/^(0[1-9]|1[0-2])\/\d{2}$/.test(value)) return null;
 
   const [month, year] = value.split('/').map(Number);
-  const expiry = new Date(2000 + year, month); // first day of next month
+  const expiry = new Date(2000 + year, month);
   const now = new Date();
 
   return expiry <= now ? { expired: true } : null;
@@ -27,35 +27,28 @@ function expiryDateValidator(control: AbstractControl): ValidationErrors | null 
   styleUrls: ['./saved-payment.css'],
 })
 export class SavedPayment {
-  // Icons
   faCcVisa = faCcVisa;
   faCcMastercard = faCcMastercard;
   faCcAmex = faCcAmex;
   faPlus = faPlus;
   faTriangleExclamation = faTriangleExclamation;
 
-  // Services
   savedPaymentService = inject(SavedPaymentService);
 
-  // State
   userId = '1';
   payments = signal<Payment[]>([]);
 
-  // Form state
   showForm = signal(false);
   editingPayment = signal<Payment | null>(null);
   isEditMode = computed(() => this.editingPayment() !== null);
 
-  // Delete confirmation
   showDeleteConfirm = signal(false);
   paymentToDelete = signal<Payment | null>(null);
 
-  // Feedback
   successMessage = signal<string | null>(null);
   errorMessage = signal<string | null>(null);
   isSubmitting = signal(false);
 
-  // Reactive Form
   paymentForm = new FormGroup({
     cardNumber: new FormControl('', [
       Validators.required,
@@ -79,7 +72,6 @@ export class SavedPayment {
     this.loadPayments();
   }
 
-  // ─── Data Loading ───────────────────────────────────────
   loadPayments(): void {
     this.savedPaymentService.getSavedPayments(this.userId).subscribe({
       next: (payments) => this.payments.set(payments as Payment[]),
@@ -87,7 +79,6 @@ export class SavedPayment {
     });
   }
 
-  // ─── Form Helpers ───────────────────────────────────────
   formatExpiryDate(event: Event): void {
     const input = event.target as HTMLInputElement;
     let value = input.value.replace(/\D/g, '');
@@ -123,12 +114,10 @@ export class SavedPayment {
     return 'Invalid input';
   }
 
-  // ─── Add Flow ───────────────────────────────────────────
   openAddForm(): void {
     this.editingPayment.set(null);
     this.paymentForm.reset({ cardType: 'visa', isDefault: false });
 
-    // First card should be default automatically
     if (this.payments().length === 0) {
       this.paymentForm.patchValue({ isDefault: true });
     }
@@ -137,7 +126,6 @@ export class SavedPayment {
     this.clearMessages();
   }
 
-  // ─── Edit Flow ──────────────────────────────────────────
   openEditForm(payment: Payment): void {
     this.editingPayment.set(payment);
     this.paymentForm.patchValue({
@@ -158,7 +146,6 @@ export class SavedPayment {
     this.clearMessages();
   }
 
-  // ─── Submit (Add / Edit) ───────────────────────────────
   submitForm(): void {
     this.paymentForm.markAllAsTouched();
     if (this.paymentForm.invalid || this.isSubmitting()) return;
@@ -213,12 +200,10 @@ export class SavedPayment {
     };
 
     try {
-      // If toggling default ON, unset others first
       if (updatedPayment.isDefault && !existing.isDefault) {
         await this.unsetAllDefaults();
       }
 
-      // Prevent un-checking default if it's the only card
       if (!updatedPayment.isDefault && existing.isDefault && this.payments().length === 1) {
         updatedPayment.isDefault = true;
       }
@@ -234,7 +219,6 @@ export class SavedPayment {
     }
   }
 
-  // ─── Set Default ────────────────────────────────────────
   async setAsDefault(payment: Payment): Promise<void> {
     try {
       await this.unsetAllDefaults();
@@ -248,7 +232,6 @@ export class SavedPayment {
     }
   }
 
-  // ─── Delete Flow ────────────────────────────────────────
   confirmDelete(payment: Payment): void {
     this.paymentToDelete.set(payment);
     this.showDeleteConfirm.set(true);
@@ -266,7 +249,6 @@ export class SavedPayment {
     try {
       await firstValueFrom(this.savedPaymentService.deletePayment(payment.id));
 
-      // If deleted card was default, promote the next card
       const remaining = this.payments().filter(p => p.id !== payment.id);
       if (payment.isDefault && remaining.length > 0) {
         await firstValueFrom(
@@ -278,7 +260,6 @@ export class SavedPayment {
       this.showDeleteConfirm.set(false);
       this.paymentToDelete.set(null);
 
-      // If the deleted card was being edited, close the form
       if (this.editingPayment()?.id === payment.id) {
         this.closeFormAndReset();
       }
@@ -290,7 +271,6 @@ export class SavedPayment {
     }
   }
 
-  // ─── Private Helpers ────────────────────────────────────
   private async unsetAllDefaults(): Promise<void> {
     const defaults = this.payments().filter(p => p.isDefault);
     for (const p of defaults) {

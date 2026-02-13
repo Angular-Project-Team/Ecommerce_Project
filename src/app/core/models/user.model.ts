@@ -17,7 +17,6 @@ export interface UserAddress {
   zipCode: string;
 }
 
-// Saved payment cards (for user profile)
 export interface Payment {
   id: string;
   userId: string;
@@ -28,24 +27,19 @@ export interface Payment {
   isDefault: boolean;
 }
 
-// Payment method types for checkout
 export type PaymentMethodType = 'credit-card' | 'paypal' | 'cash-on-delivery';
 
-// Checkout payment info
 export interface CheckoutPayment {
   method: PaymentMethodType;
-  // Credit card details (only when method is 'credit-card')
   cardDetails?: {
     cardNumber: string;
     cardholderName: string;
     ccv: string;
     expiryDate: string;
   };
-  // PayPal email (only when method is 'paypal')
   paypalEmail?: string;
 }
 
-// Cart item
 export interface CartItem {
   productId: string;
   productName: string;
@@ -55,7 +49,16 @@ export interface CartItem {
   total: number;
 }
 
-// Order
+export type OrderStatus = 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
+
+export interface OrderTimelineStep {
+  label: string;
+  key: OrderStatus | 'confirmed' | 'ready';
+  completed: boolean;
+  active: boolean;
+  cancelled: boolean;
+}
+
 export interface Order {
   id: string;
   userId: string;
@@ -64,7 +67,10 @@ export interface Order {
   tax: number;
   total: number;
   paymentMethod: PaymentMethodType;
-  status: 'pending' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
+  status: OrderStatus;
   shippingAddress: UserAddress;
   createdAt: string;
+  estimatedDeliveryDate: string;
+  deliveredDate?: string;
+  cancelledAt?: string;
 }
