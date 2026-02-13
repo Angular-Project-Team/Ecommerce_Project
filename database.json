@@ -20,7 +20,7 @@
       "material": "gold",
       "description": "Antique-inspired gold ring with intricate floral engravings and ornate detailing.",
       "productCode": "RG-002",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 1,
@@ -383,7 +383,7 @@
       "material": "silver",
       "description": "Set of three stackable gold bangles with textured and smooth finishes.",
       "productCode": "BR-005",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "catId": 4,
@@ -548,7 +548,7 @@
       "material": "gold",
       "description": "Sophisticated rose gold dress watch with slim profile and genuine leather strap.",
       "productCode": "WT-010",
-      "isFavorite": true
+      "isFavorite": false
     }
   ],
   "categories": [
@@ -592,7 +592,261 @@
       "cartId": "cart-1770806946559-mrc642"
     }
   ],
+  "users": [
+    {
+      "id": "f535",
+      "fName": "Omar",
+      "lName": "Osama",
+      "email": "omarosama1124@gmail.com",
+      "phone": "01014413327",
+      "password": "C0c0nut_oi1"
+    },
+    {
+      "id": "a6a6",
+      "fName": "Omar",
+      "lName": "Osama",
+      "email": "omarosama11@gmail.com",
+      "phone": "01014413320",
+      "password": "C0c0nut_oi1"
+    },
+    {
+      "id": "e9a6",
+      "fName": "Omar",
+      "lName": "Osama",
+      "email": "omarosama24@gmail.com",
+      "phone": "01014413325",
+      "password": "C0c0nut_oi1"
+    },
+    {
+      "id": "1",
+      "firstName": "Sarah",
+      "lastName": "Adams",
+      "email": "sarahadams12@gmail.com",
+      "phoneNumber": "+1 (555) 123-4567",
+      "password": "hashed_password_123",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+      "address": {
+        "city": "New York",
+        "streetAddress": "123 Diamond Street",
+        "fullAddress": "123 Diamond Street, Luxe City, Jewelania",
+        "zipCode": "10001"
+      },
+      "createdAt": "2024-01-15T10:30:00Z",
+      "city": "New York",
+      "streetAddress": "123 Diamond Street",
+      "fullAddress": "123 Diamond Street, Luxe City, Jewelania",
+      "zipCode": "10001"
+    },
+    {
+      "id": "2",
+      "firstName": "John",
+      "lastName": "Mitchell",
+      "email": "john.mitchell@email.com",
+      "phoneNumber": "+1 (555) 987-6543",
+      "password": "hashed_password_456",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "address": {
+        "city": "Los Angeles",
+        "streetAddress": "456 Emerald Avenue",
+        "fullAddress": "456 Emerald Avenue, Gem District, CA",
+        "zipCode": "90001"
+      },
+      "createdAt": "2024-02-20T14:45:00Z"
+    },
+    {
+      "id": "3",
+      "firstName": "Emily",
+      "lastName": "Chen",
+      "email": "emily.chen@email.com",
+      "phoneNumber": "+1 (555) 456-7890",
+      "password": "hashed_password_789",
+      "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "address": {
+        "city": "Chicago",
+        "streetAddress": "789 Pearl Lane",
+        "fullAddress": "789 Pearl Lane, Jewel Heights, IL",
+        "zipCode": "60601"
+      },
+      "createdAt": "2024-03-10T09:15:00Z"
+    },
+    {
+      "id": "4",
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "email": "michael.brown@email.com",
+      "phoneNumber": "+1 (555) 321-0987",
+      "password": "hashed_password_101",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      "address": {
+        "city": "Miami",
+        "streetAddress": "321 Sapphire Boulevard",
+        "fullAddress": "321 Sapphire Boulevard, Crystal Bay, FL",
+        "zipCode": "33101"
+      },
+      "createdAt": "2024-04-05T16:20:00Z"
+    },
+    {
+      "id": "5",
+      "firstName": "Jessica",
+      "lastName": "Williams",
+      "email": "jessica.williams@email.com",
+      "phoneNumber": "+1 (555) 654-3210",
+      "password": "hashed_password_202",
+      "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      "address": {
+        "city": "Seattle",
+        "streetAddress": "567 Ruby Road",
+        "fullAddress": "567 Ruby Road, Gemstone Park, WA",
+        "zipCode": "98101"
+      },
+      "createdAt": "2024-05-12T11:00:00Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pm1",
+      "userId": "1",
+      "cardType": "visa",
+      "cardNumber": "4242",
+      "expiryDate": "12/27",
+      "cardholderName": "Sarah Adams",
+      "isDefault": true
+    },
+    {
+      "id": "pm2",
+      "userId": "1",
+      "cardType": "mastercard",
+      "cardNumber": "8521",
+      "expiryDate": "03/26",
+      "cardholderName": "Sarah Adams",
+      "isDefault": false
+    },
+    {
+      "id": "pm3",
+      "userId": "2",
+      "cardType": "visa",
+      "cardNumber": "1234",
+      "expiryDate": "08/28",
+      "cardholderName": "John Mitchell",
+      "isDefault": true
+    },
+    {
+      "id": "pm4",
+      "userId": "4",
+      "cardType": "mastercard",
+      "cardNumber": "5678",
+      "expiryDate": "11/26",
+      "cardholderName": "Michael Brown",
+      "isDefault": true
+    },
+    {
+      "id": "pm5",
+      "userId": "4",
+      "cardType": "amex",
+      "cardNumber": "9012",
+      "expiryDate": "05/27",
+      "cardholderName": "Michael Brown",
+      "isDefault": false
+    },
+    {
+      "id": "pm6",
+      "userId": "5",
+      "cardType": "visa",
+      "cardNumber": "3456",
+      "expiryDate": "09/28",
+      "cardholderName": "Jessica Williams",
+      "isDefault": true
+    }
+  ],
   "orders": [
+    {
+      "id": "ord1",
+      "userId": "1",
+      "items": [
+        {
+          "productId": "21",
+          "productName": "Layered Chain Necklace Set",
+          "productImage": "https://www.pngmart.com/files/1/Artificial-Jewellery.png",
+          "price": 245,
+          "quantity": 1,
+          "total": 245
+        },
+        {
+          "productId": "1",
+          "productName": "Classic Solitaire Diamond Ring",
+          "productImage": "https://www.pngmart.com/files/1/Jewellery-Ring-PNG-Transparent-Image.png",
+          "price": 100,
+          "quantity": 2,
+          "total": 200
+        }
+      ],
+      "subtotal": 445,
+      "tax": 44.5,
+      "total": 489.5,
+      "paymentMethod": "credit-card",
+      "status": "delivered",
+      "shippingAddress": {
+        "city": "New York",
+        "streetAddress": "123 Diamond Street",
+        "fullAddress": "123 Diamond Street, Luxe City, Jewelania",
+        "zipCode": "10001"
+      },
+      "createdAt": "2024-12-15T14:30:00Z",
+      "estimatedDeliveryDate": "2024-12-25T00:00:00Z",
+      "deliveredDate": "2024-12-23T16:00:00Z"
+    },
+    {
+      "id": "ord2",
+      "userId": "1",
+      "items": [
+        {
+          "productId": "45",
+          "productName": "Women's Diamond Bezel Watch",
+          "productImage": "https://www.pngmart.com/files/3/Ladies-Watch-PNG-Transparent-Image.png",
+          "price": 1899,
+          "quantity": 1,
+          "total": 1899
+        }
+      ],
+      "subtotal": 1899,
+      "tax": 189.9,
+      "total": 2088.9,
+      "paymentMethod": "paypal",
+      "status": "pen",
+      "shippingAddress": {
+        "city": "New York",
+        "streetAddress": "123 Diamond Street",
+        "fullAddress": "123 Diamond Street, Luxe City, Jewelania",
+        "zipCode": "10001"
+      },
+      "createdAt": "2025-01-20T10:15:00Z"
+    },
+    {
+      "id": "ord3",
+      "userId": "2",
+      "items": [
+        {
+          "productId": "32",
+          "productName": "Diamond Tennis Bracelet",
+          "productImage": "https://www.pngmart.com/files/23/Bracelet-PNG.png",
+          "price": 1950,
+          "quantity": 1,
+          "total": 1950
+        }
+      ],
+      "subtotal": 1950,
+      "tax": 195,
+      "total": 2145,
+      "paymentMethod": "cash-on-delivery",
+      "status": "processing",
+      "shippingAddress": {
+        "city": "Los Angeles",
+        "streetAddress": "456 Emerald Avenue",
+        "fullAddress": "456 Emerald Avenue, Gem District, CA",
+        "zipCode": "90001"
+      },
+      "createdAt": "2025-02-01T16:45:00Z"
+    },
     {
       "id": "ord-001",
       "userId": 1,

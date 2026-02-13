@@ -5,20 +5,18 @@ import { Product } from './shared/components/product/product';
 import { Shopping } from './features/shopping/shopping';
 import { Header } from './shared/components/header/header';
 import { Footer } from './shared/components/footer/footer';
-import { RouterOutlet } from '@angular/router';
+
 import { Login } from './auth/login/login';
 import { Register } from './auth/register/register';
 import { Favourite } from './features/favourite/favourite';
-
-
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   imports: [Header, Footer, RouterOutlet, Register, Favourite],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-
-}
+export class App {}

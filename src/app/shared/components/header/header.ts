@@ -1,11 +1,13 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, Input, OnInit, inject } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 import { CartService } from '../../../features/services/cart-service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive, CommonModule],
+  standalone: true,
+  imports: [RouterLink,RouterLinkActive,RouterModule, CommonModule],
+
   templateUrl: './header.html',
   styleUrl: './header.css',
 })

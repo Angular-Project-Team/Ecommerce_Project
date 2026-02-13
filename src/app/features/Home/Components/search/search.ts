@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-search',
-  imports: [ReactiveFormsModule,CommonModule,Search,FormsModule],
+  imports: [ReactiveFormsModule,CommonModule,FormsModule],
   templateUrl: './search.html',
   styleUrl: './search.css',
 })

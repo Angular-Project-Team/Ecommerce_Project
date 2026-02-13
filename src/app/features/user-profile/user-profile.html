@@ -1,0 +1,58 @@
+<div class="px-4 py-6 md:px-8 lg:px-16">
+  <div class="flex flex-col items-center md:flex-row md:items-start md:justify-between">
+    <div class="flex flex-col items-center md:flex-row md:items-center gap-4">
+      <div class="relative">
+        <img
+          [src]="user()?.avatarUrl"
+          alt="Profile picture"
+          class="w-24 h-24 md:w-28 md:h-28 object-cover border-3 border-teal-950"
+        />
+        @if (this.currentRoute === '/user-profile/account-details') {
+          <button
+            class="absolute -bottom-px -right-px bg-profile-secondary rounded-sm shadow-md hover:bg-gray-100"
+          >
+            <fa-icon class="text-teal-950" [icon]="faPenToSquare"></fa-icon>
+          </button>
+        }
+      </div>
+      <div class="text-center md:text-left mt-2 md:mt-0">
+        <h2 class="text-lg md:text-xl font-medium text-gray-900">{{ user()?.firstName + ' ' + user()?.lastName }}</h2>
+        <p class="text-sm text-gray-500">{{ user()?.email }}</p>
+      </div>
+    </div>
+    @if (this.currentRoute === '/user-profile/account-details') {
+      <button
+        class="mt-4 md:mt-0 bg-profile-primary text-white px-6 md:px-8 py-2 text-sm hover:opacity-90 hover:bg-white hover:text-profile-primary border-2 border-profile-primary transition-colors duration-300"
+      >
+        Logout
+      </button>
+    }
+  </div>
+
+  <div class="mt-8 border-b border-gray-200">
+    <nav class="flex justify-center gap-6 md:gap-16">
+      <a
+        class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+        routerLink="/user-profile/account-details"
+        routerLinkActive="border-profile-primary text-profile-primary border-b-2"
+      >
+        Account Details
+      </a>
+      <a
+        class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+        routerLink="/user-profile/saved-payment"
+        routerLinkActive="border-profile-primary text-profile-primary border-b-2"
+      >
+        Saved Payment
+      </a>
+      <a
+        class="pb-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+        routerLink="/user-profile/orders"
+        routerLinkActive="border-profile-primary text-profile-primary border-b-2"
+      >
+        Orders
+      </a>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>

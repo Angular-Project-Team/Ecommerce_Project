@@ -1,0 +1,18 @@
+<div class="mt-8">
+  <h3 class="text-xl font-semibold text-gray-900 mb-6">Your Orders</h3>
+  <hr class="mb-8 border-[#969696]" />
+
+  @if (loading()) {
+    <div class="flex justify-center py-12">
+      <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-[#F87A32]"></div>
+    </div>
+  } @else if (orders().length === 0) {
+    <div class="text-center py-12">
+      <p class="text-gray-500 text-lg">You have no orders yet.</p>
+    </div>
+  } @else {
+    @for (order of orders(); track order.id) {
+      <app-order-item [order]="order" (cancelOrder)="onCancelOrder($event)" />
+    }
+  }
+</div>

@@ -12,11 +12,12 @@ import { Commisions } from './Components/commisions/commisions';
 import { Search } from './Components/search/search';
 import { ProductType } from '../../shared/models/productType';
 import { Filter } from '../shopping/filter/filter';
+import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-home',
-  imports: [BestSeller,Header,Footer,Categories,HeroSection,Search,Collection,Commisions,Filter],
+  imports: [RouterOutlet,BestSeller,Categories,HeroSection,Collection,Commisions],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

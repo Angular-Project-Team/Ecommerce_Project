@@ -1,9 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* 
-:root {
+@theme {
+    --color-profile-primary: #074D4D;
+    --color-profile-secondary: #D9D9D9;
+    --color-input-border: #4B4B4B;
+    --color-input-text: #595858;
     --color-base-100: #ffffff;
-} */
+    --font-family-base: 'Montserrat', sans-serif;
+}
+body {
+    font-family: var(--font-family-base);
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
