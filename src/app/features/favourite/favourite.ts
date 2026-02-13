@@ -6,20 +6,20 @@ import { Product } from '../../shared/components/product/product';
 
 @Component({
   selector: 'app-favourite',
-  standalone: true,                 // ✅ REQUIRED
+  standalone: true,
   imports: [CommonModule, Product],
   templateUrl: './favourite.html',
-  styleUrls: ['./favourite.css'],   // ✅ plural
+  styleUrls: ['./favourite.css'],
 })
 export class Favourite implements OnInit {
 
   private products = signal<ProductType[]>([]);
-  isLoading = signal(true);          // ✅ now a signal
-
+  isLoading = signal(true);
   favoriteProducts = computed(() =>
     this.products().filter(p => p.isFavorite)
   );
 
+  
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
@@ -28,7 +28,6 @@ export class Favourite implements OnInit {
 
   loadFavorites() {
     this.isLoading.set(true);
-
     this.productService.allProducts().subscribe({
       next: products => {
         this.products.set(products);
@@ -40,7 +39,6 @@ export class Favourite implements OnInit {
       }
     });
   }
-
   onFavoriteChange(product: ProductType) {
     this.products.update(products =>
       product.isFavorite
