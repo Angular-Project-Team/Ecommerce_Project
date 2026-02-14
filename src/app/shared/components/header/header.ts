@@ -7,9 +7,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-header',
   standalone: true,
   imports: [RouterLink,RouterLinkActive,RouterModule, CommonModule],
-
   templateUrl: './header.html',
-  styleUrl: './header.css',
+  styleUrl: './header.css'
 })
 export class Header implements OnInit {
   private readonly cartService = inject(CartService);
