@@ -1,5 +1,5 @@
 <div class="flex flex-col  h-[420px] h-full">
- <div class="card bg-[#EBE7E1]  shadow-none rounded-none p-20  relative group cursor-pointer  prod">
+ <div class="card bg-[#EBE7E1]  shadow-none rounded-none p-20  relative group cursor-pointer  prod" (click)="goToDetails()">
       <figure class="h-3.5/4">
         <img
           [src]="myproduct.image"
@@ -8,10 +8,10 @@
           />
       </figure>
        <div class="absolute top-2 right-2 flex flex-col gap-2
-              md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
+              md:opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
 
     <!-- Favorite icon -->
-    <button (click)="toggleFavorite()" class="hover:scale-110 transition-transform">
+    <button (click)="toggleFavorite(); $event.stopPropagation()" class="hover:scale-110 transition-transform">
       <!-- Unfilled Heart (default) -->
       <svg *ngIf="!myproduct.isFavorite" width="49" height="49" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="31" cy="31" r="30" stroke="#074D4D" stroke-width="2"/>
@@ -26,7 +26,7 @@
     </button>
 
     <!-- Share Icon -->
-    <button (click)="share()" class="hover:scale-110 transition-transform">
+    <button (click)="share(); $event.stopPropagation()" class="hover:scale-110 transition-transform">
       <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="23.5" cy="23.5" r="22.5" stroke="#074D4D" stroke-width="2"/>
         <path d="M30.2523 33.5156C29.4723 33.5156 28.8081 33.2495 28.2599 32.7172C27.7116 32.1864 27.4375 31.541 27.4375 30.7812C27.4375 30.6354 27.4506 30.4848 27.4769 30.3295C27.5024 30.1735 27.541 30.0269 27.5928 29.8898L18.883 24.9002C18.6078 25.202 18.2875 25.4372 17.9223 25.6056C17.5578 25.7748 17.167 25.8594 16.75 25.8594C15.9685 25.8594 15.3048 25.594 14.7588 25.0631C14.2113 24.5316 13.9375 23.8862 13.9375 23.1272C13.9375 22.3689 14.2113 21.7232 14.7588 21.1902C15.304 20.6571 15.9678 20.3906 16.75 20.3906C17.167 20.3906 17.5578 20.4752 17.9223 20.6444C18.2875 20.8128 18.6078 21.048 18.883 21.3498L27.5928 16.3602C27.541 16.2231 27.5024 16.0765 27.4769 15.9205C27.4506 15.7652 27.4375 15.6146 27.4375 15.4688C27.4375 14.709 27.7109 14.0636 28.2576 13.5328C28.8036 13.0005 29.467 12.7344 30.2478 12.7344C31.0278 12.7344 31.6919 13.0002 32.2401 13.5317C32.7884 14.0626 33.0625 14.7075 33.0625 15.4666C33.0625 16.2249 32.7888 16.8706 32.2413 17.4036C31.6953 17.9366 31.0315 18.2031 30.25 18.2031C29.833 18.2031 29.4423 18.1185 29.0778 17.9494C28.7125 17.7809 28.3923 17.5458 28.117 17.2439L19.4073 22.2336C19.459 22.3707 19.4976 22.5165 19.5231 22.6711C19.5494 22.8264 19.5625 22.9763 19.5625 23.1206C19.5625 23.265 19.5494 23.4163 19.5231 23.5745C19.4976 23.732 19.459 23.8793 19.4073 24.0164L28.117 29.0061C28.3923 28.7042 28.7125 28.4691 29.0778 28.3006C29.4423 28.1315 29.833 28.0469 30.25 28.0469C31.0315 28.0469 31.6953 28.3127 32.2413 28.8442C32.7888 29.3751 33.0625 30.02 33.0625 30.7791C33.0625 31.5374 32.7895 32.1831 32.2435 32.7161C31.6968 33.2491 31.033 33.5156 30.2523 33.5156Z" fill="#074D4D"/>
@@ -37,9 +37,10 @@
 <!-- add to cart -->
 
     <button
+            (click)="goToDetails(); $event.stopPropagation()"
             class="absolute bottom-0 left-0 right-0 h-1/7  bg-opacity-70
-              flex items-center justify-center text-white text-center cursor-pointer
-              md:opacity-0 md:group-hover:opacity-100  transition-opacity duration-300 text-2xl givecoler poi">
+              flex items-center justify-center text-white text-center cursor-pointer  opacity-100 sm:opacity-100
+              md:opacity-100 lg:opacity-0 group-hover:opacity-100  transition-opacity duration-300 text-2xl givecoler poi">
       Add to Cart
     </button>
 

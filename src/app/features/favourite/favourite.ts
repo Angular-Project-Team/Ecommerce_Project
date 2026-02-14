@@ -3,11 +3,12 @@ import { Component, computed, signal, OnInit } from '@angular/core';
 import { ProductType } from '../../shared/models/productType';
 import { ProductService } from '../services/product-service';
 import { Product } from '../../shared/components/product/product';
+import { RelatedProducts } from '../../shared/components/related-products/related-products';
 
 @Component({
   selector: 'app-favourite',
   standalone: true,
-  imports: [CommonModule, Product],
+  imports: [CommonModule, Product,RelatedProducts],
   templateUrl: './favourite.html',
   styleUrls: ['./favourite.css'],
 })
@@ -19,7 +20,7 @@ export class Favourite implements OnInit {
     this.products().filter(p => p.isFavorite)
   );
 
-  
+
   constructor(private productService: ProductService) {}
 
   ngOnInit() {

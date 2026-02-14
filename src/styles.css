@@ -4,12 +4,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@font-face {
+    font-family: 'Meiland Gorgeous';
+    src: url('/fonts/Meiland Gorgeous.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
     --color-profile-primary: #074D4D;
     --color-profile-secondary: #D9D9D9;
     --color-input-border: #4B4B4B;
     --color-input-text: #595858;
+    --color-base-100: #ffffff;
     --font-family-base: 'Montserrat', sans-serif;
+    --font-family-display: 'Meiland Gorgeous', 'Montserrat', sans-serif;
 }
 body {
     font-family: var(--font-family-base);

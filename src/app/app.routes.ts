@@ -32,6 +32,26 @@ export const routes: Routes = [
         loadComponent: () => import('./features/favourite/favourite').then((m) => m.Favourite),
       },
       {
+        path: 'product/:id',
+        loadComponent: () =>
+          import('./features/product-details/product-details').then(m => m.ProductDetails)
+      },
+      {
+        path: 'cart',
+        loadComponent: () =>
+          import('./features/cart/cart').then(m => m.Cart)
+      },
+      {
+        path: 'checkout',
+        loadComponent: () =>
+          import('./features/checkout/checkout').then(m => m.Checkout)
+      },
+      {
+        path: 'about-us',
+        loadComponent: () =>
+          import('./features/about-us/about-us').then(m => m.AboutUs)
+      },
+      {
         path: 'user-profile',
         canActivate: [authGuard],
 
@@ -58,11 +78,12 @@ export const routes: Routes = [
           {
             path: 'orders',
             loadComponent: () =>
-              import('./features/user-profile/components/orders/orders').then((m) => m.Orders),
-          },
+              import('./features/user-profile/components/orders/orders')
+                .then(m => m.Orders)
+          }
         ],
-      },
-    ],
+      }
+    ]
   },
   {
     path: '', // Auth routes
@@ -81,5 +102,6 @@ export const routes: Routes = [
       },
     ],
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: 'home' }
 ];
+
