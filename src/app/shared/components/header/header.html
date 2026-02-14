@@ -1,4 +1,4 @@
-<div class="navbar bg-[#074D4D] shadow-none absolute top-0 left-0 w-full z-50 ">
+<div class="navbar bg-[#074D4D] shadow-none absolute top-0 left-0 w-full z-50">
   <!-- Desktop menu - left side -->
   <div class="navbar-start hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-white ml-28 gap-9 text-lg font-[Vultura]">
@@ -13,15 +13,43 @@
   <div class="navbar-start lg:hidden">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"
+          />
         </svg>
       </div>
-      <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li class="text-black"><a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a></li>
-        <li><a class="text-black" [routerLink]="['/shopping']" routerLinkActive="router-link-active">Shopping</a></li>
-        <li><a class="text-black" [routerLink]="['/about-us']" routerLinkActive="router-link-active">About</a></li>
-        <li><a class="text-black" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+      >
+        <li class="text-black">
+          <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+        </li>
+        <li>
+          <a class="text-black" [routerLink]="['/shopping']" routerLinkActive="router-link-active"
+            >Shopping</a
+          >
+        </li>
+        <li>
+          <a class="text-black" [routerLink]="['/about-us']" routerLinkActive="router-link-active"
+            >About</a
+          >
+        </li>
+        <li>
+          <a class="text-black" [routerLink]="['/contact']" routerLinkActive="router-link-active"
+            >Contact</a
+          >
+        </li>
       </ul>
     </div>
   </div>
@@ -29,13 +57,30 @@
   <!-- Logo - center -->
   <div class="navbar-center">
     <div>
-      <svg class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <rect width="76" height="76" fill="url(#pattern0_1_1968)"/>
+      <svg
+        class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]"
+        viewBox="0 0 76 76"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <rect width="76" height="76" fill="url(#pattern0_1_1968)" />
         <defs>
-          <pattern id="pattern0_1_1968" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#image0_1_1968" transform="scale(0.00199203)"/>
+          <pattern
+            id="pattern0_1_1968"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use xlink:href="#image0_1_1968" transform="scale(0.00199203)" />
           </pattern>
-          <image id="image0_1_1968" width="502" height="502" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfYAAAH2CAMAAAC1NV6OAAAAP1BMVEVMaXH////////////////////////////////////////////////////////////////////////////////u4+wCAAAAFHRSTlMAoNDgEPAgwIBAYDCQULBw3Ij477nJBQMAAAAJcEhZcwAALiMAAC4jAXilP3YAACAASURBVHic7Z3pmuKwrkUZMkPg3Hvq/Z/1fMXQRcCStwc5UvD+012QeGFbk+WdbY3jOM7Dp66//3Aq/Wqj40nKqzPOlFLzS7rvDz+Ajn1/GYZpHEs82IA8kbiKvGpRnebh0scO27HfD9MoORcq9uw6Tedo4Esd+/NVhn7FnlXj0LfZR6ffD7nhV+zZdLpmmuRu9ecp3zBV7Hk0n48lBuqwv2YZq4o9g+Z9/pWdUX+eUtf8ij1VY1nmD7WXpGlfsSepG4qs7YT6IXbgnuGaSy9ggvJq+/78+Haj4Zr5UnjIHIpH/0+n8Tr08j/fYz8IuaMl1aw60RfqrzlGc7zuoXBihNrLMDZ20NLq9kWAwjqe5yzvNQ65vdB2n2yAatEo6qFHqr1MeWbUeM4264/n4lkmMc0aod91GPIMc3fNQH5LzHeTmi3dreN+zjLpu3Oajd/n2XV0SDv0uy5ZbLwm4WUvG5roidD7/s9lvWvf91Ke0+GcIxhyjZvxhy2lVMeo/e6ePGfHoRvH32qMqBFm1O7TbbwmJjQxpH6rIoVb74f9EFYu1fzGTfJGzQ7Jy/019CvbDa3vXdiv/nCeol++GYescZNUl34K/LrtUG8CgjO/EakM35i3YKM/z/ysH6/0vwVxP24iGnfTAAPorzl/66frJeeS3++H+SNGehqne0CeeY4A7ttZ4VHzPZfDvFRm9D8Pj+Ku1zfjHuIMf/ZWTHjQkhONSI2DVI7kRewToN+/ERse29QLRCG7STrJy379CfuMXnoYygjZ1Nt9qe1MtnaL/27Mpt3Exj4Cm3o/FX0kOfIt/8UN8r3nUsMgqM6/qbfnFTLJs0ym37c+A1Zda993a/xFhoeyE/3l2SYBC8+HvfN/hH17bvau75dVXZVT9sXea435TUrrRTT+SOx+9VdMyYq65MU++z7hUubFxeS139eHflPW0i6/7+UbFdtlFSffxqkE+i5vIacfu+e7PK6AbnlNOUXQdznB++0xT2R+X+R9ZeRz1ZVB3+UD78fuseXX8mvS1Xic015noiELeMD74qeEWTves6sf9dosQGgpA3b213Us8Z4S4nf1dlAdg4qr8wvDzpZXGd3aO37cevVr2JQWwAGwj9zfM9U5isUPmuL1/U8+y4QX8IYN9wEW6ys8afWzkRxDykqPYOP+3mAa5sTaqEdDP2S86i8GO2c4Fni5zOIrwa1M9buibfpE7IcSL5dT/AJvaarfFXl+CXlPxniwVk7FO+sXi1tW1A6PYGdcXGPpt5mbG63RgGOMSY84qAx2WyUW7AAdzFYEjuELPfKxjBFkCTt/nHNvuDSsCbbskE9l4jWGsPOboN+M0k2hDQeRz9wEdnYltH+Wi7Vavhc7WzVw2MC5zTCLHvnEDWBnjTnLlSJ/CulEAZVEmcfOx2hsZpMcwusvoHCLdewNt/5Z9dZdgk+mfwN2Nre+pdYruGH3BdhP3FBsqPXKTezLfhN2diC2YMIvhXHfPHbWXd8edW+52Hdg37y7/inWgA3BZhc7S91yFJ4TwH3b2HnqCh5QRn7um8b+pdQBu27L2L+Wup/7hrGz1DfSW4uUp8XYdrF/oQ3/Kj5OC53/sIj9y6l7Ci+gAmGD2L+eOt90aKPY2WN728q+kOLcuG1iZw3ZL6HOjsImsfPuy5ZuruJF73RbxN6x1DdUVeEVub1DC54t7Hxocgv9cWGRHYOhDzCFnaduvXdioChy0KeYws7WEX6H6/YiYjSgv7WEna2M/hoj/p+IZR76W0PYM8QktyX3gECvaAc7G6bZ1K2UsJynIqE/NoOd6BD0ioZsA/ryPAxwdnGT+vI8zBadM0DfXmKRVCVjVvVc+xhdFGdWh0Le2263+x/3TrgqFo5GswAAAABJRU5ErkJggg=="/>
+          <image
+            id="image0_1_1968"
+            width="502"
+            height="502"
+            preserveAspectRatio="none"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfYAAAH2CAMAAAC1NV6OAAAAP1BMVEVMaXH////////////////////////////////////////////////////////////////////////////////u4+wCAAAAFHRSTlMAoNDgEPAgwIBAYDCQULBw3Ij477nJBQMAAAAJcEhZcwAALiMAAC4jAXilP3YAACAASURBVHic7Z3pmuKwrkUZMkPg3Hvq/Z/1fMXQRcCStwc5UvD+012QeGFbk+WdbY3jOM7Dp66//3Aq/Wqj40nKqzPOlFLzS7rvDz+Ajn1/GYZpHEs82IA8kbiKvGpRnebh0scO27HfD9MoORcq9uw6Tedo4Esd+/NVhn7FnlXj0LfZR6ffD7nhV+zZdLpmmuRu9ecp3zBV7Hk0n48lBuqwv2YZq4o9g+Z9/pWdUX+eUtf8ij1VY1nmD7WXpGlfsSepG4qs7YT6IXbgnuGaSy9ggvJq+/78+Haj4Zr5UnjIHIpH/0+n8Tr08j/fYz8IuaMl1aw60RfqrzlGc7zuoXBihNrLMDZ20NLq9kWAwjqe5yzvNQ65vdB2n2yAatEo6qFHqr1MeWbUeM4264/n4lkmMc0aod91GPIMc3fNQH5LzHeTmi3dreN+zjLpu3Oajd/n2XV0SDv0uy5ZbLwm4WUvG5roidD7/s9lvWvf91Ke0+GcIxhyjZvxhy2lVMeo/e6ePGfHoRvH32qMqBFm1O7TbbwmJjQxpH6rIoVb74f9EFYu1fzGTfJGzQ7Jy/019CvbDa3vXdiv/nCeol++GYescZNUl34K/LrtUG8CgjO/EakM35i3YKM/z/ysH6/0vwVxP24iGnfTAAPorzl/66frJeeS3++H+SNGehqne0CeeY4A7ttZ4VHzPZfDvFRm9D8Pj+Ku1zfjHuIMf/ZWTHjQkhONSI2DVI7kRewToN+/ERse29QLRCG7STrJy379CfuMXnoYygjZ1Nt9qe1MtnaL/27Mpt3Exj4Cm3o/FX0kOfIt/8UN8r3nUsMgqM6/qbfnFTLJs0ym37c+A1Zda993a/xFhoeyE/3l2SYBC8+HvfN/hH17bvau75dVXZVT9sXea435TUrrRTT+SOx+9VdMyYq65MU++z7hUubFxeS139eHflPW0i6/7+UbFdtlFSffxqkE+i5vIacfu+e7PK6AbnlNOUXQdznB++0xT2R+X+R9ZeRz1ZVB3+UD78fuseXX8mvS1Xic015noiELeMD74qeEWTves6sf9dosQGgpA3b213Us8Z4S4nf1dlAdg4qr8wvDzpZXGd3aO37cevVr2JQWwAGwj9zfM9U5isUPmuL1/U8+y4QX8IYN9wEW6ys8afWzkRxDykqPYOP+3mAa5sTaqEdDP2S86i8GO2c4Fni5zOIrwa1M9buibfpE7IcSL5dT/AJvaarfFXl+CXlPxniwVk7FO+sXi1tW1A6PYGdcXGPpt5mbG63RgGOMSY84qAx2WyUW7AAdzFYEjuELPfKxjBFkCTt/nHNvuDSsCbbskE9l4jWGsPOboN+M0k2hDQeRz9wEdnYltH+Wi7Vavhc7WzVw2MC5zTCLHvnEDWBnjTnLlSJ/CulEAZVEmcfOx2hsZpMcwusvoHCLdewNt/5Z9dZdgk+mfwN2Nre+pdYruGH3BdhP3FBsqPXKTezLfhN2diC2YMIvhXHfPHbWXd8edW+52Hdg37y7/inWgA3BZhc7S91yFJ4TwH3b2HnqCh5QRn7um8b+pdQBu27L2L+Wup/7hrGz1DfSW4uUp8XYdrF/oQ3/Kj5OC53/sIj9y6l7Ci+gAmGD2L+eOt90aKPY2WN728q+kOLcuG1iZw3ZL6HOjsImsfPuy5ZuruJF73RbxN6x1DdUVeEVub1DC54t7Hxocgv9cWGRHYOhDzCFnaduvXdioChy0KeYws7WEX6H6/YiYjSgv7WEna2M/hoj/p+IZR76W0PYM8QktyX3gECvaAc7G6bZ1K2UsJynIqE/NoOd6BD0ioZsA/ryPAxwdnGT+vI8zBadM0DfXmKRVCVjVvVc+xhdFGdWh0Le2263+x/3TrgqFo5GswAAAABJRU5ErkJggg=="
+          />
         </defs>
       </svg>
     </div>
@@ -45,26 +90,78 @@
   <div class="navbar-end">
     <div class="hidden lg:block">
       <ul class="flex">
-        <li class="m-3"><a [routerLink]="['/user-profile']" routerLinkActive="router-link-active">
-          <svg width="28" height="28" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.9167 14.4977C14.9237 14.4977 13.2167 13.7872 11.7957 12.3662C10.3747 10.9452 9.66506 9.23899 9.66667 7.24765C9.66828 5.25632 10.378 3.54854 11.7957 2.12432C13.2135 0.700095 14.9205 -0.0079876 16.9167 6.79603e-05C18.9128 0.00812352 20.6198 0.717012 22.0376 2.12673C23.4554 3.53646 24.1651 5.24423 24.1667 7.25007C24.1683 9.2559 23.4586 10.9621 22.0376 12.3686C20.6166 13.7751 18.9096 14.4832 16.9167 14.4977ZM0 31.9726V27.9947C0 26.9975 0.29 26.0646 0.87 25.1962C1.45161 24.3262 2.233 23.6512 3.21417 23.1711C5.4955 22.0771 7.77844 21.2571 10.063 20.7109C12.3459 20.1631 14.6305 19.8892 16.9167 19.8892C19.2028 19.8892 21.4882 20.1631 23.7727 20.7109C26.0573 21.2587 28.3386 22.0787 30.6167 23.1711C31.5995 23.6512 32.3809 24.3262 32.9609 25.1962C33.5425 26.0646 33.8333 26.9975 33.8333 27.9947V31.9726H0ZM2.41667 29.5559H31.4167V27.9947C31.4167 27.4598 31.2435 26.9564 30.8971 26.4843C30.5523 26.0139 30.0746 25.6159 29.464 25.2905C27.4759 24.327 25.4249 23.5892 23.3112 23.0768C21.1974 22.5645 19.0659 22.3075 16.9167 22.3059C14.7674 22.3043 12.6359 22.5605 10.5222 23.0744C8.40839 23.5883 6.35744 24.3262 4.36933 25.2881C3.75711 25.6135 3.27942 26.0115 2.93625 26.4819C2.58986 26.954 2.41667 27.4582 2.41667 27.9947V29.5559ZM16.9167 12.0834C18.2458 12.0834 19.3841 11.6097 20.3314 10.6624C21.2787 9.71507 21.7516 8.57601 21.75 7.24523C21.7484 5.91446 21.2755 4.77701 20.3314 3.8329C19.3873 2.88879 18.2491 2.41512 16.9167 2.4119C15.5843 2.40868 14.4468 2.88235 13.5043 3.8329C12.5618 4.78346 12.0882 5.9209 12.0833 7.24523C12.0785 8.56957 12.0522 9.70782 13.5043 10.66C14.4565 11.6122 15.5939 12.085 16.9167 12.0786" fill="white"/>
-        </svg></a></li>
+        <li class="m-3">
+          <a [routerLink]="['/user-profile']" routerLinkActive="router-link-active">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 34 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9167 14.4977C14.9237 14.4977 13.2167 13.7872 11.7957 12.3662C10.3747 10.9452 9.66506 9.23899 9.66667 7.24765C9.66828 5.25632 10.378 3.54854 11.7957 2.12432C13.2135 0.700095 14.9205 -0.0079876 16.9167 6.79603e-05C18.9128 0.00812352 20.6198 0.717012 22.0376 2.12673C23.4554 3.53646 24.1651 5.24423 24.1667 7.25007C24.1683 9.2559 23.4586 10.9621 22.0376 12.3686C20.6166 13.7751 18.9096 14.4832 16.9167 14.4977ZM0 31.9726V27.9947C0 26.9975 0.29 26.0646 0.87 25.1962C1.45161 24.3262 2.233 23.6512 3.21417 23.1711C5.4955 22.0771 7.77844 21.2571 10.063 20.7109C12.3459 20.1631 14.6305 19.8892 16.9167 19.8892C19.2028 19.8892 21.4882 20.1631 23.7727 20.7109C26.0573 21.2587 28.3386 22.0787 30.6167 23.1711C31.5995 23.6512 32.3809 24.3262 32.9609 25.1962C33.5425 26.0646 33.8333 26.9975 33.8333 27.9947V31.9726H0ZM2.41667 29.5559H31.4167V27.9947C31.4167 27.4598 31.2435 26.9564 30.8971 26.4843C30.5523 26.0139 30.0746 25.6159 29.464 25.2905C27.4759 24.327 25.4249 23.5892 23.3112 23.0768C21.1974 22.5645 19.0659 22.3075 16.9167 22.3059C14.7674 22.3043 12.6359 22.5605 10.5222 23.0744C8.40839 23.5883 6.35744 24.3262 4.36933 25.2881C3.75711 25.6135 3.27942 26.0115 2.93625 26.4819C2.58986 26.954 2.41667 27.4582 2.41667 27.9947V29.5559ZM16.9167 12.0834C18.2458 12.0834 19.3841 11.6097 20.3314 10.6624C21.2787 9.71507 21.7516 8.57601 21.75 7.24523C21.7484 5.91446 21.2755 4.77701 20.3314 3.8329C19.3873 2.88879 18.2491 2.41512 16.9167 2.4119C15.5843 2.40868 14.4468 2.88235 13.5043 3.8329C12.5618 4.78346 12.0882 5.9209 12.0833 7.24523C12.0785 8.56957 12.0522 9.70782 13.5043 10.66C14.4565 11.6122 15.5939 12.085 16.9167 12.0786"
+                fill="white"
+              /></svg
+          ></a>
+        </li>
         <span class="text-white text-4xl m-1">|</span>
         <li class="m-3">
           <a [routerLink]="['/cart']" routerLinkActive="router-link-active" class="cart-icon">
             <span *ngIf="cartCount() > 0" class="cart-badge">{{ cartCount() }}</span>
-            <svg width="30" height="30" viewBox="0 0 37 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.3542 37.4375C17.1837 37.4375 18.6667 35.9544 18.6667 34.125C18.6667 32.2956 17.1837 30.8125 15.3542 30.8125C13.5248 30.8125 12.0417 32.2956 12.0417 34.125C12.0417 35.9544 13.5248 37.4375 15.3542 37.4375Z" stroke="white" stroke-width="2"/>
-            <path d="M30.8125 37.4375C32.6419 37.4375 34.125 35.9544 34.125 34.125C34.125 32.2956 32.6419 30.8125 30.8125 30.8125C28.9831 30.8125 27.5 32.2956 27.5 34.125C27.5 35.9544 28.9831 37.4375 30.8125 37.4375Z" stroke="white" stroke-width="2"/>
-            <path d="M1 1H5.41667L13.1547 25.2917H30.8125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11.4322 19.7709L7.18335 6.52087H34.803C34.978 6.52066 35.1506 6.56206 35.3065 6.64168C35.4624 6.72129 35.5972 6.83683 35.6996 6.97876C35.8021 7.12069 35.8693 7.28495 35.8958 7.45799C35.9223 7.63102 35.9072 7.80788 35.8519 7.97396L32.1706 19.0156C32.0974 19.2354 31.957 19.4266 31.7691 19.5621C31.5813 19.6977 31.3555 19.7707 31.1239 19.7709H11.4322Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 37 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.3542 37.4375C17.1837 37.4375 18.6667 35.9544 18.6667 34.125C18.6667 32.2956 17.1837 30.8125 15.3542 30.8125C13.5248 30.8125 12.0417 32.2956 12.0417 34.125C12.0417 35.9544 13.5248 37.4375 15.3542 37.4375Z"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M30.8125 37.4375C32.6419 37.4375 34.125 35.9544 34.125 34.125C34.125 32.2956 32.6419 30.8125 30.8125 30.8125C28.9831 30.8125 27.5 32.2956 27.5 34.125C27.5 35.9544 28.9831 37.4375 30.8125 37.4375Z"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M1 1H5.41667L13.1547 25.2917H30.8125"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.4322 19.7709L7.18335 6.52087H34.803C34.978 6.52066 35.1506 6.56206 35.3065 6.64168C35.4624 6.72129 35.5972 6.83683 35.6996 6.97876C35.8021 7.12069 35.8693 7.28495 35.8958 7.45799C35.9223 7.63102 35.9072 7.80788 35.8519 7.97396L32.1706 19.0156C32.0974 19.2354 31.957 19.4266 31.7691 19.5621C31.5813 19.6977 31.3555 19.7707 31.1239 19.7709H11.4322Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </a>
         </li>
         <span class="text-white text-4xl m-1">|</span>
-        <li class="m-3"><a [routerLink]="['/favourite']" routerLinkActive="router-link-active"><svg width="40" height="40" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M37.3474 25.7364L26.2692 36.8166C25.5347 37.5509 24.5386 37.9634 23.5001 37.9634C22.4615 37.9634 21.4655 37.5509 20.731 36.8166L9.6527 25.7384C8.73692 24.8306 8.00947 23.7508 7.5121 22.5611C7.01473 21.3715 6.75724 20.0953 6.75442 18.8058C6.75159 17.5163 7.00349 16.239 7.49564 15.0471C7.9878 13.8553 8.71052 12.7724 9.62231 11.8606C10.5341 10.9488 11.617 10.2261 12.8089 9.73392C14.0007 9.24177 15.278 8.98988 16.5675 8.9927C17.857 8.99552 19.1332 9.25301 20.3229 9.75038C21.5125 10.2477 22.5923 10.9752 23.5001 11.891C25.344 10.093 27.822 9.09382 30.3974 9.10996C32.9727 9.12609 35.4381 10.1562 37.2593 11.9772C39.0805 13.7982 40.111 16.2633 40.1275 18.8387C40.144 21.4141 39.1452 23.8922 37.3474 25.7364Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></a></li>
+        <li class="m-3">
+          <a [routerLink]="['/favourite']" routerLinkActive="router-link-active"
+            ><svg
+              width="40"
+              height="40"
+              viewBox="0 0 47 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M37.3474 25.7364L26.2692 36.8166C25.5347 37.5509 24.5386 37.9634 23.5001 37.9634C22.4615 37.9634 21.4655 37.5509 20.731 36.8166L9.6527 25.7384C8.73692 24.8306 8.00947 23.7508 7.5121 22.5611C7.01473 21.3715 6.75724 20.0953 6.75442 18.8058C6.75159 17.5163 7.00349 16.239 7.49564 15.0471C7.9878 13.8553 8.71052 12.7724 9.62231 11.8606C10.5341 10.9488 11.617 10.2261 12.8089 9.73392C14.0007 9.24177 15.278 8.98988 16.5675 8.9927C17.857 8.99552 19.1332 9.25301 20.3229 9.75038C21.5125 10.2477 22.5923 10.9752 23.5001 11.891C25.344 10.093 27.822 9.09382 30.3974 9.10996C32.9727 9.12609 35.4381 10.1562 37.2593 11.9772C39.0805 13.7982 40.111 16.2633 40.1275 18.8387C40.144 21.4141 39.1452 23.8922 37.3474 25.7364Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </div>
   </div>
