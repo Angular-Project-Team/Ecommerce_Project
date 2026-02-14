@@ -37,9 +37,9 @@ export class Login {
         next: (response) => {
           if (response && response.length > 0) {
             const user = response[0];
-            if (user.email === email && user.password === password)
-              console.log('User Saved Successfully', user);
-            localStorage.setItem('userToken', JSON.stringify(user.id));
+
+            const token = this.authService.generateFakeToken(user.id!);
+            localStorage.setItem('userToken', token);
             this.loginError = false;
             this.router.navigate(['/home']);
           } else {

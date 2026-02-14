@@ -16,12 +16,15 @@
         }
       </div>
       <div class="text-center md:text-left mt-2 md:mt-0">
-        <h2 class="text-lg md:text-xl font-medium text-gray-900">{{ user()?.firstName + ' ' + user()?.lastName }}</h2>
+        <h2 class="text-lg md:text-xl font-medium text-gray-900">
+          {{ user()?.firstName + ' ' + user()?.lastName }}
+        </h2>
         <p class="text-sm text-gray-500">{{ user()?.email }}</p>
       </div>
     </div>
     @if (this.currentRoute === '/user-profile/account-details') {
       <button
+        (click)="logout()"
         class="mt-4 md:mt-0 bg-profile-primary text-white px-6 md:px-8 py-2 text-sm hover:opacity-90 hover:bg-white hover:text-profile-primary border-2 border-profile-primary transition-colors duration-300"
       >
         Logout

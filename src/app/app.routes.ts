@@ -1,85 +1,85 @@
 import { RouterModule, Routes } from '@angular/router';
+import { authGuard } from './core/guards/auth-guard';
+import { isLoggedGuard } from './core/guards/is-logged-guard';
 
-
-  export const routes: Routes = [
-
-
+export const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: '', // Home routes
-    loadComponent: () =>
-      import('./layouts/home-layout/home-layout').then(m => m.HomeLayout),
+    loadComponent: () => import('./layouts/home-layout/home-layout').then((m) => m.HomeLayout),
     children: [
       {
         path: 'home',
-        loadComponent: () =>
-          import('./features/Home/home').then(m => m.Home)
-      }
-    ]
+        loadComponent: () => import('./features/Home/home').then((m) => m.Home),
+      },
+    ],
   },
   {
     path: '', // Blank layout routes
-    loadComponent: () =>
-      import('./layouts/blank-layout/blank-layout').then(m => m.BlankLayout),
+    loadComponent: () => import('./layouts/blank-layout/blank-layout').then((m) => m.BlankLayout),
     children: [
       {
         path: 'shopping',
-        loadComponent: () =>
-          import('./features/shopping/shopping').then(m => m.Shopping)
+        loadComponent: () => import('./features/shopping/shopping').then((m) => m.Shopping),
       },
       {
         path: 'favourite',
-        loadComponent: () =>
-          import('./features/favourite/favourite').then(m => m.Favourite)
+        canActivate: [authGuard],
+        loadComponent: () => import('./features/favourite/favourite').then((m) => m.Favourite),
       },
       {
         path: 'user-profile',
+        canActivate: [authGuard],
+
         loadComponent: () =>
-          import('./features/user-profile/user-profile').then(m => m.UserProfile),
+          import('./features/user-profile/user-profile').then((m) => m.UserProfile),
         children: [
           { path: '', redirectTo: 'account-details', pathMatch: 'full' },
           {
             path: 'account-details',
+            canActivate: [authGuard],
+
             loadComponent: () =>
-              import('./features/user-profile/components/account-details/account-details')
-                .then(m => m.AccountDetails)
+              import('./features/user-profile/components/account-details/account-details').then(
+                (m) => m.AccountDetails,
+              ),
           },
           {
             path: 'saved-payment',
             loadComponent: () =>
-              import('./features/user-profile/components/saved-payment/saved-payment')
-                .then(m => m.SavedPayment)
+              import('./features/user-profile/components/saved-payment/saved-payment').then(
+                (m) => m.SavedPayment,
+              ),
           },
           {
             path: 'orders',
             loadComponent: () =>
-              import('./features/user-profile/components/orders/orders')
-                .then(m => m.Orders)
-          }
-        ]
-      }
-    ]
+              import('./features/user-profile/components/orders/orders').then((m) => m.Orders),
+          },
+        ],
+      },
+    ],
   },
   {
     path: '', // Auth routes
-    loadComponent: () =>
-      import('./layouts/auth-layout/auth-layout').then(m => m.AuthLayout),
+    loadComponent: () => import('./layouts/auth-layout/auth-layout').then((m) => m.AuthLayout),
     children: [
       {
         path: 'login',
-        loadComponent: () =>
-          import('./auth/login/login').then(m => m.Login)
+        canActivate: [isLoggedGuard],
+        loadComponent: () => import('./auth/login/login').then((m) => m.Login),
       },
       {
         path: 'register',
-        loadComponent: () =>
-          import('./auth/register/register').then(m => m.Register)
-      }
-    ]
+        canActivate: [isLoggedGuard],
+
+        loadComponent: () => import('./auth/register/register').then((m) => m.Register),
+      },
+    ],
   },
-  { path: '**', redirectTo: 'home' }
-  ];
+  { path: '**', redirectTo: 'home' },
+];
