@@ -5,9 +5,11 @@
 <div class="w-52 h-96 my-8 relative group cursor-pointer" (click)="goToCategory()">
   <img [src]="mycategory.image" alt="Failed" class="w-full h-full object-cover">
 
-  <div class="absolute bottom-0 left-0 right-0 h-1/4  bg-opacity-70
+  <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-opacity-70
               flex items-center justify-center text-white text-center
-              opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-2xl giveclr">
+              text-2xl giveclr
+              opacity-100 sm:opacity-100 md:opacity-100 lg:opacity-0 group-hover:opacity-100
+              transition-opacity duration-300">
     <span>{{ mycategory.name }}</span>
   </div>
 </div>
