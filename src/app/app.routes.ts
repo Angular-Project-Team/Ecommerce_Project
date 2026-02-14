@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 
-  export const routes: Routes = [
+export const routes: Routes = [
 
 
   {
@@ -42,14 +42,19 @@ import { RouterModule, Routes } from '@angular/router';
           import('./features/product-details/product-details').then(m => m.ProductDetails)
       },
       {
-        path : 'cart',
+        path: 'cart',
         loadComponent: () =>
           import('./features/cart/cart').then(m => m.Cart)
       },
       {
-        path : 'checkout',
+        path: 'checkout',
         loadComponent: () =>
           import('./features/checkout/checkout').then(m => m.Checkout)
+      },
+      {
+        path: 'about-us',
+        loadComponent: () =>
+          import('./features/about-us/about-us').then(m => m.AboutUs)
       },
       {
         path: 'user-profile',
@@ -75,7 +80,7 @@ import { RouterModule, Routes } from '@angular/router';
               import('./features/user-profile/components/orders/orders')
                 .then(m => m.Orders)
           }
-        ]
+        ],
       }
     ]
   },
@@ -97,5 +102,5 @@ import { RouterModule, Routes } from '@angular/router';
     ]
   },
   { path: '**', redirectTo: 'home' }
-  ];
+];
 
