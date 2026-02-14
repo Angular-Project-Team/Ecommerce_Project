@@ -31,7 +31,7 @@
       "material": "diamond",
       "description": "Contemporary engagement ring with a center stone surrounded by a dazzling halo of diamonds.",
       "productCode": "RG-003",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "catId": 1,

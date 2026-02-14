@@ -5,11 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UserService {
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-  private BASE_URL:string = 'http://localhost:3000/users';
+  private BASE_URL: string = 'http://localhost:3000/users';
 
-  getUserById(id: number) {
+  getUserById(id: number | string) {
     return this.http.get(`${this.BASE_URL}/${id}`);
   }
   getAllUsers() {

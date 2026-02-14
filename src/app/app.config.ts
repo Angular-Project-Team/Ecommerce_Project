@@ -3,7 +3,8 @@ import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 
 import { routes } from './app.routes';
-
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { authInterceptor } from './core/interceptors/auth.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -14,8 +15,9 @@ export const appConfig: ApplicationConfig = {
 
       withInMemoryScrolling({
         anchorScrolling: 'enabled',
-        scrollPositionRestoration: 'enabled'
-      })
-    )
-  ]
+        scrollPositionRestoration: 'enabled',
+      }),
+    ),
+    provideHttpClient(withInterceptors([authInterceptor])),
+  ],
 };
